@@ -1,0 +1,7 @@
+System Implementation & Synthesis/*.cr.mti
+System Implementation & Synthesis/work/*
+System Implementation & Synthesis/*.vhd.bak
+System Implementation & Synthesis/*.mpf
+System Implementation & Synthesis/transcript
+System Implementation & Synthesis/vsim.wlf
+wlf*
