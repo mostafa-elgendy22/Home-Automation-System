@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.ALL;
 
 ENTITY priority_encoder IS
        PORT (
-              reset, SFD, SRD, SW, SFA, ST : IN STD_LOGIC;
+              reset, SFD, SRD, SFA, SW, ST : IN STD_LOGIC;
               temperature : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
               A : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
        );
