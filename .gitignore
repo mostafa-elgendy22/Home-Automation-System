@@ -1,6 +1,6 @@
-*.cr.mti
+System Implementation & Synthesis/rtl/*.cr.mti
 System Implementation & Synthesis/rtl/work/*
-*.vhd.bak
-*.mpf
-transcript
-vsim.wlf
+System Implementation & Synthesis/rtl/*.vhd.bak
+System Implementation & Synthesis/rtl/*.mpf
+System Implementation & Synthesis/rtl/transcript
+System Implementation & Synthesis/rtl/vsim.wlf
