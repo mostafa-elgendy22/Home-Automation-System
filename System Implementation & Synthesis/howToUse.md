@@ -1,6 +1,6 @@
 1. Open a terminal and open the liscence server using: `lmgrd`
 2. Open a new terminal and type `oasys`
-3. Type `source scripts/clear.tcl`
+3. Type `delete_design` `reset_upf`
 4. Type `./cleanup.sh`
 5. Type `source scripts/run.tcl`
 6. File structure should be like this one.
