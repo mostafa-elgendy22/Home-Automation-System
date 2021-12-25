@@ -1,3 +1,0 @@
-> create_chip -bottom_clearance 30 -left_clearance 30 -right_clearance 30 -top_clearance 30 -utilization 60
-info:    create new die (0.000000 0.000000) (115.775000 115.775000)  [FP-110]
-info:    create new core (30.000000 30.000000) (85.669950 84.599950), 39 core rows  [FP-109]

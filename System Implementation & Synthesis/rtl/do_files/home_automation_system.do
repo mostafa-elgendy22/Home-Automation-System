@@ -1,4 +1,3 @@
-project compileall
 vsim -gui work.home_automation_system
 
 add wave -position insertpoint  \
