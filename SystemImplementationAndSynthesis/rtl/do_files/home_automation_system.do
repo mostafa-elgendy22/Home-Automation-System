@@ -1,23 +1,7 @@
 vsim -gui work.home_automation_system
 
 add wave -position insertpoint  \
-sim:/home_automation_system/clk \
-sim:/home_automation_system/reset \
-sim:/home_automation_system/SFD \
-sim:/home_automation_system/SRD \
-sim:/home_automation_system/SFA \
-sim:/home_automation_system/SW \
-sim:/home_automation_system/ST \
-sim:/home_automation_system/temperature \
-sim:/home_automation_system/front_door \
-sim:/home_automation_system/rear_door \
-sim:/home_automation_system/alarm_buzzer \
-sim:/home_automation_system/window_buzzer \
-sim:/home_automation_system/heater \
-sim:/home_automation_system/cooler \
-sim:/home_automation_system/display \
-sim:/home_automation_system/reversed_priority \
-sim:/home_automation_system/counter_Q
+sim:/home_automation_system/*
 
 
 force -freeze sim:/home_automation_system/clk 1 0, 0 {100 ps} -r 200
