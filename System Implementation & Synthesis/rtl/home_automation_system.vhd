@@ -1,5 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY home_automation_system IS
        PORT (
@@ -16,8 +17,13 @@ END ENTITY;
 ARCHITECTURE arch1 OF home_automation_system IS
 
        SIGNAL A : STD_LOGIC_VECTOR(2 DOWNTO 0);
-
+       SIGNAL reversed_priority : STD_LOGIC;
+       SIGNAL counter_enable : STD_LOGIC;
+       SIGNAL counter_Q : STD_LOGIC_VECTOR(3 DOWNTO 0);
+       SIGNAL state : STD_LOGIC_VECTOR(2 DOWNTO 0);
 BEGIN
+
+       reversed_priority <= counter_Q(3);
        priority_encoder : ENTITY work.priority_encoder
               PORT MAP(
                      reset => reset,
@@ -27,12 +33,39 @@ BEGIN
                      SW => SW,
                      ST => ST,
                      temperature => temperature,
+                     reversed_priority => reversed_priority,
                      A => A
               );
-       -- output_decoder : ENTITY work.decoder
-       --        PORT MAP(
-       --               A => A,
 
-       --        );
+       counter_enable <= SFD OR SRD OR SFA OR SW OR ST;
+       counter : ENTITY work.counter
+              PORT MAP(
+                     clk => clk,
+                     reset => reset,
+                     enable => counter_enable,
+                     Q => counter_Q
+              );
+
+       state_holder : ENTITY work.DFF_register
+              GENERIC MAP(data_width => 3)
+              PORT MAP(
+                     clk => clk,
+                     reset => reset,
+                     enable => '1',
+                     D => A,
+                     Q => state
+              );
+       display <= state;
+
+       output_decoder : ENTITY work.decoder
+              PORT MAP(
+                     A => state,
+                     front_door => front_door,
+                     rear_door => rear_door,
+                     alarm_buzzer => alarm_buzzer,
+                     window_buzzer => window_buzzer,
+                     heater => heater,
+                     cooler => cooler
+              );
 
 END ARCHITECTURE;
