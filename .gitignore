@@ -1,9 +1,13 @@
 **.cr.mti
-System_Implementation_And_Synthesis/rtl/Design_1/modelsim/work/*
 **.vhd.bak
 **.mpf
-System_Implementation_And_Synthesis/rtl/Design_1/modelsim/transcript
 **.wlf
 **.ini
 **.lnk
-System_Implementation_And_Synthesis/rtl/Design_1/modelsim/wlftdxk23f
+System_Implementation_And_Synthesis/rtl/Design_1/simulation/modelsim/work/*
+System_Implementation_And_Synthesis/rtl/Design_1/simulation/modelsim/transcript
+System_Implementation_And_Synthesis/rtl/Design_1/post_synthesis_simulation/modelsim/work/*
+System_Implementation_And_Synthesis/rtl/Design_1/post_synthesis_simulation/modelsim/transcript
+
+
+

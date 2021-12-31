@@ -12,12 +12,14 @@ END ENTITY;
 
 ARCHITECTURE DFF_register OF DFF_register IS
 BEGIN
-       PROCESS (clk, enable, reset)
+       PROCESS (clk)
        BEGIN
-              IF reset = '1' THEN
-                     Q <= (OTHERS => '0');
-              ELSIF rising_edge(clk) AND enable = '1' THEN
-                     Q <= D;
+              IF rising_edge(clk) AND enable = '1' THEN
+                     IF reset = '1' THEN
+                            Q <= (OTHERS => '0');
+                     ELSIF enable = '1' THEN
+                            Q <= D;
+                     END IF;
               END IF;
        END PROCESS;
 END ARCHITECTURE;
