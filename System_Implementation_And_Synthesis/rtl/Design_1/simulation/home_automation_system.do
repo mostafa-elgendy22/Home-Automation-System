@@ -20,7 +20,7 @@ sim:/home_automation_system/reversed_priority \
 sim:/home_automation_system/counter_Q
 
 
-force -freeze sim:/home_automation_system/clk 1 0, 0 {100 ps} -r 200
+force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
 force -freeze sim:/home_automation_system/reset 1 0
 run {200 ps}
 

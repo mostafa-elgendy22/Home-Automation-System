@@ -33,7 +33,7 @@ config_report timing -format "cell edge arrival delay arc_delay net_delay slew n
 
 set search_path "${module_rtl_dir}/"
 
-set rtl_list "${module_rtl_dir}/Design_1/home_automation_system.vhd ${module_rtl_dir}/Design_1/counter.vhd ${module_rtl_dir}/Design_1/decoder.vhd ${module_rtl_dir}/Design_1/register.vhd ${module_rtl_dir}/Design_1/priority_encoder.vhd  "
+set rtl_list "${module_rtl_dir}/Design_1/simulation/home_automation_system.vhd ${module_rtl_dir}/Design_1/simulation/counter.vhd ${module_rtl_dir}/Design_1/simulation/decoder.vhd ${module_rtl_dir}/Design_1/simulation/register.vhd ${module_rtl_dir}/Design_1/simulation/priority_encoder.vhd  "
 
 #set macro_libs
 set std_vlt_lib "$library_path/NangateOpenCellLibrary_typical.lib"

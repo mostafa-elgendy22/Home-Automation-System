@@ -36,7 +36,7 @@ write_design ${odb_dir}/module.odb
 write_mxdb ${mxdb_dir}/module.mxdb
 
 #Write verilog
-write_verilog ${output_dir}/verilog/module.syn.v
+write_verilog ${output_dir}/verilog/home_automation_system.syn.v
 
 #Write SDC
 write_sdc ${output_dir}/constraints/module.oasys.sdc

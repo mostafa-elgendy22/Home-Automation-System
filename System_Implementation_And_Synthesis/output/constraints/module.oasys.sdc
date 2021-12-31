@@ -1,11 +1,12 @@
 #
 # Created by 
-#   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Dec 26 00:10:15 2021
+#   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Fri Dec 31 21:47:39 2021
 # (C) Mentor Graphics Corporation
 #
 set_units -time ns -capacitance ff -resistance kohm -power nW -voltage V -current mA
 create_clock -period 1 -waveform {0 0.5} -name vsysclk 
-create_clock -period 1.5 -waveform {0 0.75} -name sysclk [get_ports clk]
+create_clock -period 2 -waveform {0 1} -name sysclk [get_ports clk]
+set_false_path -from [get_ports reset]
 group_path -name I2R -from [list [get_ports {temperature[0]}] [get_ports {temperature[1]}] [get_ports {temperature[2]}] [get_ports {temperature[3]}] [get_ports {temperature[4]}] [get_ports {temperature[5]}] [get_ports ST] [get_ports SW] [get_ports SFA] [get_ports SRD] [get_ports SFD] [get_ports reset] [get_ports clk]]
 group_path -name I2O -from [list [get_ports {temperature[0]}] [get_ports {temperature[1]}] [get_ports {temperature[2]}] [get_ports {temperature[3]}] [get_ports {temperature[4]}] [get_ports {temperature[5]}] [get_ports ST] [get_ports SW] [get_ports SFA] [get_ports SRD] [get_ports SFD] [get_ports reset] [get_ports clk]]  -to [list [get_ports {display[0]}] [get_ports {display[1]}] [get_ports {display[2]}] [get_ports cooler] [get_ports heater] [get_ports window_buzzer] [get_ports alarm_buzzer] [get_ports rear_door] [get_ports front_door]]
 group_path -name R2O -to [list [get_ports {display[0]}] [get_ports {display[1]}] [get_ports {display[2]}] [get_ports cooler] [get_ports heater] [get_ports window_buzzer] [get_ports alarm_buzzer] [get_ports rear_door] [get_ports front_door]]
