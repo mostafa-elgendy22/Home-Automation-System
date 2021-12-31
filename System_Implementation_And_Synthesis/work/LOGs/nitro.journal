@@ -1,10 +1,9 @@
 #---------------------------------------------------------------------
-# start session at Fri Dec 31 22:12:31 2021
+# start session at Fri Dec 31 22:55:20 2021
 # version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
-# Running on 192.168.247.128 3cores 6.6GBytes 2.0GHz 64bits mode pid 5735 
+# Running on 192.168.247.128 3cores 6.6GBytes 2.0GHz 64bits mode pid 7978 
 # Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
 #---------------------------------------------------------------------
-setup_rnf
 setup_nrf
 source flow_scripts/0_import.tcl
 start
@@ -17,14 +16,10 @@ set_option -name toolbar:main:zoom:location -value {310 20}
 set_option -name toolbar:main:custom_editing:location -value {508 20}
 set_option -name toolbar:main:objects:location -value {735 20}
 set_option -name toolbar:main:cross_probe:location -value {412 48}
-set_option -name window:hierarchy:explorer:location -value {62 77}
-set_option -name window:hierarchy:explorer:size -value {260 749}
-set_option -name window:main:message_area:location -value {328 610}
-set_option -name window:main:message_area:size -value {1592 216}
-set_option -name window:main:view:location -value {39 59}
 ## trigger_gui -name design:create_pg_rings
 set_option -name window:design:create_pg_rings:state -value visible
 set_option -name window:design:create_pg_rings:size -value {936 603}
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL7
 set_option -name trigger:design:create_pg_rings:hor_ver_layer_link -value true
 set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL8
 set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL8
@@ -88,36 +83,39 @@ set_option -name window:design:create_pg_rings:state -value hidden
 set_option -name window:design:create_pg_stripes:state -value visible
 set_option -name window:design:create_pg_stripes:size -value {758 575}
 set_option -name trigger:design:create_pg_stripes:layers -value METAL8
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
 set_option -name trigger:design:create_pg_stripes:offset_link -value true
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
-set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
-set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
-set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
-set_option -name trigger:design:create_pg_stripes:start_length -value 1
-set_option -name trigger:design:create_pg_stripes:start_length -value 14
-set_option -name trigger:design:create_pg_stripes:start_length -value 140
-set_option -name trigger:design:create_pg_stripes:start_length -value 1400
-set_option -name trigger:design:create_pg_stripes:stop_length -value 1
-set_option -name trigger:design:create_pg_stripes:stop_length -value 14
-set_option -name trigger:design:create_pg_stripes:stop_length -value 140
-set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
 set_option -name trigger:design:create_pg_stripes:margin_link -value true
-set_option -name window:design:create_pg_stripes:state -value hidden
-## trigger_gui -name design:create_pg_stripes
-set_option -name window:design:create_pg_stripes:state -value visible
-set_option -name trigger:design:create_pg_stripes:step -value 16000
-set_option -name trigger:design:create_pg_stripes:step -value 8000
+set_option -name trigger:design:create_pg_stripes:start_length -value 1
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1
+set_option -name trigger:design:create_pg_stripes:start_length -value 14
+set_option -name trigger:design:create_pg_stripes:stop_length -value 14
+set_option -name trigger:design:create_pg_stripes:start_length -value 140
+set_option -name trigger:design:create_pg_stripes:stop_length -value 140
+set_option -name trigger:design:create_pg_stripes:start_length -value 1400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
 create_pg_stripes -partitions "home_automation_system" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
 set_option -name window:design:create_pg_stripes:state -value hidden
 ## trigger_gui -name design:create_pg_stripes
@@ -144,20 +142,12 @@ set_option -name trigger:design:create_pg_stripes:step -value 16000
 set_option -name trigger:design:create_pg_stripes:step -value 8000
 create_pg_stripes -partitions "home_automation_system" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
 set_option -name window:design:create_pg_stripes:state -value hidden
-## trigger_gui -name design:check_design
-set_option -name window:design:check_design:state -value visible
-set_option -name window:design:check_design:size -value {600 300}
-set_option -name window:main:message_area:location -value {328 357}
-set_option -name window:main:message_area:size -value {1592 469}
-set_option -name window:design:check_design:state -value hidden
-## trigger_gui -name main:view_errors
-set_option -name window:main:errors:state -value visible
-set_option -name window:main:errors:location -value {30 192}
-set_option -name window:main:errors:size -value {757 600}
-set_option -name window:main:errors:state -value hidden
-set_option -name window:hierarchy:explorer:size -value {260 731}
-set_option -name window:main:message_area:location -value {328 339}
-set_option -name window:main:message_area:size -value {630 469}
+set_option -name window:main:message_area:location -value {328 562}
+set_option -name window:main:message_area:size -value {630 216}
+set_option -name window:main:view:location -value {9 50}
+set_option -name window:main:view:size -value {958 800}
+set_option -name window:main:message_area:size -value {631 216}
+set_option -name window:main:view:size -value {959 800}
 source flow_scripts/3_route.tcl
 # get_config -name process -param node
 # config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
@@ -286,11 +276,6 @@ source flow_scripts/3_route.tcl
 # write_db -data design -file dbs/route.db
 # save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
 # config_shell -echo false
-set_option -name window:hierarchy:explorer:size -value {260 749}
-set_option -name window:main:message_area:location -value {328 357}
-set_option -name window:main:message_area:size -value {1592 469}
-set_option -name window:main:message_area:location -value {328 683}
-set_option -name window:main:message_area:size -value {1592 143}
 set_option -name view:design:scheme0:layer1:final_route:wire:visible -value true
 set_option -name view:design:scheme0:layer3:final_route:wire:visible -value true
 set_option -name view:design:scheme0:layer5:final_route:wire:visible -value true
@@ -301,22 +286,13 @@ set_option -name view:design:scheme0:layer13:final_route:wire:visible -value tru
 set_option -name view:design:scheme0:layer15:final_route:wire:visible -value true
 set_option -name view:design:scheme0:layer17:final_route:wire:visible -value true
 set_option -name view:design:scheme0:layer19:final_route:wire:visible -value true
-set_option -name window:hierarchy:explorer:size -value {260 731}
-set_option -name window:main:message_area:location -value {328 665}
-set_option -name window:main:message_area:size -value {630 143}
 ## trigger_gui -name main:save_design_as
 set_option -name window:main:save_design_as:state -value visible
-set_option -name window:main:save_design_as:location -value {189 208}
+set_option -name window:main:save_design_as:location -value {219 232}
 set_option -name window:main:save_design_as:size -value {500 350}
 set_option -name trigger:main:save_design_as:file_name -value /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/RoutedHomeAutomation
 set_option -name trigger:main:save_design_as:design_name -value RoutedHomeAutomation
 write_db -file /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/RoutedHomeAutomation -name RoutedHomeAutomation -overwrite true -data all
 set_option -name window:main:save_design_as:state -value hidden
-set_option -name window:hierarchy:explorer:size -value {260 749}
-set_option -name window:main:message_area:location -value {328 683}
-set_option -name window:main:message_area:size -value {1592 143}
-exit
-set_option -name window:main:view:state -value minimized
-#---------------------------------------------------------------------
-# end session at Fri Dec 31 22:30:34 2021
-#---------------------------------------------------------------------
+set_option -name window:main:view:location -value {-10 51}
+set_option -name window:main:view:state -value hidden

@@ -3,14 +3,14 @@ Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
 
 Report 'report_lvs': Detail Routing LVS Report
-Generated on Fri Dec 31 22:21:26 2021
+Generated on Fri Dec 31 23:06:38 2021
   
 --------------------------------------------------------------------------------
 |                    LVS detail routing verification report                    |
 |------------------------------------------------------------------------------|
 |                   | Total nets Open nets Open Float Tail Loop Pillar Warning | 
 |------------------------------------------------------------------------------|
-| Signal nets       | 71         0         0    0     0    0    -      -       | 
+| Signal nets       | 70         0         0    0     0    0    -      -       | 
 | Logic nets        | 2          0         0    0     0    0    -      -       | 
 | Shield nets       | 0          0         0    0     0    0    -      -       | 
 | Power/Ground nets | -          -         -    -     -    -    -      -       | 
@@ -18,7 +18,7 @@ Generated on Fri Dec 31 22:21:26 2021
 --------------------------------------------------------------------------------
 
 
-info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 273M, CVMEM - 1761M, PVMEM - 1992M)
+info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 266M, CVMEM - 1758M, PVMEM - 1992M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
 Processing metal1: 100% 
@@ -33,7 +33,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Fri Dec 31 22:21:26 2021
+Generated on Fri Dec 31 23:06:38 2021
   
 --------------------------------------------------------------------------------------------------------
 |                                       DRC verification report                                        |
@@ -55,9 +55,9 @@ Generated on Fri Dec 31 22:21:26 2021
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 273M, CVMEM - 1761M, PVMEM - 1992M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 266M, CVMEM - 1758M, PVMEM - 1992M)
 info CHK10: Checking placement...
-info Found 49 movable and 8 fixed cells in partition home_automation_system
+info Found 48 movable and 8 fixed cells in partition home_automation_system
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 Checking boundary overlap with partition: home_automation_system; Nmacros=0; overlaps=0 : fpan/mcplace/mcpController.cpp@3946
 info Report for partition home_automation_system:
@@ -79,7 +79,7 @@ info Report for partition home_automation_system:
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 272M, CVMEM - 1761M, PVMEM - 1992M)
+info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 266M, CVMEM - 1758M, PVMEM - 1992M)
 info running report region utilization in global placement context: 
     - utilization = (mobile_cell_area/(row_area - obstruction_area)).
     - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
@@ -88,15 +88,15 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'Region_Utilization': Region Utilization Report
-Generated on Fri Dec 31 22:21:26 2021
+Generated on Fri Dec 31 23:06:38 2021
   
 ------------------------------------------------------------------------------------------------------------------------
 |                                              Report Region Utilization                                               |
 |----------------------------------------------------------------------------------------------------------------------|
 |   | Partition/Region       MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) | 
 |----------------------------------------------------------------------------------------------------------------------|
-| 0 | home_automation_system -  -   47.614    47.348         47.614       100.562               46.9                   | 
+| 0 | home_automation_system -  -   48.412    50.806         48.412       95.288                45.8                   | 
 ------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 272M, CVMEM - 1761M, PVMEM - 1992M)
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 266M, CVMEM - 1758M, PVMEM - 1992M)

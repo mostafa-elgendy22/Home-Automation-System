@@ -1,14 +1,14 @@
 info Check pin constraints
 Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 100
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 71
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 69
 Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 100
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 48
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 47
 Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 50
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 48
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 47
 Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 17
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 17
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 16
 Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 9
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 9
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 8
 info Checking partition 'home_automation_system' ...
 info Constraint definition check completed.
     total infos: 0
@@ -25,15 +25,15 @@ PASSED: pin layer direction mismatch edge
 PASSED: invalid design keepout
 
 Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 100
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 71
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 69
 Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 100
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 48
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 47
 Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 50
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 48
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 47
 Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 17
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 17
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 16
 Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 9
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 9
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 8
 info Check pin placement
     Total pins: 22
 info Check completed.

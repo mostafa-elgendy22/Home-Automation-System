@@ -122,7 +122,7 @@ set MGC_CornerTiming(corner_0_0) new_pvt
 ##########################################################################################################################
 #                   START: Variables needed to build design database dbs/import.db                                       #
 ##########################################################################################################################
-set MGC_importVerilogNetlist "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/output/verilog/module.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
+set MGC_importVerilogNetlist "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/output/verilog/home_automation_system.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
                                                       #           match vg files only. NOT REQUIRED FOR mxdb flow.
 set MGC_topDesign            "home_automation_system"                     ; # REVIEW  : Name of top level module in verilog netlist(s).
 set MGC_nrf_floorplanning    "auto"                     ; # REVIEW  : Type floorplanning to be performed: auto | manual | none
