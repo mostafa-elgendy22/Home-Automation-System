@@ -15,7 +15,8 @@ sim:/home_automation_system/alarm_buzzer \
 sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
-sim:/home_automation_system/display
+sim:/home_automation_system/display \
+sim:/home_automation_system/counter_Q
 
 
 force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
@@ -25,7 +26,8 @@ run {200 ps}
 force -freeze sim:/home_automation_system/reset 0 0
 force -freeze sim:/home_automation_system/SFD 1 0
 force -freeze sim:/home_automation_system/SRD 1 0
-run {200 ps}
+force -freeze sim:/home_automation_system/SW 1 0
+run {400 ps}
 
 force -freeze sim:/home_automation_system/SFD 0 0
 run {1000 ps}
