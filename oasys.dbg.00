@@ -1,0 +1,243 @@
+
+@/home/vlsi/Desktop/Project/VLSI-Project/oasys.log.00:952
+libc: 2.17-stable
+
+Timestamp: 1641039885.628910284
+---
+PID=5852 2.417048396 0.449290 1.967761 program start
+Complete list of environment variables at program start
+_ /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL true
+BREAKPAD_DUMP_LOCATION {/home/vlsi/.config/Code/exthost Crash Reports}
+CALIBRE_HOME /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14
+CHROME_DESKTOP code-url-handler.desktop
+COLORTERM truecolor
+DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-ndSsc5OK3i,guid=436700f89fd5794f3613477b61d03247
+DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-ndSsc5OK3i,guid=436700f89fd5794f3613477b61d03247
+DBUS_STARTER_BUS_TYPE session
+DESKTOP_SESSION gnome-classic
+DISPLAY :0
+GDK_BACKEND x11
+GDM_LANG en_US.UTF-8
+GDMSESSION gnome-classic
+GIT_ASKPASS /usr/share/code/resources/app/extensions/git/dist/askpass.sh
+GNOME_DESKTOP_SESSION_ID this-is-deprecated
+GNOME_SHELL_SESSION_MODE classic
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/ece8f363_fafa_4a8a_a9cf_fbbf9625aa9a
+GNOME_TERMINAL_SERVICE :1.142
+HISTCONTROL ignoredups
+HISTSIZE 1000
+HOME /home/vlsi
+HOSTNAME localhost.localdomain
+IMSETTINGS_INTEGRATE_DESKTOP yes
+IMSETTINGS_MODULE none
+LANG en_US.UTF-8
+LD_LIBRARY_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/Linux-x86_64-O:
+LESSOPEN {||/usr/bin/lesspipe.sh %s}
+LM_LICENSE_FILE /home/vlsi/Installation/5984_0023AE7CBD56.txt
+LOGNAME vlsi
+LS_COLORS {rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:}
+MAIL /var/spool/mail/vlsi
+MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man:
+MGC_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/mgc_home
+NO_AT_BRIDGE 1
+OASYSLD_LICENSE_FILE /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/license.lic
+ORIGINAL_XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/onespin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/slec:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/.local/bin:/home/vlsi/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin
+PWD /home/vlsi/Desktop/Project/VLSI-Project
+QT_GRAPHICSSYSTEM_CHECKED 1
+QT_IM_MODULE ibus
+QTDIR /usr/lib64/qt-3.3
+QTINC /usr/lib64/qt-3.3/include
+QTLIB /usr/lib64/qt-3.3/lib
+RT_CMD {/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys }
+RT_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+RT_LIBPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib
+RT_MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man
+RT_PID 5842
+RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
+RT_TMP /tmp/oasys.5842
+RT_WRAPPER_SCRIPT /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys
+SBX_CHROME_API_RQ 1
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/1689,unix/unix:/tmp/.ICE-unix/1689
+SHELL /bin/bash
+SHLVL 5
+SSH_AGENT_PID 1817
+SSH_AUTH_SOCK /run/user/1000/keyring/ssh
+TCL_LIBRARY /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library
+TERM xterm-256color
+TERM_PROGRAM vscode
+TERM_PROGRAM_VERSION 1.62.2
+USER vlsi
+USERNAME vlsi
+VSCODE_GIT_ASKPASS_EXTRA_ARGS {}
+VSCODE_GIT_ASKPASS_MAIN /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_NODE /usr/share/code/code
+VSCODE_GIT_IPC_HANDLE /run/user/1000/vscode-git-ba2b1ee515.sock
+VTE_VERSION 5204
+WINDOWPATH 1
+XAUTHORITY /run/gdm/auth-for-vlsi-0kO54v/database
+XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+XDG_DATA_DIRS /home/vlsi/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_MENU_PREFIX gnome-
+XDG_RUNTIME_DIR /run/user/1000
+XDG_SEAT seat0
+XDG_SESSION_DESKTOP gnome-classic
+XDG_SESSION_ID 1
+XDG_SESSION_TYPE x11
+XDG_VTNR 1
+XMODIFIERS @im=ibus
+---
+
+Timestamp: 1641039885.675700100
+---
+Soft resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -S}
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15650
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1641039885.710916631
+---
+Hard resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -H}
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15650
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15650
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1641039885.711224274
+---
+CPU Information
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 165
+model name	: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+stepping	: 2
+microcode	: 0xffffffff
+cpu MHz		: 2592.008
+cache size	: 12288 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
+bogomips	: 5184.01
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+
+This host has 1 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1641039886.016287663
+---
+Miscellaneous system info for process PID=5852
+Recorded at Sat Jan 01 14:24:45 EET 2022
+
+Executing: uptime
+ 14:24:45 up  1:34,  2 users,  load average: 2.16, 1.17, 0.60
+
+Executing: uname -a
+Linux localhost.localdomain 3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+Executing: free
+              total        used        free      shared  buff/cache   available
+Mem:        4040708     1749460      234816       58744     2056432     1966936
+Swap:       4063228           0     4063228
+
+Executing: ps u 5852
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vlsi      5852 41.0  0.7 277936 31192 pts/1    S+   14:24   0:02 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+
+Executing: cat /etc/redhat-release
+CentOS Linux release 7.9.2009 (Core)
+
+Executing: ldd /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+	linux-vdso.so.1 =>  (0x00007ffd76526000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007fccf2c76000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fccf2a5a000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fccf2856000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fccf264e000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007fccf2310000)
+	libSM.so.6 => /lib64/libSM.so.6 (0x00007fccf2108000)
+	libICE.so.6 => /lib64/libICE.so.6 (0x00007fccf1eec000)
+	libXi.so.6 => /lib64/libXi.so.6 (0x00007fccf1cdc000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007fccf1ad1000)
+	libXfixes.so.3 => /lib64/libXfixes.so.3 (0x00007fccf18cb000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007fccf16c0000)
+	libXcursor.so.1 => /lib64/libXcursor.so.1 (0x00007fccf14b5000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007fccf12b2000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007fccf0ff3000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007fccf0de1000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fccf0bcb000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007fccf09c9000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007fccf06b3000)
+	libfontconfig.so.1 => /lib64/libfontconfig.so.1 (0x00007fccf0471000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fccf016f000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fccefda1000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fccf2e9d000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007fccefb77000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007fccef94f000)
+	libuuid.so.1 => /lib64/libuuid.so.1 (0x00007fccef74a000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007fccef53a000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007fccef30f000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007fccef0ad000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007fcceee83000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007fcceec7f000)
+
+Examining disk space in the following directories:
+  Current directory: /home/vlsi/Desktop/Project/VLSI-Project
+  Oasys' temp directory: /tmp/oasys.5842/ (normalized path: /tmp/oasys.5842)
+  RT_TMP directory: /tmp/oasys.5842
+
+Executing: df /home/vlsi/Desktop/Project/VLSI-Project /tmp/oasys.5842 /tmp/oasys.5842
+Filesystem          1K-blocks     Used Available Use% Mounted on
+/dev/mapper/cl-root  47285700 32739048  14546652  70% /
+tmpfs                 2020352     1320   2019032   1% /tmp
+tmpfs                 2020352     1320   2019032   1% /tmp
+
+
+---
+
