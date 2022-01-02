@@ -1,9 +1,16 @@
 /*
  * Created by 
+<<<<<<< HEAD
    ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 23:34:44 2022
  * (C) Mentor Graphics Corporation
  */
 /* CheckSum: 2696916661 */
+=======
+   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 21:32:09 2022
+ * (C) Mentor Graphics Corporation
+ */
+/* CheckSum: 2670321331 */
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 
 module counter(clk, enable, reset, Q);
    input clk;
@@ -143,14 +150,23 @@ module DFF_register(D, clk, enable, reset, Q);
 
    wire n_0_0;
 
+<<<<<<< HEAD
    DFF_X1 \Q_reg[2]  (.D(n_2), .CK(n_3), .Q(Q[2]), .QN());
    DFF_X1 \Q_reg[1]  (.D(n_1), .CK(n_3), .Q(Q[1]), .QN());
    DFF_X1 \Q_reg[0]  (.D(n_0), .CK(n_3), .Q(Q[0]), .QN());
+=======
+   DFF_X2 \Q_reg[2]  (.D(n_2), .CK(n_3), .Q(Q[2]), .QN());
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
    AND2_X1 i_0_0 (.A1(D[0]), .A2(n_0_0), .ZN(n_0));
    AND2_X1 i_0_1 (.A1(D[1]), .A2(n_0_0), .ZN(n_1));
    AND2_X1 i_0_2 (.A1(D[2]), .A2(n_0_0), .ZN(n_2));
    INV_X1 i_0_3 (.A(reset), .ZN(n_0_0));
    INV_X1 i_0_4 (.A(clk), .ZN(n_3));
+<<<<<<< HEAD
+=======
+   DFF_X2 \Q_reg[1]  (.D(n_1), .CK(n_3), .Q(Q[1]), .QN());
+   DFF_X2 \Q_reg[0]  (.D(n_0), .CK(n_3), .Q(Q[0]), .QN());
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 endmodule
 
 module decoder(A, front_door, rear_door, alarm_buzzer, window_buzzer, heater, 
@@ -165,15 +181,31 @@ module decoder(A, front_door, rear_door, alarm_buzzer, window_buzzer, heater,
 
    wire n_0_0;
    wire n_0_1;
+   wire n_0_2;
+   wire n_1_0;
+   wire n_1_1;
+   wire n_2_0;
+   wire n_3_0;
+   wire n_3_1;
+   wire n_4_0;
+   wire n_5_0;
 
-   AND3_X1 i_0_0 (.A1(A[2]), .A2(n_0_0), .A3(A[1]), .ZN(cooler));
-   AND3_X1 i_0_1 (.A1(n_0_1), .A2(A[0]), .A3(A[2]), .ZN(heater));
-   AND3_X1 i_0_2 (.A1(A[2]), .A2(n_0_0), .A3(n_0_1), .ZN(window_buzzer));
-   NOR3_X1 i_0_3 (.A1(A[2]), .A2(n_0_1), .A3(n_0_0), .ZN(alarm_buzzer));
-   NOR3_X1 i_0_4 (.A1(A[2]), .A2(n_0_1), .A3(A[0]), .ZN(rear_door));
-   NOR3_X1 i_0_5 (.A1(A[1]), .A2(n_0_0), .A3(A[2]), .ZN(front_door));
-   INV_X1 i_0_6 (.A(A[0]), .ZN(n_0_0));
-   INV_X1 i_0_7 (.A(A[1]), .ZN(n_0_1));
+   INV_X1 i_0_0 (.A(n_0_0), .ZN(front_door));
+   NAND3_X1 i_0_1 (.A1(n_0_2), .A2(n_0_1), .A3(A[0]), .ZN(n_0_0));
+   INV_X1 i_0_2 (.A(A[1]), .ZN(n_0_1));
+   INV_X1 i_0_3 (.A(A[2]), .ZN(n_0_2));
+   INV_X1 i_1_0 (.A(n_1_0), .ZN(rear_door));
+   NAND2_X1 i_1_1 (.A1(A[1]), .A2(n_1_1), .ZN(n_1_0));
+   NOR2_X1 i_1_2 (.A1(A[2]), .A2(A[0]), .ZN(n_1_1));
+   NAND2_X1 i_2_0 (.A1(A[0]), .A2(A[1]), .ZN(n_2_0));
+   NOR2_X1 i_2_1 (.A1(n_2_0), .A2(A[2]), .ZN(alarm_buzzer));
+   INV_X1 i_3_0 (.A(n_3_0), .ZN(window_buzzer));
+   NAND2_X1 i_3_1 (.A1(A[2]), .A2(n_3_1), .ZN(n_3_0));
+   NOR2_X1 i_3_2 (.A1(A[1]), .A2(A[0]), .ZN(n_3_1));
+   NAND2_X1 i_4_0 (.A1(A[0]), .A2(A[2]), .ZN(n_4_0));
+   NOR2_X1 i_4_1 (.A1(n_4_0), .A2(A[1]), .ZN(heater));
+   NAND2_X1 i_5_0 (.A1(A[1]), .A2(A[2]), .ZN(n_5_0));
+   NOR2_X1 i_5_1 (.A1(n_5_0), .A2(A[0]), .ZN(cooler));
 endmodule
 
 module home_automation_system(clk, reset, SFD, SRD, SFA, SW, ST, temperature, 
