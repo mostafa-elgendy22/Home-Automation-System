@@ -1,28 +1,83 @@
 Report for group default
-Report for group I2R
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-Startpoint: SRD
-    (Clocked by rtDefaultClock R)
-Endpoint: counter/Q_reg[0]/D
+Startpoint: counter/Q_reg[3]/Q
     (Clocked by sysclk R)
-Path Group: I2R
-Data required time: 866.0
-    (Clock shift: 900.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 34.0)
-Data arrival time: 858.3
-Slack: 7.7
+Endpoint: state_holder/Q_reg[1]/D
+    (Clocked by sysclk R)
+Path Group: default
+Data required time: 969.1
+    (Clock shift: 1000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 30.9)
+Data arrival time: 291.8
+Slack: 677.3
 Logic depth: 5
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
 Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
                                                         (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-SRD                      {set_input_delay}        f    700.0    700.0    700.0                        6.9     42.0      4    72,   37                       
-i_0_0_1/A1->ZN           NOR2_X4                 fr    756.5     56.5     56.1      0.4    100.0      0.7      4.9      1    36,   36  /PD_TOP        (1.10)
-i_0_0_3/A2->ZN           NAND3_X4*               rf    803.9     47.4     47.4      0.0     16.2      3.0     39.9      4    36,   36  /PD_TOP        (1.10)
-counter/i_0_1_4/A->ZN    INV_X8                  fr    820.2     16.3     16.3      0.0     15.3      1.8     13.1      3    33,   33  /PD_TOP        (1.10)
-counter/i_0_1_5/A1->ZN   NAND2_X4                rf    832.1     11.9     11.9      0.0      7.5      0.7      4.9      1    33,   33  /PD_TOP        (1.10)
-counter/i_0_1_6/B2->ZN   AOI21_X2                fr    858.3     26.2     26.2      0.0      7.2      0.7      1.9      1    33,   33  /PD_TOP        (1.10)
-counter/Q_reg[0]/D       DFF_X1#                  r    858.3      0.0               0.0     17.8                             33,   33  /PD_TOP        (1.10)
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      4    38,    0                       
+counter/clk_gate_Q_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0      4    33,   37  /PD_TOP        (1.10)
+counter/Q_reg[3]/CK->Q   DFF_X1*                 rr    154.7    154.7    154.7      0.0      0.0      2.1     48.4      6    33,   37  /PD_TOP        (1.10)
+priority_encoder/i_0_15/A->ZN
+                         INV_X8                  rf    163.2      8.5      8.5      0.0     15.3      1.4      9.6      2    36,   35  /PD_TOP        (1.10)
+priority_encoder/i_0_10/B2->ZN
+                         AOI21_X4                fr    220.4     57.2     57.2      0.0      4.0      0.6     26.1      1    36,   35  /PD_TOP        (1.10)
+priority_encoder/i_0_9/A->ZN
+                         INV_X8                  rf    227.0      6.6      6.6      0.0     47.2      0.6      4.5      1    36,   35  /PD_TOP        (1.10)
+priority_encoder/i_0_8/A->ZN
+                         AOI21_X2                fr    261.9     34.9     34.9      0.0      3.5      0.7      2.9      1    36,   35  /PD_TOP        (1.10)
+state_holder/i_0_2/A2->ZN
+                         AND2_X4                 rr    291.8     29.9     29.9      0.0     20.3      0.7      1.8      1    36,   35  /PD_TOP        (1.10)
+state_holder/Q_reg[1]/D  DFF_X1                   r    291.8      0.0               0.0      6.5                             36,   35  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: SRD
+    (Clocked by rtDefaultClock R)
+Endpoint: counter/clk_gate_Q_reg/E
+    (Clocked by sysclk R)
+Path Group: I2R
+Data required time: 937.2
+    (Clock shift: 1000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 62.8)
+Data arrival time: 913.4
+Slack: 23.8
+Logic depth: 3
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+SRD                      {set_input_delay}        f    700.0    700.0    700.0                        4.6     33.1      2    72,   35                       
+i_0_0_0/A4->ZN           OR4_X4                  ff    828.6    128.6    128.2      0.4    100.0      0.7      2.9      1    36,   35  /PD_TOP        (1.10)
+i_0_0_1/A1->ZN           OR2_X4                  ff    870.6     42.0     42.0      0.0     15.3      0.6      2.8      1    36,   35  /PD_TOP        (1.10)
+counter/i_0_0_0/A2->ZN   OR2_X4                  ff    913.4     42.8     42.8      0.0      7.8      0.7      1.5      1    33,   37  /PD_TOP        (1.10)
+counter/clk_gate_Q_reg/E CLKGATETST_X2            f    913.4      0.0               0.0      7.5                             33,   37  /PD_TOP        (1.10)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2O
 Report for group R2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: state_holder/Q_reg[0]/Q
+    (Clocked by sysclk R)
+Endpoint: alarm_buzzer
+    (Clocked by vsysclk R)
+Path Group: R2O
+Data required time: 900.0
+    (Clock shift: 1000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 100.0)
+Data arrival time: 235.6
+Slack: 664.4
+Logic depth: 2
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      4    38,    0                       
+state_holder/Q_reg[0]/CK->Q
+                         DFF_X1*                 rr    154.6    154.6    154.6      0.0      0.0      2.1     48.2      4    36,   35  /PD_TOP        (1.10)
+output_decoder/i_0_6/A->ZN
+                         INV_X8                  rf    164.7     10.1     10.1      0.0     15.3      2.8     14.8      4    36,   35  /PD_TOP        (1.10)
+output_decoder/i_0_3/A3->ZN
+                         NOR3_X4                 fr    235.2     70.5     70.4      0.1      4.6      4.7     14.7      1    36,   35  /PD_TOP        (1.10)
+alarm_buzzer                                      r    235.6      0.4               0.4     46.3                             72,   34                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
