@@ -3,34 +3,34 @@ Report Physical info:
                         |                      |Area (squm)|Leakage (uW)
 ------------------------+----------------------+-----------+------------
 Design Name             |home_automation_system|           |            
-  Total Instances       |                    74|         89|       1.907
+  Total Instances       |                    80|        108|       2.375
     Macros              |                     0|          0|       0.000
     Pads                |                     0|          0|       0.000
     Phys                |                     0|          0|       0.000
     Blackboxes          |                     0|          0|       0.000
-    Cells               |                    74|         89|       1.907
+    Cells               |                    80|        108|       2.375
       Buffers           |                     0|          0|       0.000
-      Inverters         |                    15|          8|       0.215
+      Inverters         |                    14|          7|       0.201
       Clock-Gates       |                     0|          0|       0.000
-      Combinational     |                    53|         59|       1.331
+      Combinational     |                    57|         64|       1.468
       Latches           |                     3|          8|       0.123
-      FlipFlops         |                     3|         14|       0.237
-       Single-Bit FF    |                     3|         14|       0.237
+      FlipFlops         |                     6|         29|       0.583
+       Single-Bit FF    |                     6|         29|       0.583
        Multi-Bit FF     |                     0|          0|       0.000
        Clock-Gated      |                     0|           |            
-       Bits             |                     3|         14|       0.237
+       Bits             |                     6|         29|       0.583
          Load-Enabled   |                     0|           |            
          Clock-Gated    |                     0|           |            
   Tristate Pin Count    |                     0|           |            
 Physical Info           |Placed                |           |            
-  Chip Size (mm x mm)   |0.072 x 0.072         |       5206|            
+  Chip Size (mm x mm)   |0.073 x 0.073         |       5390|            
   Fixed Cell Area       |                      |          0|            
     Phys Only           |                     0|          0|            
-  Placeable Area        |                      |        134|            
-  Movable Cell Area     |                      |         89|            
-  Utilization (%)       |                    66|           |            
-  Chip Utilization (%)  |                    66|           |            
-  Total Wire Length (mm)|                 0.825|           |            
-  Longest Wire (mm)     |                 0.042|           |            
-  Average Wire (mm)     |                 0.032|           |            
+  Placeable Area        |                      |        168|            
+  Movable Cell Area     |                      |        108|            
+  Utilization (%)       |                    64|           |            
+  Chip Utilization (%)  |                    64|           |            
+  Total Wire Length (mm)|                 0.855|           |            
+  Longest Wire (mm)     |                 0.043|           |            
+  Average Wire (mm)     |                 0.033|           |            
 ------------------------+----------------------+-----------+------------
