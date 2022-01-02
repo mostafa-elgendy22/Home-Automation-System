@@ -18,5 +18,76 @@ Slack: 664
 Power: 284
 result: 203.60000000000002
 
-
-
+Design2:
+-----------
+Movable Area: 108
+clock: 1.5
+Slack: -256.1
+Power: 192.03
+result: 619.2359999999999
+----------- 
+Movable Area: 112, after setting the max
+clock: 1, set_output_delay -clock vsysclk [ expr 0.1 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 75.1
+Power: 333.98
+result: 400.26599999999996
+----------- 
+Movable Area: 105
+clock: 1,  set_output_delay -clock vsysclk [ expr 0.1 * ${io_clock_period} ] [ all_outputs ] 
+Slack: -1184, set_input_delay 2 [all_inputs]
+Power: 258
+result: 759.3
+----------- 
+Movable Area: 112
+clock: 1, set_output_delay -clock vsysclk [ expr 0.15 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 75
+Power: 342
+result: 401.9
+----------- 
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.15 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 114.3, set_input_delay 0.2 [all_inputs]
+Power: 227
+result: 362.61
+----------- 
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.1 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 164, set_input_delay 0.2 [all_inputs]
+Power: 227
+result: 347.69999999999993
+----------- 
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 184, set_input_delay 0.2 [all_inputs]
+Power: 227
+result: 341.69999999999993
+----------- 
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 206, set_input_delay 0.2 [all_inputs]
+Power: 204, set pad_load 1  instead of 10
+result: 330.5
+----------- 
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 208.9, set_input_delay 0.2 [all_inputs]
+Power: 202.9, set pad_load 0.01  instead of 10
+result: 329.40999999999997
+-----------
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 208.9, set_input_delay 0.2 [all_inputs]
+Power: 200.75, set pad_load 0.01  instead of 10
+result: 328.98, set transition 0.001 instead of 0.1
+-----------
+Movable Area: 103
+clock: 1, set_output_delay -clock vsysclk [ expr 0.05 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 238, set_input_delay 0.2 [all_inputs]
+Power: 200.75, set pad_load 0.01  instead of 10
+result: 320.25, set transition 0.001 instead of 0.1
+-----------
+Movable Area: 102, Made Register run on Rising
+clock: 1, set_output_delay -clock vsysclk [ expr 0.05 * ${io_clock_period} ] [ all_outputs ] 
+Slack: 489, set_input_delay 0.2 [all_inputs]
+Power: 200.65, set pad_load 0.01  instead of 10
+result: 244.43, set transition 0.001 instead of 0.1
