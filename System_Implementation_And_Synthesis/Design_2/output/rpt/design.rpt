@@ -3,11 +3,16 @@ Report Physical info:
                         |                      |Area (squm)|Leakage (uW)
 ------------------------+----------------------+-----------+------------
 Design Name             |home_automation_system|           |            
+<<<<<<< HEAD
   Total Instances       |                    72|        103|       2.172
+=======
+  Total Instances       |                    80|        108|       2.375
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
     Macros              |                     0|          0|       0.000
     Pads                |                     0|          0|       0.000
     Phys                |                     0|          0|       0.000
     Blackboxes          |                     0|          0|       0.000
+<<<<<<< HEAD
     Cells               |                    72|        103|       2.172
       Buffers           |                     0|          0|       0.000
       Inverters         |                    11|          6|       0.158
@@ -19,10 +24,24 @@ Design Name             |home_automation_system|           |
        Multi-Bit FF     |                     0|          0|       0.000
        Clock-Gated      |                     0|           |            
        Bits             |                     6|         27|       0.475
+=======
+    Cells               |                    80|        108|       2.375
+      Buffers           |                     0|          0|       0.000
+      Inverters         |                    14|          7|       0.201
+      Clock-Gates       |                     0|          0|       0.000
+      Combinational     |                    57|         64|       1.468
+      Latches           |                     3|          8|       0.123
+      FlipFlops         |                     6|         29|       0.583
+       Single-Bit FF    |                     6|         29|       0.583
+       Multi-Bit FF     |                     0|          0|       0.000
+       Clock-Gated      |                     0|           |            
+       Bits             |                     6|         29|       0.583
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
          Load-Enabled   |                     0|           |            
          Clock-Gated    |                     0|           |            
   Tristate Pin Count    |                     0|           |            
 Physical Info           |Placed                |           |            
+<<<<<<< HEAD
   Chip Size (mm x mm)   |0.073 x 0.073         |       5343|            
   Fixed Cell Area       |                      |          0|            
     Phys Only           |                     0|          0|            
@@ -33,4 +52,16 @@ Physical Info           |Placed                |           |
   Total Wire Length (mm)|                 0.842|           |            
   Longest Wire (mm)     |                 0.044|           |            
   Average Wire (mm)     |                 0.032|           |            
+=======
+  Chip Size (mm x mm)   |0.073 x 0.073         |       5390|            
+  Fixed Cell Area       |                      |          0|            
+    Phys Only           |                     0|          0|            
+  Placeable Area        |                      |        168|            
+  Movable Cell Area     |                      |        108|            
+  Utilization (%)       |                    64|           |            
+  Chip Utilization (%)  |                    64|           |            
+  Total Wire Length (mm)|                 0.855|           |            
+  Longest Wire (mm)     |                 0.043|           |            
+  Average Wire (mm)     |                 0.033|           |            
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 ------------------------+----------------------+-----------+------------

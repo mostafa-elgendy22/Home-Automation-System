@@ -1,6 +1,10 @@
 #
 # Created by 
+<<<<<<< HEAD
 #   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 23:34:44 2022
+=======
+#   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 21:32:09 2022
+>>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 # (C) Mentor Graphics Corporation
 #
 create_power_domain PD_TOP
