@@ -5,19 +5,21 @@ Report End Points:
 1    |default|      |       |     |     |     |     |           |         
 -----+-------+------+-------+-----+-----+-----+-----+-----------+---------
 Report End Points: 
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
-     |Group|Launch        |Capture|Shift|Delay|Depth|Slack|Begin Point|End Point         
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
-1    |I2R  |rtDefaultClock|sysclk |900.0|158.3|    5|  7.7|SRD        |counter/Q_reg[0]/D
-2    |I2R  |rtDefaultClock|sysclk |900.0|137.6|    4| 23.2|SRD        |counter/Q_reg[1]/D
-3    |I2R  |rtDefaultClock|sysclk |900.0|137.6|    4| 23.2|SRD        |counter/Q_reg[2]/D
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point         
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
+1    |I2R  |rtDefaultClock|sysclk |1500.0|304.7|    7|463.6|SRD        |counter/Q_reg[1]/D
+2    |I2R  |rtDefaultClock|sysclk |1500.0|300.0|    7|468.3|SRD        |counter/Q_reg[0]/D
+3    |I2R  |rtDefaultClock|sysclk |1500.0|300.0|    7|468.3|SRD        |counter/Q_reg[2]/D
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
 Report End Points: 
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
-     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
-1    |I2O  |      |       |     |     |     |     |           |         
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point   |End Point    
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
+1    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[1]|front_door   
+2    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[0]|rear_door    
+3    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[0]|window_buzzer
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point

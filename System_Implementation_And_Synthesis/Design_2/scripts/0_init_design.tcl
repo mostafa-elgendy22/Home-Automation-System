@@ -7,7 +7,7 @@ set max_route_layer "5"
 
 #Set design file path variables
 set ekit_dir            "$env(PWD)"
-set module_rtl_dir  "${ekit_dir}/rtl/Design_2/simulation"
+set module_rtl_dir  "${ekit_dir}/rtl/simulation"
 set module_sdc_files "${ekit_dir}/constraints/module_func.sdc"
 
 #Set Oasys-RTL script and output path variables
@@ -32,9 +32,6 @@ config_report timing -format "cell edge arrival delay arc_delay net_delay slew n
 #################################################### RTL and Libraries ###########################################
 
 set search_path "${module_rtl_dir}/"
-
-# set rtl_list "${module_rtl_dir}/home_automation_system.vhd ${module_rtl_dir}/counter.vhd ${module_rtl_dir}/decoder.vhd ${module_rtl_dir}/register.vhd ${module_rtl_dir}/priority_encoder.vhd  "
-set rtl_list "${module_rtl_dir}/home_automation_system.vhd ${module_rtl_dir}/counter.vhd ${module_rtl_dir}/decoder.vhd  ${module_rtl_dir}/priority_encoder.vhd  "
 
 # add all the files in the $module_rtl_dir to rtl_list
 foreach script [glob -nocomplain -dir $module_rtl_dir *.vhd] { lappend rtl_list $script}
