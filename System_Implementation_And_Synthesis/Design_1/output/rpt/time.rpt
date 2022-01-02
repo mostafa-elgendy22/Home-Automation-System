@@ -1,0 +1,28 @@
+Report for group default
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: SRD
+    (Clocked by rtDefaultClock R)
+Endpoint: counter/Q_reg[0]/D
+    (Clocked by sysclk R)
+Path Group: I2R
+Data required time: 866.0
+    (Clock shift: 900.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 34.0)
+Data arrival time: 858.3
+Slack: 7.7
+Logic depth: 5
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+SRD                      {set_input_delay}        f    700.0    700.0    700.0                        6.9     42.0      4    72,   37                       
+i_0_0_1/A1->ZN           NOR2_X4                 fr    756.5     56.5     56.1      0.4    100.0      0.7      4.9      1    36,   36  /PD_TOP        (1.10)
+i_0_0_3/A2->ZN           NAND3_X4*               rf    803.9     47.4     47.4      0.0     16.2      3.0     39.9      4    36,   36  /PD_TOP        (1.10)
+counter/i_0_1_4/A->ZN    INV_X8                  fr    820.2     16.3     16.3      0.0     15.3      1.8     13.1      3    33,   33  /PD_TOP        (1.10)
+counter/i_0_1_5/A1->ZN   NAND2_X4                rf    832.1     11.9     11.9      0.0      7.5      0.7      4.9      1    33,   33  /PD_TOP        (1.10)
+counter/i_0_1_6/B2->ZN   AOI21_X2                fr    858.3     26.2     26.2      0.0      7.2      0.7      1.9      1    33,   33  /PD_TOP        (1.10)
+counter/Q_reg[0]/D       DFF_X1#                  r    858.3      0.0               0.0     17.8                             33,   33  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O
