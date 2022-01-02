@@ -86,7 +86,7 @@ BEGIN
                      ELSE
                             A <= "000";
                      END IF;
-              ELSE
+              ELSIF state = "100" THEN
                      IF reset = '1' THEN
                             A <= "000";
                      ELSIF (ST = '1') AND (temperature < "001001") THEN--temperature is less than 50F
