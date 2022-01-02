@@ -2,18 +2,18 @@ Report End Points:
 -----+-------+------+-------+------+-----+-----+-----+----------------+-----------------------
      |Group  |Launch|Capture|Shift |Delay|Depth|Slack|Begin Point     |End Point              
 -----+-------+------+-------+------+-----+-----+-----+----------------+-----------------------
-1    |default|sysclk|sysclk |1000.0|137.1|    5|677.3|counter/i_0/Q[3]|state_holder/Q_reg[1]/D
-2    |default|sysclk|sysclk |1000.0|134.7|    5|679.7|counter/i_0/Q[3]|state_holder/Q_reg[0]/D
-3    |default|sysclk|sysclk |1000.0| 86.0|    3|728.4|counter/i_0/Q[3]|state_holder/Q_reg[2]/D
+1    |default|sysclk|sysclk |1000.0|105.7|    3|717.4|counter/i_0/Q[3]|state_holder/Q_reg[0]/D
+2    |default|sysclk|sysclk |1000.0| 93.5|    3|729.6|counter/i_0/Q[3]|state_holder/Q_reg[2]/D
+3    |default|sysclk|sysclk |1000.0| 84.9|    4|730.4|counter/i_0/Q[3]|state_holder/Q_reg[1]/D
 -----+-------+------+-------+------+-----+-----+-----+----------------+-----------------------
 Report End Points: 
------+-----+--------------+-------+------+-----+-----+-----+--------------+------------------------
-     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point   |End Point               
------+-----+--------------+-------+------+-----+-----+-----+--------------+------------------------
-1    |I2R  |rtDefaultClock|sysclk |1000.0|213.4|    3| 23.8|SRD           |counter/clk_gate_Q_reg/E
-2    |I2R  |rtDefaultClock|sysclk |1000.0|210.6|    6| 58.5|temperature[1]|state_holder/Q_reg[0]/D 
-3    |I2R  |rtDefaultClock|sysclk |1000.0|186.2|    6| 82.9|ST            |state_holder/Q_reg[1]/D 
------+-----+--------------+-------+------+-----+-----+-----+--------------+------------------------
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-----------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point   |End Point              
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-----------------------
+1    |I2R  |rtDefaultClock|sysclk |1000.0|282.2|    6|676.9|temperature[0]|state_holder/Q_reg[0]/D
+2    |I2R  |rtDefaultClock|sysclk |1000.0|237.0|    7|714.3|temperature[0]|state_holder/Q_reg[1]/D
+3    |I2R  |rtDefaultClock|sysclk |1000.0|237.3|    6|721.8|temperature[0]|state_holder/Q_reg[2]/D
+-----+-----+--------------+-------+------+-----+-----+-----+--------------+-----------------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
@@ -24,7 +24,7 @@ Report End Points:
 -----+-----+------+-------+------+-----+-----+-----+-----------------------+------------
      |Group|Launch|Capture|Shift |Delay|Depth|Slack|Begin Point            |End Point   
 -----+-----+------+-------+------+-----+-----+-----+-----------------------+------------
-1    |R2O  |sysclk|vsysclk|1000.0| 81.0|    2|664.4|state_holder/Q_reg[0]/Q|alarm_buzzer
-2    |R2O  |sysclk|vsysclk|1000.0| 76.6|    2|668.6|state_holder/Q_reg[1]/Q|rear_door   
-3    |R2O  |sysclk|vsysclk|1000.0| 76.7|    2|668.7|state_holder/Q_reg[0]/Q|front_door  
+1    |R2O  |sysclk|vsysclk|1000.0| 60.5|    2|689.5|state_holder/Q_reg[0]/Q|alarm_buzzer
+2    |R2O  |sysclk|vsysclk|1000.0| 56.9|    2|692.9|state_holder/Q_reg[1]/Q|rear_door   
+3    |R2O  |sysclk|vsysclk|1000.0| 56.9|    2|693.1|state_holder/Q_reg[0]/Q|front_door  
 -----+-----+------+-------+------+-----+-----+-----+-----------------------+------------
