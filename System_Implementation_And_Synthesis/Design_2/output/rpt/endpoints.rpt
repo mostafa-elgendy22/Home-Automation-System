@@ -1,28 +1,30 @@
 Report End Points: 
------+-------+------+-------+-----+-----+-----+-----+-----------+---------
-     |Group  |Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
------+-------+------+-------+-----+-----+-----+-----+-----------+---------
-1    |default|      |       |     |     |     |     |           |         
------+-------+------+-------+-----+-----+-----+-----+-----------+---------
+-----+-------+------+-------+-----+-----+-----+-----+------------------+------------------
+     |Group  |Launch|Capture|Shift|Delay|Depth|Slack|Begin Point       |End Point         
+-----+-------+------+-------+-----+-----+-----+-----+------------------+------------------
+1    |default|sysclk|sysclk |950.0|213.0|    4|547.7|counter/Q_reg[0]/Q|counter/Q_reg[1]/D
+2    |default|sysclk|sysclk |950.0|140.3|    4|611.2|counter/Q_reg[0]/Q|counter/Q_reg[2]/D
+3    |default|sysclk|sysclk |950.0|136.1|    5|614.0|counter/Q_reg[2]/Q|counter/Q_reg[0]/D
+-----+-------+------+-------+-----+-----+-----+-----+------------------+------------------
 Report End Points: 
------+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
-     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point         
------+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
-1    |I2R  |rtDefaultClock|sysclk |1500.0|304.7|    7|463.6|SRD        |counter/Q_reg[1]/D
-2    |I2R  |rtDefaultClock|sysclk |1500.0|300.0|    7|468.3|SRD        |counter/Q_reg[0]/D
-3    |I2R  |rtDefaultClock|sysclk |1500.0|300.0|    7|468.3|SRD        |counter/Q_reg[2]/D
------+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
-Report End Points: 
------+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
-     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point   |End Point    
------+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
-1    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[1]|front_door   
-2    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[0]|rear_door    
-3    |I2O  |rtDefaultClock|vsysclk|1000.0|<?>  |    3|-86.3|i_0/display[0]|window_buzzer
------+-----+--------------+-------+------+-----+-----+-----+--------------+-------------
+-----+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
+     |Group|Launch        |Capture|Shift|Delay|Depth|Slack|Begin Point|End Point         
+-----+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
+1    |I2R  |rtDefaultClock|sysclk |950.0|304.9|    7|413.4|SRD        |counter/Q_reg[1]/D
+2    |I2R  |rtDefaultClock|sysclk |950.0|300.2|    7|418.1|SRD        |counter/Q_reg[0]/D
+3    |I2R  |rtDefaultClock|sysclk |950.0|300.2|    7|418.1|SRD        |counter/Q_reg[2]/D
+-----+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
-1    |R2O  |      |       |     |     |     |     |           |         
+1    |I2O  |      |       |     |     |     |     |           |         
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+------+-----------------------+----------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack |Begin Point            |End Point 
+-----+-----+------+-------+-----+-----+-----+------+-----------------------+----------
+1    |R2O  |sysclk|vsysclk| 25.0| 52.1|    2|-261.1|state_holder/Q_reg[2]/Q|heater    
+2    |R2O  |sysclk|vsysclk| 25.0| 52.1|    2|-261.1|state_holder/Q_reg[2]/Q|cooler    
+3    |R2O  |sysclk|vsysclk| 25.0| 59.5|    2|-260.9|state_holder/Q_reg[0]/Q|front_door
+-----+-----+------+-------+-----+-----+-----+------+-----------------------+----------

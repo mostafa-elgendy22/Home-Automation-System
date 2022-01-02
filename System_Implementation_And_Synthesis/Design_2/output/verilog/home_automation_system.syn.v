@@ -1,9 +1,9 @@
 /*
  * Created by 
-   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sat Jan  1 15:00:29 2022
+   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 21:32:09 2022
  * (C) Mentor Graphics Corporation
  */
-/* CheckSum: 1885900837 */
+/* CheckSum: 2670321331 */
 
 module counter(clk, enable, reset, Q);
    input clk;
@@ -11,55 +11,37 @@ module counter(clk, enable, reset, Q);
    input reset;
    inout [2:0]Q;
 
-   wire n_0_0;
-   wire n_0_0_0;
+   wire n_0_2;
    wire n_0_1;
-   wire n_0_1_0;
+   wire n_0_0;
    wire n_0_1_1;
+   wire n_0_1_0;
+   wire n_0_3;
+   wire n_0_4;
+   wire n_0_5;
+   wire n_0_6;
    wire n_0_1_2;
    wire n_0_1_3;
    wire n_0_1_4;
    wire n_0_1_5;
-   wire n_0_2;
-   wire n_0_3;
    wire n_0_1_6;
-   wire n_0_1_7;
-   wire n_0_1_8;
-   wire n_0_1_9;
-   wire n_0_4;
-   wire n_0_1_10;
-   wire n_0_1_11;
-   wire n_0_1_12;
-   wire n_0_1_13;
-   wire n_0_1_14;
-   wire n_0_1_15;
 
    DFF_X1 \Q_reg[0]  (.D(n_0_2), .CK(clk), .Q(Q[0]), .QN());
-   DFF_X1 \Q_reg[1]  (.D(n_0_3), .CK(clk), .Q(Q[1]), .QN());
-   DFF_X1 \Q_reg[2]  (.D(n_0_4), .CK(clk), .Q(Q[2]), .QN());
-   HA_X1 i_0_0_0 (.A(Q[1]), .B(Q[0]), .CO(n_0_0_0), .S(n_0_0));
-   XOR2_X1 i_0_0_1 (.A(Q[2]), .B(n_0_0_0), .Z(n_0_1));
-   INV_X1 i_0_1_0 (.A(Q[1]), .ZN(n_0_1_0));
-   NAND2_X1 i_0_1_1 (.A1(n_0_1_0), .A2(Q[2]), .ZN(n_0_1_1));
-   INV_X1 i_0_1_2 (.A(Q[0]), .ZN(n_0_1_2));
-   NAND3_X1 i_0_1_3 (.A1(n_0_1_1), .A2(enable), .A3(n_0_1_2), .ZN(n_0_1_3));
-   INV_X1 i_0_1_4 (.A(enable), .ZN(n_0_1_4));
-   NAND2_X1 i_0_1_5 (.A1(n_0_1_4), .A2(Q[0]), .ZN(n_0_1_5));
-   AOI21_X1 i_0_1_6 (.A(reset), .B1(n_0_1_3), .B2(n_0_1_5), .ZN(n_0_2));
-   NAND2_X1 i_0_1_7 (.A1(n_0_1_7), .A2(n_0_1_6), .ZN(n_0_3));
-   NAND4_X1 i_0_1_8 (.A1(enable), .A2(n_0_1_15), .A3(n_0_0), .A4(n_0_1_14), 
-      .ZN(n_0_1_6));
-   NAND2_X1 i_0_1_9 (.A1(n_0_1_4), .A2(n_0_1_8), .ZN(n_0_1_7));
-   INV_X1 i_0_1_10 (.A(n_0_1_9), .ZN(n_0_1_8));
-   NAND2_X1 i_0_1_11 (.A1(Q[1]), .A2(n_0_1_15), .ZN(n_0_1_9));
-   NAND2_X1 i_0_1_12 (.A1(n_0_1_10), .A2(n_0_1_13), .ZN(n_0_4));
-   NAND2_X1 i_0_1_13 (.A1(n_0_1_4), .A2(n_0_1_11), .ZN(n_0_1_10));
-   INV_X1 i_0_1_14 (.A(n_0_1_12), .ZN(n_0_1_11));
-   NAND2_X1 i_0_1_15 (.A1(Q[2]), .A2(n_0_1_15), .ZN(n_0_1_12));
-   NAND4_X1 i_0_1_16 (.A1(enable), .A2(n_0_1_15), .A3(n_0_1), .A4(n_0_1_14), 
-      .ZN(n_0_1_13));
-   NAND3_X1 i_0_1_17 (.A1(n_0_1_2), .A2(Q[2]), .A3(n_0_1_0), .ZN(n_0_1_14));
-   INV_X1 i_0_1_18 (.A(reset), .ZN(n_0_1_15));
+   DFF_X1 \Q_reg[1]  (.D(n_0_1), .CK(clk), .Q(Q[1]), .QN());
+   DFF_X1 \Q_reg[2]  (.D(n_0_0), .CK(clk), .Q(Q[2]), .QN());
+   MUX2_X1 i_0_0_0 (.A(Q[0]), .B(n_0_4), .S(n_0_3), .Z(n_0_2));
+   MUX2_X1 i_0_0_1 (.A(Q[1]), .B(n_0_5), .S(n_0_3), .Z(n_0_1));
+   MUX2_X1 i_0_0_2 (.A(Q[2]), .B(n_0_6), .S(n_0_3), .Z(n_0_0));
+   HA_X1 i_0_1_0 (.A(Q[1]), .B(Q[0]), .CO(n_0_1_0), .S(n_0_1_1));
+   OR2_X1 i_0_1_1 (.A1(reset), .A2(enable), .ZN(n_0_3));
+   NOR2_X1 i_0_1_2 (.A1(n_0_1_3), .A2(Q[0]), .ZN(n_0_4));
+   NOR2_X1 i_0_1_3 (.A1(n_0_1_6), .A2(n_0_1_3), .ZN(n_0_5));
+   NOR2_X1 i_0_1_4 (.A1(n_0_1_3), .A2(n_0_1_2), .ZN(n_0_6));
+   XNOR2_X1 i_0_1_5 (.A(Q[2]), .B(n_0_1_0), .ZN(n_0_1_2));
+   OR2_X1 i_0_1_6 (.A1(reset), .A2(n_0_1_4), .ZN(n_0_1_3));
+   NOR3_X1 i_0_1_7 (.A1(n_0_1_5), .A2(Q[0]), .A3(Q[1]), .ZN(n_0_1_4));
+   NAND2_X1 i_0_1_8 (.A1(enable), .A2(Q[2]), .ZN(n_0_1_5));
+   INV_X1 i_0_1_9 (.A(n_0_1_1), .ZN(n_0_1_6));
 endmodule
 
 module priority_encoder(reset, SFD, SRD, SFA, SW, ST, temperature, state, A);
@@ -152,6 +134,25 @@ module priority_encoder(reset, SFD, SRD, SFA, SW, ST, temperature, state, A);
    INV_X1 i_0_34 (.A(temperature[3]), .ZN(n_0_30));
 endmodule
 
+module DFF_register(D, clk, enable, reset, Q);
+   input [2:0]D;
+   input clk;
+   input enable;
+   input reset;
+   output [2:0]Q;
+
+   wire n_0_0;
+
+   DFF_X2 \Q_reg[2]  (.D(n_2), .CK(n_3), .Q(Q[2]), .QN());
+   AND2_X1 i_0_0 (.A1(D[0]), .A2(n_0_0), .ZN(n_0));
+   AND2_X1 i_0_1 (.A1(D[1]), .A2(n_0_0), .ZN(n_1));
+   AND2_X1 i_0_2 (.A1(D[2]), .A2(n_0_0), .ZN(n_2));
+   INV_X1 i_0_3 (.A(reset), .ZN(n_0_0));
+   INV_X1 i_0_4 (.A(clk), .ZN(n_3));
+   DFF_X2 \Q_reg[1]  (.D(n_1), .CK(n_3), .Q(Q[1]), .QN());
+   DFF_X2 \Q_reg[0]  (.D(n_0), .CK(n_3), .Q(Q[0]), .QN());
+endmodule
+
 module decoder(A, front_door, rear_door, alarm_buzzer, window_buzzer, heater, 
       cooler);
    input [2:0]A;
@@ -164,15 +165,31 @@ module decoder(A, front_door, rear_door, alarm_buzzer, window_buzzer, heater,
 
    wire n_0_0;
    wire n_0_1;
+   wire n_0_2;
+   wire n_1_0;
+   wire n_1_1;
+   wire n_2_0;
+   wire n_3_0;
+   wire n_3_1;
+   wire n_4_0;
+   wire n_5_0;
 
-   AND3_X1 i_0_0 (.A1(A[2]), .A2(n_0_0), .A3(A[1]), .ZN(cooler));
-   AND3_X1 i_0_1 (.A1(n_0_1), .A2(A[0]), .A3(A[2]), .ZN(heater));
-   AND3_X1 i_0_2 (.A1(A[2]), .A2(n_0_0), .A3(n_0_1), .ZN(window_buzzer));
-   NOR3_X1 i_0_3 (.A1(A[2]), .A2(n_0_1), .A3(n_0_0), .ZN(alarm_buzzer));
-   NOR3_X1 i_0_4 (.A1(A[2]), .A2(n_0_1), .A3(A[0]), .ZN(rear_door));
-   NOR3_X1 i_0_5 (.A1(A[1]), .A2(n_0_0), .A3(A[2]), .ZN(front_door));
-   INV_X1 i_0_6 (.A(A[0]), .ZN(n_0_0));
-   INV_X1 i_0_7 (.A(A[1]), .ZN(n_0_1));
+   INV_X1 i_0_0 (.A(n_0_0), .ZN(front_door));
+   NAND3_X1 i_0_1 (.A1(n_0_2), .A2(n_0_1), .A3(A[0]), .ZN(n_0_0));
+   INV_X1 i_0_2 (.A(A[1]), .ZN(n_0_1));
+   INV_X1 i_0_3 (.A(A[2]), .ZN(n_0_2));
+   INV_X1 i_1_0 (.A(n_1_0), .ZN(rear_door));
+   NAND2_X1 i_1_1 (.A1(A[1]), .A2(n_1_1), .ZN(n_1_0));
+   NOR2_X1 i_1_2 (.A1(A[2]), .A2(A[0]), .ZN(n_1_1));
+   NAND2_X1 i_2_0 (.A1(A[0]), .A2(A[1]), .ZN(n_2_0));
+   NOR2_X1 i_2_1 (.A1(n_2_0), .A2(A[2]), .ZN(alarm_buzzer));
+   INV_X1 i_3_0 (.A(n_3_0), .ZN(window_buzzer));
+   NAND2_X1 i_3_1 (.A1(A[2]), .A2(n_3_1), .ZN(n_3_0));
+   NOR2_X1 i_3_2 (.A1(A[1]), .A2(A[0]), .ZN(n_3_1));
+   NAND2_X1 i_4_0 (.A1(A[0]), .A2(A[2]), .ZN(n_4_0));
+   NOR2_X1 i_4_1 (.A1(n_4_0), .A2(A[1]), .ZN(heater));
+   NAND2_X1 i_5_0 (.A1(A[1]), .A2(A[2]), .ZN(n_5_0));
+   NOR2_X1 i_5_1 (.A1(n_5_0), .A2(A[0]), .ZN(cooler));
 endmodule
 
 module home_automation_system(clk, reset, SFD, SRD, SFA, SW, ST, temperature, 
@@ -194,22 +211,20 @@ module home_automation_system(clk, reset, SFD, SRD, SFA, SW, ST, temperature,
    output cooler;
    output [2:0]display;
 
+   wire [2:0]A;
    wire n_0_0_0;
-   wire n_0_0_1;
-   wire n_0_0_2;
    wire counter_enable;
 
    counter counter (.clk(clk), .enable(counter_enable), .reset(reset), .Q({n_2, 
       n_1, n_0}));
    priority_encoder priority_encoder (.reset(reset), .SFD(SFD), .SRD(SRD), 
       .SFA(SFA), .SW(SW), .ST(ST), .temperature(temperature), .state({n_2, n_1, 
-      n_0}), .A(display));
+      n_0}), .A(A));
+   DFF_register state_holder (.D(A), .clk(clk), .enable(), .reset(reset), 
+      .Q(display));
    decoder output_decoder (.A(display), .front_door(front_door), .rear_door(
       rear_door), .alarm_buzzer(alarm_buzzer), .window_buzzer(window_buzzer), 
       .heater(heater), .cooler(cooler));
-   NOR2_X1 i_0_0_0 (.A1(ST), .A2(SFD), .ZN(n_0_0_0));
-   NOR2_X1 i_0_0_1 (.A1(SRD), .A2(SW), .ZN(n_0_0_1));
-   INV_X1 i_0_0_2 (.A(SFA), .ZN(n_0_0_2));
-   NAND3_X1 i_0_0_3 (.A1(n_0_0_0), .A2(n_0_0_1), .A3(n_0_0_2), .ZN(
-      counter_enable));
+   OR4_X1 i_0_0_0 (.A1(ST), .A2(SW), .A3(SFA), .A4(SRD), .ZN(n_0_0_0));
+   OR2_X1 i_0_0_1 (.A1(n_0_0_0), .A2(SFD), .ZN(counter_enable));
 endmodule
