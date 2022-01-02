@@ -22,9 +22,10 @@ To Try floor planning & routing
 1. Open variables folder and edit TCL scripts as needed  (See Lab slides to understand)
 2. Run clean_nitro.sh
 3. cd work 
-4. run this command  ->  nitro -log LOGs/nitro.log -journal LOGs/nitro.journal
-5. run setup_nrf
-6. source flow_scripts/0_import.tcl
+4. run this command  -> nitro -log LOGs/nitro.log -journal LOGs/nitro.journal
+5. run -> setup_nrf
+6. run -> source flow_scripts/import_variables.tcl > LOGs/import.log
+7. run -> source flow_scripts/0_import.tcl > LOGs/import0.log
 7. Then make sure there are no errors
 8. start
 9. nitro GUI opens and start playing !
