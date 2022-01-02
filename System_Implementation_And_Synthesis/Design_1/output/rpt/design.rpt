@@ -3,16 +3,16 @@ Report Physical info:
                         |                      |Area (squm)|Leakage (uW)
 ------------------------+----------------------+-----------+------------
 Design Name             |home_automation_system|           |            
-  Total Instances       |                    71|         92|       1.922
+  Total Instances       |                    56|         84|       1.784
     Macros              |                     0|          0|       0.000
     Pads                |                     0|          0|       0.000
     Phys                |                     0|          0|       0.000
     Blackboxes          |                     0|          0|       0.000
-    Cells               |                    71|         92|       1.922
+    Cells               |                    56|         84|       1.784
       Buffers           |                     0|          0|       0.000
-      Inverters         |                    22|         12|       0.316
+      Inverters         |                     9|          5|       0.129
       Clock-Gates       |                     1|          4|       0.059
-      Combinational     |                    41|         44|       0.993
+      Combinational     |                    39|         44|       1.042
       Latches           |                     0|          0|       0.000
       FlipFlops         |                     7|         32|       0.554
        Single-Bit FF    |                     7|         32|       0.554
@@ -23,14 +23,14 @@ Design Name             |home_automation_system|           |
          Clock-Gated    |                     4|           |            
   Tristate Pin Count    |                     0|           |            
 Physical Info           |Placed                |           |            
-  Chip Size (mm x mm)   |0.072 x 0.072         |       5237|            
+  Chip Size (mm x mm)   |0.072 x 0.072         |       5160|            
   Fixed Cell Area       |                      |          0|            
     Phys Only           |                     0|          0|            
-  Placeable Area        |                      |        138|            
-  Movable Cell Area     |                      |         92|            
-  Utilization (%)       |                    66|           |            
-  Chip Utilization (%)  |                    66|           |            
-  Total Wire Length (mm)|                 0.812|           |            
+  Placeable Area        |                      |        132|            
+  Movable Cell Area     |                      |         84|            
+  Utilization (%)       |                    63|           |            
+  Chip Utilization (%)  |                    63|           |            
+  Total Wire Length (mm)|                 0.806|           |            
   Longest Wire (mm)     |                 0.041|           |            
   Average Wire (mm)     |                 0.030|           |            
 ------------------------+----------------------+-----------+------------
