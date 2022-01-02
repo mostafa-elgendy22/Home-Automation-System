@@ -15,12 +15,19 @@ sim:/home_automation_system/alarm_buzzer \
 sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
-sim:/home_automation_system/display \
+sim:/home_automation_system/priority_encoder/A \
+sim:/home_automation_system/priority_encoder/state \
 sim:/home_automation_system/counter/Q \
-sim:/home_automation_system/priority_encoder/state
+sim:/home_automation_system/display
+
 
 
 force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
+force -freeze sim:/home_automation_system/SFD 0 0
+force -freeze sim:/home_automation_system/SRD 0 0
+force -freeze sim:/home_automation_system/SFA 0 0
+force -freeze sim:/home_automation_system/SW 0 0
+force -freeze sim:/home_automation_system/ST 0 0
 force -freeze sim:/home_automation_system/reset 1 0
 run {299 ps}
 

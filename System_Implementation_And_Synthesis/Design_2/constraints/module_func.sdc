@@ -13,7 +13,7 @@ set pad_load            10
 set transition          0.1
 set io_clock_period     1.0
 
-set clock_period 0.9
+set clock_period 1.5
 
 
 
@@ -32,14 +32,13 @@ set_input_delay 0.7 [all_inputs]
 set_output_delay -clock vsysclk [ expr 0.3 * ${io_clock_period} ] [ all_outputs ] 
  #   [ remove_from_collection [ all_outputs ] [ get_ports { usb_plus usb_minus }] ]
 
-
-set_max_area 0.0
-set_max_capacitance 0.0
-set_max_delay 0.0 
-set_max_dynamic_power 0.0
-set_max_leakage_power 0.0
-set_max_time_borrow 0.0
-set_max_transition 0.0
+# set_max_area 0.0
+# set_max_capacitance 0.0
+# set_max_delay 0.0 
+# set_max_dynamic_power 0.0
+# set_max_leakage_power 0.0
+# set_max_time_borrow 0.0
+# set_max_transition 0.0
 
 
 
