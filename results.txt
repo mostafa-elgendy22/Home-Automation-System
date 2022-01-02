@@ -104,7 +104,6 @@ clock: 1, set_output_delay -clock vsysclk [ expr 0.1 * ${io_clock_period} ] [ al
 Slack: 164, set_input_delay 0.2 [all_inputs]
 Power: 227
 result: 347.69999999999993
-<<<<<<< HEAD
 ----------- 
 Movable Area: 103
 clock: 1, set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
@@ -141,9 +140,3 @@ clock: 1, set_output_delay -clock vsysclk [ expr 0.05 * ${io_clock_period} ] [ a
 Slack: 489, set_input_delay 0.2 [all_inputs]
 Power: 200.65, set pad_load 0.01  instead of 10
 result: 244.43, set transition 0.001 instead of 0.1
-=======
-
-
-
-
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
