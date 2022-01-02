@@ -19,6 +19,7 @@ ARCHITECTURE arch1 OF home_automation_system IS
        SIGNAL counter_enable : STD_LOGIC;
        SIGNAL counter_Q : STD_LOGIC_VECTOR(2 DOWNTO 0);
        SIGNAL A : STD_LOGIC_VECTOR(2 DOWNTO 0);
+       SIGNAL state : STD_LOGIC_VECTOR(2 DOWNTO 0);
 BEGIN
 
        priority_encoder : ENTITY work.priority_encoder
@@ -42,10 +43,18 @@ BEGIN
                      enable => counter_enable,
                      Q => counter_Q
               );
-
+       state_holder : ENTITY work.DFF_register
+              generic map(data_width => 3)
+              port map(
+                     clk => clk,
+                     reset => reset,
+                     enable => '1',
+                     D => A,
+                     Q => state
+              );
        output_decoder : ENTITY work.decoder
               PORT MAP(
-                     A => A,
+                     A => state,
                      front_door => front_door,
                      rear_door => rear_door,
                      alarm_buzzer => alarm_buzzer,
@@ -53,6 +62,6 @@ BEGIN
                      heater => heater,
                      cooler => cooler
               );
-       display <= A;
+       display <= state;
 
 END ARCHITECTURE;

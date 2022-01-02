@@ -16,6 +16,8 @@ sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
 sim:/home_automation_system/counter_Q \
+sim:/home_automation_system/A \
+sim:/home_automation_system/state \
 sim:/home_automation_system/display
 
 
