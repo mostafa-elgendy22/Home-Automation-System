@@ -10,13 +10,12 @@ ENTITY home_automation_system IS
               --The temperature range from 41 to 104 degree fahrenheit (5 to 40 degree celsius) (can be represented with 6-bits "floor(log2(104 - 41 + 1))")
               temperature : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
               front_door, rear_door, alarm_buzzer, window_buzzer, heater, cooler : OUT STD_LOGIC;
-              display : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+              display : INOUT STD_LOGIC_VECTOR(2 DOWNTO 0)
        );
 END ENTITY;
 
 ARCHITECTURE arch1 OF home_automation_system IS
 
-       SIGNAL A : STD_LOGIC_VECTOR(2 DOWNTO 0);
        SIGNAL counter_enable : STD_LOGIC;
        SIGNAL counter_Q : STD_LOGIC_VECTOR(2 DOWNTO 0);
 BEGIN
@@ -31,7 +30,7 @@ BEGIN
                      ST => ST,
                      temperature => temperature,
                      state => counter_Q,
-                     A => A
+                     A => display
               );
 
        counter_enable <= SFD OR SRD OR SFA OR SW OR ST;
@@ -42,11 +41,10 @@ BEGIN
                      enable => counter_enable,
                      Q => counter_Q
               );
-       display <= A;
 
        output_decoder : ENTITY work.decoder
               PORT MAP(
-                     A => A,
+                     A => display,
                      front_door => front_door,
                      rear_door => rear_door,
                      alarm_buzzer => alarm_buzzer,

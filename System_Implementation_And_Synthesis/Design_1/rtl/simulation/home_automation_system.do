@@ -16,8 +16,7 @@ sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
 sim:/home_automation_system/display \
-sim:/home_automation_system/reversed_priority \
-sim:/home_automation_system/counter_Q
+sim:/home_automation_system/reversed_priority
 
 
 force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
@@ -25,6 +24,8 @@ force -freeze sim:/home_automation_system/reset 1 0
 run {200 ps}
 
 force -freeze sim:/home_automation_system/reset 0 0
+run {99 ps}
+
 force -freeze sim:/home_automation_system/SFD 1 0
 force -freeze sim:/home_automation_system/SRD 1 0
 run {200 ps}
@@ -35,5 +36,5 @@ run {1000 ps}
 force -freeze sim:/home_automation_system/SFD 1 0
 force -freeze sim:/home_automation_system/ST 1 0
 force -freeze sim:/home_automation_system/temperature 001000 0
-run {400 ps}
+run {1500 ps}
 
