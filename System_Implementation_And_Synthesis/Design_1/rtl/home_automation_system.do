@@ -15,10 +15,8 @@ sim:/home_automation_system/alarm_buzzer \
 sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
-sim:/home_automation_system/output_decoder/A \
 sim:/home_automation_system/reversed_priority \
-sim:/home_automation_system/display \
-
+sim:/home_automation_system/display
 
 
 force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
