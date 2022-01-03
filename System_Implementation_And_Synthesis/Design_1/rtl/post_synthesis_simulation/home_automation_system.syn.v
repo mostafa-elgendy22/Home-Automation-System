@@ -1,9 +1,9 @@
 /*
  * Created by 
-   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 15:38:45 2022
+   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Mon Jan  3 00:28:32 2022
  * (C) Mentor Graphics Corporation
  */
-/* CheckSum: 1004719113 */
+/* CheckSum: 34131069 */
 
 module counter(clk, enable, reset, Q);
    input clk;
@@ -74,62 +74,36 @@ module priority_encoder(reset, SFD, SRD, SFA, SW, ST, temperature,
    wire n_0_17;
    wire n_0_18;
    wire n_0_19;
-   wire n_0_20;
-   wire n_0_21;
-   wire n_0_22;
-   wire n_0_23;
-   wire n_0_24;
-   wire n_0_25;
-   wire n_0_26;
-   wire n_0_27;
-   wire n_0_28;
-   wire n_0_29;
-   wire n_0_30;
-   wire n_0_31;
-   wire n_0_32;
-   wire n_0_33;
-   wire n_0_34;
 
-   INV_X1 i_0_0 (.A(n_0_0), .ZN(A[0]));
-   OAI211_X1 i_0_1 (.A(n_0_1), .B(n_0_20), .C1(n_0_3), .C2(SFD), .ZN(n_0_0));
-   OAI211_X1 i_0_2 (.A(n_0_6), .B(reversed_priority), .C1(n_0_22), .C2(n_0_2), 
-      .ZN(n_0_1));
-   OAI21_X1 i_0_3 (.A(n_0_10), .B1(n_0_18), .B2(SFA), .ZN(n_0_2));
-   AOI21_X1 i_0_4 (.A(n_0_4), .B1(n_0_6), .B2(n_0_17), .ZN(n_0_3));
-   AOI21_X1 i_0_5 (.A(reversed_priority), .B1(n_0_5), .B2(n_0_18), .ZN(n_0_4));
-   NAND2_X1 i_0_6 (.A1(n_0_17), .A2(SW), .ZN(n_0_5));
-   NAND3_X1 i_0_7 (.A1(n_0_30), .A2(n_0_25), .A3(n_0_27), .ZN(n_0_6));
-   AOI21_X1 i_0_8 (.A(n_0_7), .B1(n_0_11), .B2(n_0_21), .ZN(A[1]));
-   INV_X1 i_0_9 (.A(n_0_8), .ZN(n_0_7));
-   AOI21_X1 i_0_10 (.A(reset), .B1(n_0_9), .B2(n_0_13), .ZN(n_0_8));
-   OAI21_X1 i_0_11 (.A(n_0_19), .B1(n_0_12), .B2(n_0_10), .ZN(n_0_9));
-   INV_X1 i_0_12 (.A(SW), .ZN(n_0_10));
-   OAI21_X1 i_0_13 (.A(n_0_12), .B1(n_0_26), .B2(n_0_13), .ZN(n_0_11));
-   NAND2_X1 i_0_14 (.A1(n_0_18), .A2(n_0_17), .ZN(n_0_12));
-   INV_X1 i_0_15 (.A(reversed_priority), .ZN(n_0_13));
-   AOI21_X1 i_0_16 (.A(n_0_14), .B1(n_0_21), .B2(n_0_26), .ZN(A[2]));
-   OAI21_X1 i_0_17 (.A(n_0_20), .B1(n_0_15), .B2(reversed_priority), .ZN(n_0_14));
-   INV_X1 i_0_18 (.A(n_0_16), .ZN(n_0_15));
-   NAND3_X1 i_0_19 (.A1(n_0_19), .A2(n_0_18), .A3(n_0_17), .ZN(n_0_16));
+   AOI221_X1 i_0_0 (.A(reset), .B1(reversed_priority), .B2(n_0_0), .C1(n_0_2), 
+      .C2(n_0_18), .ZN(A[0]));
+   NOR2_X1 i_0_1 (.A1(n_0_4), .A2(n_0_1), .ZN(n_0_0));
+   AOI211_X1 i_0_2 (.A(SW), .B(n_0_11), .C1(SRD), .C2(n_0_17), .ZN(n_0_1));
+   OAI22_X1 i_0_3 (.A1(SFA), .A2(n_0_4), .B1(n_0_3), .B2(reversed_priority), 
+      .ZN(n_0_2));
+   AOI21_X1 i_0_4 (.A(SRD), .B1(n_0_17), .B2(SW), .ZN(n_0_3));
+   AND2_X1 i_0_5 (.A1(n_0_14), .A2(n_0_19), .ZN(n_0_4));
+   NOR2_X1 i_0_6 (.A1(n_0_5), .A2(reset), .ZN(A[1]));
+   OAI22_X1 i_0_7 (.A1(n_0_11), .A2(n_0_7), .B1(n_0_6), .B2(reversed_priority), 
+      .ZN(n_0_5));
+   AOI21_X1 i_0_8 (.A(SFD), .B1(SW), .B2(n_0_9), .ZN(n_0_6));
+   AOI21_X1 i_0_9 (.A(n_0_9), .B1(n_0_13), .B2(reversed_priority), .ZN(n_0_7));
+   NOR3_X1 i_0_10 (.A1(reset), .A2(n_0_10), .A3(n_0_8), .ZN(A[2]));
+   AOI21_X1 i_0_11 (.A(reversed_priority), .B1(n_0_9), .B2(n_0_18), .ZN(n_0_8));
+   NOR2_X1 i_0_12 (.A1(SRD), .A2(SFA), .ZN(n_0_9));
+   NOR2_X1 i_0_13 (.A1(n_0_13), .A2(n_0_11), .ZN(n_0_10));
+   AOI21_X1 i_0_14 (.A(n_0_16), .B1(n_0_12), .B2(n_0_19), .ZN(n_0_11));
+   NAND4_X1 i_0_15 (.A1(temperature[4]), .A2(temperature[3]), .A3(temperature[2]), 
+      .A4(temperature[1]), .ZN(n_0_12));
+   OR2_X1 i_0_16 (.A1(SW), .A2(n_0_14), .ZN(n_0_13));
+   AOI211_X1 i_0_17 (.A(temperature[4]), .B(n_0_16), .C1(n_0_15), .C2(
+      temperature[3]), .ZN(n_0_14));
+   OR3_X1 i_0_18 (.A1(temperature[2]), .A2(temperature[1]), .A3(temperature[0]), 
+      .ZN(n_0_15));
+   INV_X1 i_0_19 (.A(ST), .ZN(n_0_16));
    INV_X1 i_0_20 (.A(SFA), .ZN(n_0_17));
-   INV_X1 i_0_21 (.A(SRD), .ZN(n_0_18));
-   INV_X1 i_0_22 (.A(SFD), .ZN(n_0_19));
-   INV_X1 i_0_23 (.A(reset), .ZN(n_0_20));
-   INV_X1 i_0_24 (.A(n_0_22), .ZN(n_0_21));
-   AOI21_X1 i_0_25 (.A(n_0_24), .B1(n_0_23), .B2(n_0_25), .ZN(n_0_22));
-   NAND4_X1 i_0_26 (.A1(temperature[4]), .A2(temperature[3]), .A3(temperature[2]), 
-      .A4(temperature[1]), .ZN(n_0_23));
-   INV_X1 i_0_27 (.A(ST), .ZN(n_0_24));
-   INV_X1 i_0_28 (.A(temperature[5]), .ZN(n_0_25));
-   AOI21_X1 i_0_29 (.A(SW), .B1(n_0_30), .B2(n_0_27), .ZN(n_0_26));
-   INV_X1 i_0_30 (.A(n_0_28), .ZN(n_0_27));
-   NAND2_X1 i_0_31 (.A1(n_0_29), .A2(ST), .ZN(n_0_28));
-   INV_X1 i_0_32 (.A(temperature[4]), .ZN(n_0_29));
-   NAND2_X1 i_0_33 (.A1(n_0_31), .A2(temperature[3]), .ZN(n_0_30));
-   NAND3_X1 i_0_34 (.A1(n_0_34), .A2(n_0_33), .A3(n_0_32), .ZN(n_0_31));
-   INV_X1 i_0_35 (.A(temperature[0]), .ZN(n_0_32));
-   INV_X1 i_0_36 (.A(temperature[1]), .ZN(n_0_33));
-   INV_X1 i_0_37 (.A(temperature[2]), .ZN(n_0_34));
+   INV_X1 i_0_21 (.A(SFD), .ZN(n_0_18));
+   INV_X1 i_0_22 (.A(temperature[5]), .ZN(n_0_19));
 endmodule
 
 module DFF_register(D, clk, enable, reset, Q);

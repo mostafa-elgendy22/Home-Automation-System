@@ -29,8 +29,8 @@ set MGC_libDbPath               ""            ; # REVIEW: Path to the lib.db if 
 
 ## This section contains variables related to tech files 
 
-set MGC_physical_library_tech   "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/lib_data/NangateOpenCellLibrary.tech.lef"   ; # REQUIRED: Path to Tech LEF file. Typically used for 40nm and above
-set MGC_physical_libraries      "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/lib_data/NangateOpenCellLibrary.macro.lef"            ; # REQUIRED: Path to standard cell and macro LEF files. For example lef/std_cell.lef
+set MGC_physical_library_tech   "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/lib_data/NangateOpenCellLibrary.tech.lef"   ; # REQUIRED: Path to Tech LEF file. Typically used for 40nm and above
+set MGC_physical_libraries      "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/lib_data/NangateOpenCellLibrary.macro.lef"            ; # REQUIRED: Path to standard cell and macro LEF files. For example lef/std_cell.lef
 set MGC_itf_to_lef_layer_map    ""            ; # REVIEW  : Path to a layer mapping file when there is a mismatch between LEF and PTF layer names. For example itf/map.txt
 set MGC_tech_rules              ""            ; # ADVANCED: Path to Tech Rule files needed for lower tech nodes (typically 28nm and below). For example tech_file.tcl 
 set MGC_disable_SDA_vias_creation false       ; # ADVANCED: Set to true to prevent Nitro from generating vias
@@ -53,7 +53,7 @@ set MGC_customNdrFile           ""            ; # ADVANCED: This is the user spe
 ## 	set MGC_parasitic_library(TYPICAL) TYPICAL.ptf
 ## 	set MGC_parasitic_library(CMAX)    CMAX.ptf
 ## 	set MGC_parasitic_library(CMIN)    CMIN.ptf
-set MGC_parasitic_library(new_rc) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/lib_data/NCSU_FreePDK_45nm.ptf
+set MGC_parasitic_library(new_rc) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/lib_data/NCSU_FreePDK_45nm.ptf
 
 ## REQUIRED: Identify the timing library files (.lib) corresponding to each PVT condition 
 ## 	     The name of the array key is a user generated label used to identify the .lib file(s) for a specific PVT condition
@@ -66,7 +66,7 @@ set MGC_parasitic_library(new_rc) /home/vlsi/Desktop/VLSI-Project/System_Impleme
 ## Alternatively :
 ## 	set MGC_timing_library(ss_0.90v_m40c) {ss_0.90v_m40c.lib}
 ## 	set MGC_timing_library(ss_0.90v_125c) {ss_0.90v_125c}
-set MGC_timing_library(new_pvt) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/lib_data/NangateOpenCellLibrary_typical.lib
+set MGC_timing_library(new_pvt) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/lib_data/NangateOpenCellLibrary_typical.lib
 
 ## REQUIRED: Provide names for the design analysis corners.
 ## 	     These names will be used to associate the PTF, .lib and temperatures to each analysis corner
@@ -122,7 +122,7 @@ set MGC_CornerTiming(corner_0_0) new_pvt
 ##########################################################################################################################
 #                   START: Variables needed to build design database dbs/import.db                                       #
 ##########################################################################################################################
-set MGC_importVerilogNetlist "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/output/verilog/home_automation_system.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
+set MGC_importVerilogNetlist "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/output/verilog/home_automation_system.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
                                                       #           match vg files only. NOT REQUIRED FOR mxdb flow.
 set MGC_topDesign            "home_automation_system"                     ; # REVIEW  : Name of top level module in verilog netlist(s).
 set MGC_nrf_floorplanning    "auto"                     ; # REVIEW  : Type floorplanning to be performed: auto | manual | none
@@ -156,12 +156,12 @@ set MGC_cornersPerMode(new_mode) corner_0_0
 ## Alternatively :
 ## 	set MGC_importConstraintsFile(func)  "/path/func.sdc  /path/user_constraints_func.sdc"
 ## 	set MGC_importConstraintsFile(shift) "/path/shift.sdc /path/user_constraints_shift.sdc"
-set MGC_importConstraintsFile(new_mode) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/constraints/module_func.sdc
+set MGC_importConstraintsFile(new_mode) /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/constraints/module_func.sdc
 
 set MGC_primary_power_net        ""         ; # REQUIRED: Primary power net name.
 set MGC_primary_ground_net       ""         ; # REQUIRED: Primary ground net name.
 set MGC_MultiVoltage             false      ; # ADVANCED: Enable if the design is multivoltage.  UPF file necessary if true.
-set MGC_UPF_File                 "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/constraints/module.85.upf"         ; # ADVANCED: Unified Power Format (UPF) for defining design power intent.
+set MGC_UPF_File                 "/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_2/constraints/module.85.upf"         ; # ADVANCED: Unified Power Format (UPF) for defining design power intent.
 set MGC_additional_MV_Setup_File ""         ; # ADVANCED: Additional MV file if necessary (ie, region creation, special settings, etc).
 set MGC_mxdb_flow                false      ; # ADVANCED: Set to true to use Oasys mxdb flow.
 set MGC_mxdb_path                ""         ; # ADVANCED: Path to mxdb when Oasys mxdb flow is used.

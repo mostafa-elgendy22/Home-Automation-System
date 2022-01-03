@@ -30,4 +30,4 @@ To Try floor planning & routing
 9. Then make sure there are no errors
 10. start
 11. nitro GUI opens and start playing !
-
+12. run the commands from the `nitro_script` file inside the nitro-SoC command line 
