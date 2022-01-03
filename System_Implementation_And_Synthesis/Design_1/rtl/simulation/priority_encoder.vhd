@@ -12,7 +12,7 @@ END ENTITY;
 
 ARCHITECTURE priority_encoder OF priority_encoder IS
 BEGIN
-       PROCESS (reset, SFD, SRD, SFA, SW, ST, reversed_priority)
+       PROCESS (reset, SFD, SRD, SFA, SW, ST, temperature, reversed_priority)
        BEGIN
               IF reversed_priority = '0' THEN
                      IF reset = '1' THEN
