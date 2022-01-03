@@ -1,0 +1,30 @@
+Report End Points: 
+-----+-------+------+-------+------+-----+-----+-----+------------------+------------------
+     |Group  |Launch|Capture|Shift |Delay|Depth|Slack|Begin Point       |End Point         
+-----+-------+------+-------+------+-----+-----+-----+------------------+------------------
+1    |default|sysclk|sysclk |1000.0|213.0|    4|597.6|counter/Q_reg[0]/Q|counter/Q_reg[1]/D
+2    |default|sysclk|sysclk |1000.0|140.3|    4|661.1|counter/Q_reg[0]/Q|counter/Q_reg[2]/D
+3    |default|sysclk|sysclk |1000.0|136.1|    5|664.0|counter/Q_reg[2]/Q|counter/Q_reg[0]/D
+-----+-------+------+-------+------+-----+-----+-----+------------------+------------------
+Report End Points: 
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack|Begin Point|End Point         
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
+1    |I2R  |rtDefaultClock|sysclk |1000.0|278.9|    7|489.4|SRD        |counter/Q_reg[1]/D
+2    |I2R  |rtDefaultClock|sysclk |1000.0|274.2|    7|494.1|SRD        |counter/Q_reg[0]/D
+3    |I2R  |rtDefaultClock|sysclk |1000.0|274.2|    7|494.1|SRD        |counter/Q_reg[2]/D
+-----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point            |End Point   
+-----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------
+1    |R2O  |sysclk|vsysclk|500.0| 61.0|    2|238.9|state_holder/Q_reg[0]/Q|alarm_buzzer
+2    |R2O  |sysclk|vsysclk|500.0| 56.7|    2|243.0|state_holder/Q_reg[1]/Q|rear_door   
+3    |R2O  |sysclk|vsysclk|500.0| 56.7|    2|243.2|state_holder/Q_reg[0]/Q|front_door  
+-----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------

@@ -1,0 +1,23 @@
+create_power_domain PD_TOP 
+
+create_supply_net VDD 
+create_supply_net VSS 
+create_supply_port VDD
+connect_supply_net VDD -ports {VDD}
+
+
+
+#create_power_domain PD_CPU -elements {i_cpu_sys}
+
+#create_supply_net VDD -domain PD_CPU -reuse
+#create_supply_net VSS -domain PD_CPU -reuse
+connect_supply_net VDD -ports {VDD}
+
+set_domain_supply_net PD_TOP -primary_power_net VDD -primary_ground_net VSS
+#set_domain_supply_net PD_CPU -primary_power_net VDD -primary_ground_net VSS
+
+add_port_state VDD -state {on85 0.85} -state {on95 0.95}
+
+create_pst pst1 -supplies {VDD}
+
+add_pst_state st0 -pst pst1 -state {on85}

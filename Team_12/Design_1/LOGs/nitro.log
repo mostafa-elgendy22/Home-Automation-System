@@ -1,0 +1,58 @@
+#---------------------------------------------------------------------
+# start session at Mon Jan 3 00:34:12 2022
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+--------------------------------------------------------------------------------
+|    Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019    | 
+| Running on localhost.localdomain 1core 3.9GBytes 3.2GHz 64bits mode pid 4440 | 
+|             Copyright (c) 2003-2019 Mentor Graphics Corporation              | 
+|                             All Rights Reserved                              | 
+|         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION          | 
+|             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION             | 
+|              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.               | 
+--------------------------------------------------------------------------------
+
+Nitro-SoC> exit
+#---------------------------------------------------------------------
+# end session at Mon Jan 3 00:36:41 2022
+#---------------------------------------------------------------------
+#---------------------------------------------------------------------
+# start session at Mon Jan 3 12:52:37 2022
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+--------------------------------------------------------------------------------
+|    Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019    | 
+| Running on localhost.localdomain 1core 3.9GBytes 3.2GHz 64bits mode pid 4506 | 
+|             Copyright (c) 2003-2019 Mentor Graphics Corporation              | 
+|                             All Rights Reserved                              | 
+|         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION          | 
+|             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION             | 
+|              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.               | 
+--------------------------------------------------------------------------------
+
+Nitro-SoC> ls
+clean_nitro.sh
+cleanup.sh
+constraints
+howToUse.md
+lib_data
+LOGs
+output
+rtl
+script
+scripts
+variables
+work
+Nitro-SoC> cd work 
+Nitro-SoC> start
+Nitro-SoC> read_db -file /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/work/dbs/floorplan.db/root.db -cpus 4
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+error used wrong file format
+Nitro-SoC> read_db -file /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/work/dbs/route.db/Design/home_automation_system/routing.db -cpus 4
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+error used wrong file format
+error UI158: Can't read or write to the terminal.
+info UI155: Nitro-SoC terminated with exit status of 2 (fatal).
+#---------------------------------------------------------------------
+# end session at Mon Jan 3 13:09:40 2022
+#---------------------------------------------------------------------
