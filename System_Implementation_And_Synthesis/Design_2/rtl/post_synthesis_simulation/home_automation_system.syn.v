@@ -1,10 +1,7 @@
 /*
- * Created by 
-   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 20:53:14 2022
+   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Sun Jan  2 23:34:44 2022
  * (C) Mentor Graphics Corporation
  */
-/* CheckSum: 2670321331 */
-
 module counter(clk, enable, reset, Q);
    input clk;
    input enable;

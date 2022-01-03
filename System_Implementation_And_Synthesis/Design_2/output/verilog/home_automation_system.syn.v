@@ -140,23 +140,14 @@ module DFF_register(D, clk, enable, reset, Q);
 
    wire n_0_0;
 
-<<<<<<< HEAD
-   DFF_X1 \Q_reg[2]  (.D(n_2), .CK(n_3), .Q(Q[2]), .QN());
-   DFF_X1 \Q_reg[1]  (.D(n_1), .CK(n_3), .Q(Q[1]), .QN());
-   DFF_X1 \Q_reg[0]  (.D(n_0), .CK(n_3), .Q(Q[0]), .QN());
-=======
    DFF_X2 \Q_reg[2]  (.D(n_2), .CK(n_3), .Q(Q[2]), .QN());
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
    AND2_X1 i_0_0 (.A1(D[0]), .A2(n_0_0), .ZN(n_0));
    AND2_X1 i_0_1 (.A1(D[1]), .A2(n_0_0), .ZN(n_1));
    AND2_X1 i_0_2 (.A1(D[2]), .A2(n_0_0), .ZN(n_2));
    INV_X1 i_0_3 (.A(reset), .ZN(n_0_0));
    INV_X1 i_0_4 (.A(clk), .ZN(n_3));
-<<<<<<< HEAD
-=======
    DFF_X2 \Q_reg[1]  (.D(n_1), .CK(n_3), .Q(Q[1]), .QN());
    DFF_X2 \Q_reg[0]  (.D(n_0), .CK(n_3), .Q(Q[0]), .QN());
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 endmodule
 
 module decoder(A, front_door, rear_door, alarm_buzzer, window_buzzer, heater, 
