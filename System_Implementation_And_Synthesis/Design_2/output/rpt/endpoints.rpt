@@ -1,5 +1,4 @@
 Report End Points: 
-<<<<<<< HEAD
 -----+-------+------+-------+------+-----+-----+-----+------------------+------------------
      |Group  |Launch|Capture|Shift |Delay|Depth|Slack|Begin Point       |End Point         
 -----+-------+------+-------+------+-----+-----+-----+------------------+------------------
@@ -15,23 +14,6 @@ Report End Points:
 2    |I2R  |rtDefaultClock|sysclk |1000.0|274.2|    7|494.1|SRD        |counter/Q_reg[0]/D
 3    |I2R  |rtDefaultClock|sysclk |1000.0|274.2|    7|494.1|SRD        |counter/Q_reg[2]/D
 -----+-----+--------------+-------+------+-----+-----+-----+-----------+------------------
-=======
------+-------+------+-------+-----+-----+-----+-----+------------------+------------------
-     |Group  |Launch|Capture|Shift|Delay|Depth|Slack|Begin Point       |End Point         
------+-------+------+-------+-----+-----+-----+-----+------------------+------------------
-1    |default|sysclk|sysclk |950.0|213.0|    4|547.7|counter/Q_reg[0]/Q|counter/Q_reg[1]/D
-2    |default|sysclk|sysclk |950.0|140.3|    4|611.2|counter/Q_reg[0]/Q|counter/Q_reg[2]/D
-3    |default|sysclk|sysclk |950.0|136.1|    5|614.0|counter/Q_reg[2]/Q|counter/Q_reg[0]/D
------+-------+------+-------+-----+-----+-----+-----+------------------+------------------
-Report End Points: 
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
-     |Group|Launch        |Capture|Shift|Delay|Depth|Slack|Begin Point|End Point         
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
-1    |I2R  |rtDefaultClock|sysclk |950.0|304.9|    7|413.4|SRD        |counter/Q_reg[1]/D
-2    |I2R  |rtDefaultClock|sysclk |950.0|300.2|    7|418.1|SRD        |counter/Q_reg[0]/D
-3    |I2R  |rtDefaultClock|sysclk |950.0|300.2|    7|418.1|SRD        |counter/Q_reg[2]/D
------+-----+--------------+-------+-----+-----+-----+-----+-----------+------------------
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
@@ -39,7 +21,6 @@ Report End Points:
 1    |I2O  |      |       |     |     |     |     |           |         
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
 Report End Points: 
-<<<<<<< HEAD
 -----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point            |End Point   
 -----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------
@@ -47,12 +28,3 @@ Report End Points:
 2    |R2O  |sysclk|vsysclk|500.0| 56.7|    2|243.0|state_holder/Q_reg[1]/Q|rear_door   
 3    |R2O  |sysclk|vsysclk|500.0| 56.7|    2|243.2|state_holder/Q_reg[0]/Q|front_door  
 -----+-----+------+-------+-----+-----+-----+-----+-----------------------+------------
-=======
------+-----+------+-------+-----+-----+-----+------+-----------------------+----------
-     |Group|Launch|Capture|Shift|Delay|Depth|Slack |Begin Point            |End Point 
------+-----+------+-------+-----+-----+-----+------+-----------------------+----------
-1    |R2O  |sysclk|vsysclk| 25.0| 52.1|    2|-261.1|state_holder/Q_reg[2]/Q|heater    
-2    |R2O  |sysclk|vsysclk| 25.0| 52.1|    2|-261.1|state_holder/Q_reg[2]/Q|cooler    
-3    |R2O  |sysclk|vsysclk| 25.0| 59.5|    2|-260.9|state_holder/Q_reg[0]/Q|front_door
------+-----+------+-------+-----+-----+-----+------+-----------------------+----------
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0

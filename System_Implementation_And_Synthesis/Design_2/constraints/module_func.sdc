@@ -13,11 +13,7 @@ set pad_load            0.01
 set transition          0.001
 set io_clock_period     1.0
 
-<<<<<<< HEAD
 set clock_period 1
-=======
-set clock_period 0.95
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
 
 
 
@@ -33,11 +29,7 @@ set_load                ${pad_load}   [ all_outputs ]
 set_input_transition    ${transition} [ all_inputs ]
 set_input_delay 0.2 [all_inputs]
 
-<<<<<<< HEAD
 set_output_delay -clock vsysclk [ expr 0.05 * ${io_clock_period} ] [ all_outputs ] 
-=======
-set_output_delay -clock vsysclk [ expr 0.08 * ${io_clock_period} ] [ all_outputs ] 
->>>>>>> 4cad45fd98b359e9ccf0f37605bf955e7b30e8a0
  #   [ remove_from_collection [ all_outputs ] [ get_ports { usb_plus usb_minus }] ]
 
 set_max_area 0.0
