@@ -16,11 +16,9 @@ sim:/home_automation_system/window_buzzer \
 sim:/home_automation_system/heater \
 sim:/home_automation_system/cooler \
 sim:/home_automation_system/counter_Q \
-sim:/home_automation_system/A \
-sim:/home_automation_system/state \
 sim:/home_automation_system/display
 
-
+radix signal sim:/home_automation_system/temperature Unsigned
 
 force -freeze sim:/home_automation_system/clk 0 0, 1 {100 ps} -r 200
 force -freeze sim:/home_automation_system/SFD 0 0
@@ -46,7 +44,11 @@ force -freeze sim:/home_automation_system/SFA 1 0
 run {400 ps}
 
 force -freeze sim:/home_automation_system/SFD 0 0
+force -freeze sim:/home_automation_system/SFA 0 0
+force -freeze sim:/home_automation_system/SW 0 0
 force -freeze sim:/home_automation_system/ST 1 0
 force -freeze sim:/home_automation_system/temperature 001000 0
-run {600 ps}
+run {400 ps}
 
+force -freeze sim:/home_automation_system/temperature 100000 0
+run {400 ps}
