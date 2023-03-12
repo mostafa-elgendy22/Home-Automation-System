@@ -1,0 +1,688 @@
+#---------------------------------------------------------------------
+# start session at Mon Jan 3 13:11:13 2022
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 1core 3.9GBytes 3.2GHz 64bits mode pid 5068 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+setup_nrf
+source flow_scripts/import_variables.tcl > LOGs/import.log
+source flow_scripts/0_import.tcl > LOGs/import0.log
+start
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+## trigger_gui -name main:activate_window -param design:view
+set_option -name window:main:view:location -value {-232 362}
+set_option -name window:main:view:location -value {671 234}
+## trigger_gui -name design:check_design
+set_option -name window:design:check_design:state -value visible
+set_option -name window:design:check_design:size -value {600 300}
+set_option -name window:design:check_design:state -value hidden
+## trigger_gui -name design:create_pg_rings
+set_option -name window:design:create_pg_rings:state -value visible
+set_option -name window:design:create_pg_rings:size -value {936 603}
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL8
+set_option -name trigger:design:create_pg_rings:step -value 16000
+set_option -name trigger:design:create_pg_rings:step -value 8000
+set_option -name window:design:create_pg_rings:location -value {176 75}
+set_option -name trigger:design:create_pg_rings:location_left -value 1
+set_option -name trigger:design:create_pg_rings:location_right -value 1
+set_option -name trigger:design:create_pg_rings:location_bottom -value 1
+set_option -name trigger:design:create_pg_rings:location_top -value 1
+set_option -name trigger:design:create_pg_rings:location_left -value 14
+set_option -name trigger:design:create_pg_rings:location_right -value 14
+set_option -name trigger:design:create_pg_rings:location_bottom -value 14
+set_option -name trigger:design:create_pg_rings:location_top -value 14
+set_option -name trigger:design:create_pg_rings:location_left -value 140
+set_option -name trigger:design:create_pg_rings:location_right -value 140
+set_option -name trigger:design:create_pg_rings:location_bottom -value 140
+set_option -name trigger:design:create_pg_rings:location_top -value 140
+set_option -name trigger:design:create_pg_rings:location_left -value 1400
+set_option -name trigger:design:create_pg_rings:location_right -value 1400
+set_option -name trigger:design:create_pg_rings:location_bottom -value 1400
+set_option -name trigger:design:create_pg_rings:location_top -value 1400
+create_pg_rings -partitions "home_automation_system" -nets "VDD" -window false -layers { metal1 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:size -value {757 600}
+set_option -name window:main:view:location -value {493 258}
+set_option -name window:design:create_pg_rings:location -value {708 401}
+zoom_to -target area -xl_area -6555a -yb_area 36574a -xr_area 137655a -yt_area 189684a
+zoom_to -target area -xl_area -6555a -yb_area 79703a -xr_area 137655a -yt_area 232813a
+zoom_to -target area -xl_area -6555a -yb_area 122832a -xr_area 137655a -yt_area 275942a
+zoom_to -target area -xl_area -6555a -yb_area 209091a -xr_area 137655a -yt_area 362201a
+zoom_to -target area -xl_area -6555a -yb_area 252220a -xr_area 137655a -yt_area 405330a
+zoom_to -target area -xl_area -31140a -yb_area 229487a -xr_area 149121a -yt_area 420874a
+zoom_to -target area -xl_area -61871a -yb_area 201071a -xr_area 163454a -yt_area 440304a
+set_option -name window:design:create_pg_rings:location -value {749 815}
+zoom_to -target area -xl_area -61871a -yb_area 197140a -xr_area 163454a -yt_area 436373a
+zoom_to -target area -xl_area -61871a -yb_area 175239a -xr_area 163454a -yt_area 414472a
+zoom_to -target area -xl_area -61871a -yb_area 146037a -xr_area 163454a -yt_area 385270a
+zoom_to -target area -xl_area -61871a -yb_area 57308a -xr_area 163454a -yt_area 296541a
+zoom_to -target area -xl_area -61871a -yb_area -28052a -xr_area 163454a -yt_area 211181a
+zoom_to -target area -xl_area -61871a -yb_area -69608a -xr_area 163454a -yt_area 169625a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -61871a -yb_area -69665a -xr_area 163454a -yt_area 169568a
+zoom_to -target area -xl_area -38552a -yb_area -42035a -xr_area 141707a -yt_area 149350a
+zoom_to -target area -xl_area -19897a -yb_area -19931a -xr_area 124309a -yt_area 133176a
+zoom_to -target area -xl_area -4972a -yb_area -2247a -xr_area 110391a -yt_area 120236a
+zoom_to -target area -xl_area 6967a -yb_area 11899a -xr_area 99257a -yt_area 109885a
+zoom_to -target area -xl_area 6762a -yb_area 12877a -xr_area 99052a -yt_area 110863a
+zoom_to -target area -xl_area 6762a -yb_area 14948a -xr_area 99052a -yt_area 112934a
+zoom_to -target area -xl_area 6762a -yb_area 19318a -xr_area 99052a -yt_area 117304a
+zoom_to -target area -xl_area 6762a -yb_area 34959a -xr_area 99052a -yt_area 132945a
+zoom_to -target area -xl_area 6762a -yb_area 47610a -xr_area 99052a -yt_area 145596a
+zoom_to -target area -xl_area 6762a -yb_area 54050a -xr_area 99052a -yt_area 152036a
+zoom_to -target area -xl_area 6762a -yb_area 56810a -xr_area 99052a -yt_area 154796a
+zoom_to -target area -xl_area 6762a -yb_area 58880a -xr_area 99052a -yt_area 156866a
+zoom_to -target area -xl_area 6762a -yb_area 62560a -xr_area 99052a -yt_area 160546a
+zoom_to -target area -xl_area 6762a -yb_area 63941a -xr_area 99052a -yt_area 161927a
+zoom_to -target area -xl_area 6762a -yb_area 66701a -xr_area 99052a -yt_area 164687a
+zoom_to -target area -xl_area 6762a -yb_area 72451a -xr_area 99052a -yt_area 170437a
+zoom_to -target area -xl_area 6762a -yb_area 76591a -xr_area 99052a -yt_area 174577a
+zoom_to -target area -xl_area 6762a -yb_area 80042a -xr_area 99052a -yt_area 178028a
+zoom_to -target area -xl_area 6762a -yb_area 81652a -xr_area 99052a -yt_area 179638a
+zoom_to -target area -xl_area 6762a -yb_area 83032a -xr_area 99052a -yt_area 181018a
+zoom_to -target area -xl_area 6762a -yb_area 82343a -xr_area 99052a -yt_area 180329a
+zoom_to -target area -xl_area 6762a -yb_area 81653a -xr_area 99052a -yt_area 179639a
+zoom_to -target area -xl_area 21419a -yb_area 93890a -xr_area 95251a -yt_area 172278a
+zoom_to -target area -xl_area 33145a -yb_area 103679a -xr_area 92210a -yt_area 166389a
+set_option -name window:design:create_pg_rings:location -value {199 328}
+set_option -name window:design:create_pg_rings:location -value {308 470}
+select_objects -objects [get_area_objects -type wire -xl_area 1400a -yb_area 134600a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @length == 128300.0000 && @width == 4000.0000 && @layer == metal1 && @orientation == horizontal && @route_type == pre_route"] -keep true
+select_objects -objects [get_area_objects -type wire -xl_area 1400a -yb_area 134600a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @length == 128300.0000 && @width == 4000.0000 && @layer == metal1 && @orientation == horizontal && @route_type == pre_route"] -keep false
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+set_option -name window:design:edit_delete:size -value {304 518}
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type wire -xl_area 1400a -yb_area 1400a -xr_area 5400a -yt_area 138600a -filter "@net_name == VDD && @length == 137200.0000 && @width == 4000.0000 && @layer == metal8 && @orientation == vertical && @route_type == pre_route"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+set_option -name window:design:create_pg_rings:location -value {1068 717}
+select_objects -objects [get_area_objects -type via -xl_area 1950a -yb_area 134750a -xr_area 4850a -yt_area 138450a -filter "@net_name == VDD && @top_layer == metal2"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type via -xl_area 1400a -yb_area 134600a -xr_area 5400a -yt_area 138600a -filter "@net_name == VDD && @top_layer == metal8"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+zoom_to -target area -xl_area 33135a -yb_area 101804a -xr_area 92200a -yt_area 164514a
+zoom_to -target area -xl_area 33135a -yb_area 91941a -xr_area 92200a -yt_area 154651a
+zoom_to -target area -xl_area 33135a -yb_area 85464a -xr_area 92200a -yt_area 148174a
+zoom_to -target area -xl_area 33135a -yb_area 44982a -xr_area 92200a -yt_area 107692a
+zoom_to -target area -xl_area 33135a -yb_area 28053a -xr_area 92200a -yt_area 90763a
+zoom_to -target area -xl_area 33135a -yb_area 20840a -xr_area 92200a -yt_area 83550a
+zoom_to -target area -xl_area 33135a -yb_area 13038a -xr_area 92200a -yt_area 75748a
+zoom_to -target area -xl_area 33135a -yb_area 5236a -xr_area 92200a -yt_area 67946a
+zoom_to -target area -xl_area 33135a -yb_area 378a -xr_area 92200a -yt_area 63088a
+zoom_to -target area -xl_area 33135a -yb_area -6835a -xr_area 92200a -yt_area 55875a
+zoom_to -target area -xl_area 33135a -yb_area -12429a -xr_area 92200a -yt_area 50281a
+zoom_to -target area -xl_area 33135a -yb_area -16698a -xr_area 92200a -yt_area 46012a
+zoom_to -target area -xl_area 33135a -yb_area -20967a -xr_area 92200a -yt_area 41743a
+zoom_to -target area -xl_area 33135a -yb_area -23764a -xr_area 92200a -yt_area 38946a
+zoom_to -target area -xl_area 33135a -yb_area -27444a -xr_area 92200a -yt_area 35266a
+zoom_to -target area -xl_area 33135a -yb_area -30977a -xr_area 92200a -yt_area 31733a
+zoom_to -target area -xl_area 33135a -yb_area -35834a -xr_area 92200a -yt_area 26876a
+zoom_to -target area -xl_area 33135a -yb_area -37307a -xr_area 92200a -yt_area 25403a
+zoom_to -target area -xl_area 33135a -yb_area -41576a -xr_area 92200a -yt_area 21134a
+zoom_to -target area -xl_area 33135a -yb_area -46581a -xr_area 92200a -yt_area 16129a
+zoom_to -target area -xl_area 33135a -yb_area -47905a -xr_area 92200a -yt_area 14805a
+zoom_to -target area -xl_area 33135a -yb_area -49377a -xr_area 92200a -yt_area 13333a
+zoom_to -target area -xl_area 33135a -yb_area -50114a -xr_area 92200a -yt_area 12596a
+zoom_to -target area -xl_area 33135a -yb_area -49378a -xr_area 92200a -yt_area 13332a
+zoom_to -target area -xl_area 33135a -yb_area -48642a -xr_area 92200a -yt_area 14068a
+zoom_to -target area -xl_area 33135a -yb_area -47906a -xr_area 92200a -yt_area 14804a
+zoom_to -target area -xl_area 33135a -yb_area -46582a -xr_area 92200a -yt_area 16128a
+zoom_to -target area -xl_area 33135a -yb_area -45109a -xr_area 92200a -yt_area 17601a
+zoom_to -target area -xl_area 33135a -yb_area -43785a -xr_area 92200a -yt_area 18925a
+zoom_to -target area -xl_area 33135a -yb_area -42313a -xr_area 92200a -yt_area 20397a
+zoom_to -target area -xl_area 33135a -yb_area -40104a -xr_area 92200a -yt_area 22606a
+zoom_to -target area -xl_area 33135a -yb_area -38780a -xr_area 92200a -yt_area 23930a
+zoom_to -target area -xl_area 33135a -yb_area -36572a -xr_area 92200a -yt_area 26138a
+zoom_to -target area -xl_area 33135a -yb_area -34511a -xr_area 92200a -yt_area 28199a
+zoom_to -target area -xl_area 33135a -yb_area -33039a -xr_area 92200a -yt_area 29671a
+zoom_to -target area -xl_area 33135a -yb_area -32303a -xr_area 92200a -yt_area 30407a
+zoom_to -target area -xl_area 33135a -yb_area -30978a -xr_area 92200a -yt_area 31732a
+select_objects -objects [get_area_objects -type wire -xl_area 1400a -yb_area 1400a -xr_area 129700a -yt_area 5400a -filter "@net_name == VDD && @length == 128300.0000 && @width == 4000.0000 && @layer == metal1 && @orientation == horizontal && @route_type == pre_route"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+zoom_to -target area -xl_area -33256a -yb_area -30978a -xr_area 25809a -yt_area 31732a
+select_objects -objects [get_area_objects -type via -xl_area 1950a -yb_area 1550a -xr_area 4850a -yt_area 5250a -filter "@net_name == VDD && @top_layer == metal2"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type via -xl_area 1400a -yb_area 1400a -xr_area 5400a -yt_area 5400a -filter "@net_name == VDD && @top_layer == metal8"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+zoom_to -target area -xl_area -32669a -yb_area -30978a -xr_area 26396a -yt_area 31732a
+zoom_to -target area -xl_area -28400a -yb_area -30978a -xr_area 30665a -yt_area 31732a
+zoom_to -target area -xl_area -25160a -yb_area -30978a -xr_area 33905a -yt_area 31732a
+zoom_to -target area -xl_area 6636a -yb_area -30978a -xr_area 65701a -yt_area 31732a
+zoom_to -target area -xl_area 25185a -yb_area -30978a -xr_area 84250a -yt_area 31732a
+zoom_to -target area -xl_area 30926a -yb_area -30978a -xr_area 89991a -yt_area 31732a
+zoom_to -target area -xl_area 39758a -yb_area -30978a -xr_area 98823a -yt_area 31732a
+zoom_to -target area -xl_area 45205a -yb_area -30978a -xr_area 104270a -yt_area 31732a
+zoom_to -target area -xl_area 48149a -yb_area -30978a -xr_area 107214a -yt_area 31732a
+zoom_to -target area -xl_area 54331a -yb_area -30978a -xr_area 113396a -yt_area 31732a
+zoom_to -target area -xl_area 60808a -yb_area -30978a -xr_area 119873a -yt_area 31732a
+zoom_to -target area -xl_area 64341a -yb_area -30978a -xr_area 123406a -yt_area 31732a
+zoom_to -target area -xl_area 70819a -yb_area -30978a -xr_area 129884a -yt_area 31732a
+zoom_to -target area -xl_area 76707a -yb_area -30978a -xr_area 135772a -yt_area 31732a
+zoom_to -target area -xl_area 82889a -yb_area -30978a -xr_area 141954a -yt_area 31732a
+zoom_to -target area -xl_area 85539a -yb_area -30978a -xr_area 144604a -yt_area 31732a
+zoom_to -target area -xl_area 90397a -yb_area -30978a -xr_area 149462a -yt_area 31732a
+zoom_to -target area -xl_area 93930a -yb_area -30978a -xr_area 152995a -yt_area 31732a
+zoom_to -target area -xl_area 94813a -yb_area -30978a -xr_area 153878a -yt_area 31732a
+zoom_to -target area -xl_area 96138a -yb_area -30978a -xr_area 155203a -yt_area 31732a
+zoom_to -target area -xl_area 96432a -yb_area -30978a -xr_area 155497a -yt_area 31732a
+zoom_to -target area -xl_area 97169a -yb_area -30978a -xr_area 156234a -yt_area 31732a
+select_objects -objects [get_area_objects -type via -xl_area 126250a -yb_area 1550a -xr_area 129150a -yt_area 5250a -filter "@net_name == VDD && @top_layer == metal2"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type via -xl_area 125700a -yb_area 1400a -xr_area 129700a -yt_area 5400a -filter "@net_name == VDD && @top_layer == metal8"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type wire -xl_area 125700a -yb_area 1400a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @length == 137200.0000 && @width == 4000.0000 && @layer == metal8 && @orientation == vertical && @route_type == pre_route"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+zoom_to -target area -xl_area 103281a -yb_area -22822a -xr_area 150533a -yt_area 27345a
+zoom_to -target area -xl_area 103249a -yb_area -22463a -xr_area 150501a -yt_area 27704a
+zoom_to -target area -xl_area 103249a -yb_area -19519a -xr_area 150501a -yt_area 30648a
+zoom_to -target area -xl_area 103249a -yb_area -9627a -xr_area 150501a -yt_area 40540a
+zoom_to -target area -xl_area 103249a -yb_area 265a -xr_area 150501a -yt_area 50432a
+zoom_to -target area -xl_area 103249a -yb_area 9450a -xr_area 150501a -yt_area 59617a
+zoom_to -target area -xl_area 103249a -yb_area 14514a -xr_area 150501a -yt_area 64681a
+zoom_to -target area -xl_area 103249a -yb_area 25819a -xr_area 150501a -yt_area 75986a
+zoom_to -target area -xl_area 103249a -yb_area 36418a -xr_area 150501a -yt_area 86585a
+zoom_to -target area -xl_area 103249a -yb_area 50667a -xr_area 150501a -yt_area 100834a
+zoom_to -target area -xl_area 103249a -yb_area 58440a -xr_area 150501a -yt_area 108607a
+zoom_to -target area -xl_area 103249a -yb_area 66212a -xr_area 150501a -yt_area 116379a
+zoom_to -target area -xl_area 103249a -yb_area 72571a -xr_area 150501a -yt_area 122738a
+zoom_to -target area -xl_area 103249a -yb_area 79755a -xr_area 150501a -yt_area 129922a
+zoom_to -target area -xl_area 103249a -yb_area 83994a -xr_area 150501a -yt_area 134161a
+zoom_to -target area -xl_area 103249a -yb_area 86820a -xr_area 150501a -yt_area 136987a
+zoom_to -target area -xl_area 103249a -yb_area 90353a -xr_area 150501a -yt_area 140520a
+zoom_to -target area -xl_area 103249a -yb_area 94593a -xr_area 150501a -yt_area 144760a
+zoom_to -target area -xl_area 103249a -yb_area 98832a -xr_area 150501a -yt_area 148999a
+zoom_to -target area -xl_area 103249a -yb_area 100245a -xr_area 150501a -yt_area 150412a
+zoom_to -target area -xl_area 103249a -yb_area 100952a -xr_area 150501a -yt_area 151119a
+zoom_to -target area -xl_area 103249a -yb_area 101659a -xr_area 150501a -yt_area 151826a
+zoom_to -target area -xl_area 103249a -yb_area 102365a -xr_area 150501a -yt_area 152532a
+zoom_to -target area -xl_area 103249a -yb_area 101660a -xr_area 150501a -yt_area 151827a
+zoom_to -target area -xl_area 103249a -yb_area 100953a -xr_area 150501a -yt_area 151120a
+select_objects -objects [get_area_objects -type via -xl_area 126250a -yb_area 134750a -xr_area 129150a -yt_area 138450a -filter "@net_name == VDD && @top_layer == metal2"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+select_objects -objects [get_area_objects -type via -xl_area 125700a -yb_area 134600a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @top_layer == metal8"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+set_option -name window:design:create_pg_rings:location -value {481 413}
+set_option -name trigger:design:create_pg_rings:hor_ver_layer_link -value true
+set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL8
+create_pg_rings -partitions "home_automation_system" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+zoom_to -target area -xl_area 95841a -yb_area 95389a -xr_area 154905a -yt_area 158097a
+zoom_to -target area -xl_area 71147a -yb_area 76841a -xr_area 169587a -yt_area 181354a
+zoom_to -target area -xl_area 55713a -yb_area 65249a -xr_area 178763a -yt_area 195890a
+set_option -name window:design:create_pg_rings:location -value {828 423}
+zoom_to -target area -xl_area 55699a -yb_area 63720a -xr_area 178749a -yt_area 194361a
+zoom_to -target area -xl_area 55393a -yb_area 56054a -xr_area 178443a -yt_area 186695a
+zoom_to -target area -xl_area 55086a -yb_area 36120a -xr_area 178136a -yt_area 166761a
+zoom_to -target area -xl_area 54779a -yb_area 26307a -xr_area 177829a -yt_area 156948a
+zoom_to -target area -xl_area 54473a -yb_area 22013a -xr_area 177523a -yt_area 152654a
+zoom_to -target area -xl_area 54166a -yb_area 21400a -xr_area 177216a -yt_area 152041a
+zoom_to -target area -xl_area 53859a -yb_area 17107a -xr_area 176909a -yt_area 147748a
+zoom_to -target area -xl_area 53553a -yb_area 12200a -xr_area 176603a -yt_area 142841a
+zoom_to -target area -xl_area 53246a -yb_area 5147a -xr_area 176296a -yt_area 135788a
+zoom_to -target area -xl_area 52939a -yb_area 1467a -xr_area 175989a -yt_area 132108a
+zoom_to -target area -xl_area 52633a -yb_area -3440a -xr_area 175683a -yt_area 127201a
+zoom_to -target area -xl_area 52326a -yb_area -6200a -xr_area 175376a -yt_area 124441a
+zoom_to -target area -xl_area 52019a -yb_area -7120a -xr_area 175069a -yt_area 123521a
+zoom_to -target area -xl_area 51713a -yb_area -7120a -xr_area 174763a -yt_area 123521a
+zoom_to -target area -xl_area 51406a -yb_area -6201a -xr_area 174456a -yt_area 124440a
+zoom_to -target area -xl_area 51099a -yb_area -4974a -xr_area 174149a -yt_area 125667a
+zoom_to -target area -xl_area 50793a -yb_area -3441a -xr_area 173843a -yt_area 127200a
+zoom_to -target area -xl_area 50486a -yb_area -2828a -xr_area 173536a -yt_area 127813a
+zoom_to -target area -xl_area 50179a -yb_area -1908a -xr_area 173229a -yt_area 128733a
+zoom_to -target area -xl_area 49873a -yb_area -1294a -xr_area 172923a -yt_area 129347a
+zoom_to -target area -xl_area 49566a -yb_area -1907a -xr_area 172616a -yt_area 128734a
+zoom_to -target area -xl_area 49259a -yb_area -1907a -xr_area 172309a -yt_area 128734a
+zoom_to -target area -xl_area 48953a -yb_area -1907a -xr_area 172003a -yt_area 128734a
+zoom_to -target area -xl_area 48646a -yb_area -1907a -xr_area 171696a -yt_area 128734a
+zoom_to -target area -xl_area 48339a -yb_area 65253a -xr_area 171389a -yt_area 195894a
+zoom_to -target area -xl_area 48033a -yb_area 64640a -xr_area 171083a -yt_area 195281a
+zoom_to -target area -xl_area 47726a -yb_area 63107a -xr_area 170776a -yt_area 193748a
+zoom_to -target area -xl_area 47419a -yb_area 61574a -xr_area 170469a -yt_area 192215a
+zoom_to -target area -xl_area 47113a -yb_area 60347a -xr_area 170163a -yt_area 190988a
+zoom_to -target area -xl_area 46806a -yb_area 58814a -xr_area 169856a -yt_area 189455a
+zoom_to -target area -xl_area 46499a -yb_area 57280a -xr_area 169549a -yt_area 187921a
+zoom_to -target area -xl_area 46193a -yb_area 55440a -xr_area 169243a -yt_area 186081a
+zoom_to -target area -xl_area 45886a -yb_area 51760a -xr_area 168936a -yt_area 182401a
+zoom_to -target area -xl_area 45579a -yb_area 47467a -xr_area 168629a -yt_area 178108a
+zoom_to -target area -xl_area 45272a -yb_area 45320a -xr_area 168322a -yt_area 175961a
+zoom_to -target area -xl_area 44966a -yb_area 44094a -xr_area 168016a -yt_area 174735a
+zoom_to -target area -xl_area 44659a -yb_area 42560a -xr_area 167709a -yt_area 173201a
+zoom_to -target area -xl_area 44352a -yb_area 41947a -xr_area 167402a -yt_area 172588a
+zoom_to -target area -xl_area 44046a -yb_area 38880a -xr_area 167096a -yt_area 169521a
+zoom_to -target area -xl_area 43739a -yb_area 36120a -xr_area 166789a -yt_area 166761a
+zoom_to -target area -xl_area 43432a -yb_area 33973a -xr_area 166482a -yt_area 164614a
+zoom_to -target area -xl_area 43126a -yb_area 31213a -xr_area 166176a -yt_area 161854a
+zoom_to -target area -xl_area 42819a -yb_area 29680a -xr_area 165869a -yt_area 160321a
+zoom_to -target area -xl_area 42512a -yb_area 29067a -xr_area 165562a -yt_area 159708a
+zoom_to -target area -xl_area 42206a -yb_area 28453a -xr_area 165256a -yt_area 159094a
+zoom_to -target area -xl_area 41899a -yb_area 27840a -xr_area 164949a -yt_area 158481a
+zoom_to -target area -xl_area 41592a -yb_area 26920a -xr_area 164642a -yt_area 157561a
+zoom_to -target area -xl_area 41286a -yb_area 25693a -xr_area 164336a -yt_area 156334a
+zoom_to -target area -xl_area 40979a -yb_area 24160a -xr_area 164029a -yt_area 154801a
+zoom_to -target area -xl_area 40672a -yb_area 22627a -xr_area 163722a -yt_area 153268a
+zoom_to -target area -xl_area 40366a -yb_area 20480a -xr_area 163416a -yt_area 151121a
+zoom_to -target area -xl_area 40059a -yb_area 19867a -xr_area 163109a -yt_area 150508a
+zoom_to -target area -xl_area 39752a -yb_area 18640a -xr_area 162802a -yt_area 149281a
+zoom_to -target area -xl_area 39446a -yb_area 17720a -xr_area 162496a -yt_area 148361a
+zoom_to -target area -xl_area 39139a -yb_area 17107a -xr_area 162189a -yt_area 147748a
+zoom_to -target area -xl_area 38832a -yb_area 16493a -xr_area 161882a -yt_area 147134a
+zoom_to -target area -xl_area 38526a -yb_area 15573a -xr_area 161576a -yt_area 146214a
+zoom_to -target area -xl_area 38219a -yb_area 14960a -xr_area 161269a -yt_area 145601a
+zoom_to -target area -xl_area 37912a -yb_area 14347a -xr_area 160962a -yt_area 144988a
+zoom_to -target area -xl_area 37606a -yb_area 13427a -xr_area 160656a -yt_area 144068a
+zoom_to -target area -xl_area 37299a -yb_area 12813a -xr_area 160349a -yt_area 143454a
+zoom_to -target area -xl_area 36992a -yb_area 12200a -xr_area 160042a -yt_area 142841a
+zoom_to -target area -xl_area 36686a -yb_area 11280a -xr_area 159736a -yt_area 141921a
+zoom_to -target area -xl_area 36379a -yb_area 10053a -xr_area 159429a -yt_area 140694a
+zoom_to -target area -xl_area 36072a -yb_area 10053a -xr_area 159122a -yt_area 140694a
+zoom_to -target area -xl_area 35766a -yb_area 10666a -xr_area 158816a -yt_area 141307a
+zoom_to -target area -xl_area 35459a -yb_area 11279a -xr_area 158509a -yt_area 141920a
+zoom_to -target area -xl_area 35152a -yb_area 12812a -xr_area 158202a -yt_area 143453a
+create_pg_rings -partitions "home_automation_system" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+set_option -name window:design:create_pg_rings:state -value hidden
+## trigger_gui -name design:create_pg_rings
+set_option -name window:design:create_pg_rings:state -value visible
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL7
+set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL7
+set_option -name trigger:design:create_pg_rings:step -value 16000
+set_option -name trigger:design:create_pg_rings:step -value 8000
+set_option -name window:main:view:location -value {154 737}
+set_option -name window:main:errors:location -value {17 621}
+set_option -name trigger:design:create_pg_rings:location_left -value 9
+set_option -name trigger:design:create_pg_rings:location_right -value 9
+set_option -name trigger:design:create_pg_rings:location_bottom -value 9
+set_option -name trigger:design:create_pg_rings:location_top -value 9
+set_option -name trigger:design:create_pg_rings:location_left -value 94
+set_option -name trigger:design:create_pg_rings:location_right -value 94
+set_option -name trigger:design:create_pg_rings:location_bottom -value 94
+set_option -name trigger:design:create_pg_rings:location_top -value 94
+set_option -name trigger:design:create_pg_rings:location_left -value 940
+set_option -name trigger:design:create_pg_rings:location_right -value 940
+set_option -name trigger:design:create_pg_rings:location_bottom -value 940
+set_option -name trigger:design:create_pg_rings:location_top -value 940
+set_option -name trigger:design:create_pg_rings:location_left -value 9400
+set_option -name trigger:design:create_pg_rings:location_right -value 9400
+set_option -name trigger:design:create_pg_rings:location_bottom -value 9400
+set_option -name trigger:design:create_pg_rings:location_top -value 9400
+create_pg_rings -partitions "home_automation_system" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+create_pg_rings -partitions "home_automation_system" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
+set_option -name window:design:create_pg_rings:state -value hidden
+set_option -name window:main:view:location -value {524 452}
+zoom_to -target area -xl_area 12180a -yb_area -18850a -xr_area 165992a -yt_area 144449a
+zoom_to -target area -xl_area -16533a -yb_area -58428a -xr_area 175731a -yt_area 145694a
+zoom_to -target area -xl_area 12181a -yb_area -18848a -xr_area 165991a -yt_area 144448a
+zoom_to -target area -xl_area 35152a -yb_area 12815a -xr_area 158199a -yt_area 143451a
+zoom_to -target area -xl_area 53528a -yb_area 38145a -xr_area 151965a -yt_area 142653a
+zoom_to -target area -xl_area 68229a -yb_area 58409a -xr_area 146978a -yt_area 142015a
+zoom_to -target area -xl_area 79990a -yb_area 74620a -xr_area 142988a -yt_area 141504a
+zoom_to -target area -xl_area 89398a -yb_area 87589a -xr_area 139796a -yt_area 141095a
+zoom_to -target area -xl_area 96925a -yb_area 97964a -xr_area 137242a -yt_area 140768a
+zoom_to -target area -xl_area 102946a -yb_area 106264a -xr_area 135199a -yt_area 140506a
+zoom_to -target area -xl_area 107763a -yb_area 112904a -xr_area 133565a -yt_area 140297a
+zoom_to -target area -xl_area 111616a -yb_area 118216a -xr_area 132257a -yt_area 140129a
+zoom_to -target area -xl_area 114698a -yb_area 122465a -xr_area 131210a -yt_area 139995a
+select_objects -objects [get_area_objects -type via -xl_area 125700a -yb_area 134600a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @top_layer == metal7"] -keep true
+select_objects -objects [get_area_objects -type wire -xl_area 1400a -yb_area 134600a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @length == 128300.0000 && @width == 4000.0000 && @layer == metal8 && @orientation == horizontal && @route_type == pre_route"] -keep false
+select_objects -objects [get_area_objects -type wire -xl_area 125700a -yb_area 1400a -xr_area 129700a -yt_area 138600a -filter "@net_name == VDD && @length == 137200.0000 && @width == 4000.0000 && @layer == metal8 && @orientation == vertical && @route_type == pre_route"] -keep false
+select_objects -objects [get_area_objects -type wire -xl_area 117700a -yb_area 9400a -xr_area 121700a -yt_area 130600a -filter "@net_name == VSS && @length == 121200.0000 && @width == 4000.0000 && @layer == metal7 && @orientation == vertical && @route_type == pre_route"] -keep false
+select_objects -objects [get_area_objects -type wire -xl_area 9400a -yb_area 126600a -xr_area 121700a -yt_area 130600a -filter "@net_name == VSS && @length == 112300.0000 && @width == 4000.0000 && @layer == metal7 && @orientation == horizontal && @route_type == pre_route"] -keep false
+clear_selection
+zoom_to -target area -xl_area 110546a -yb_area 120386a -xr_area 131185a -yt_area 142298a
+zoom_to -target area -xl_area 105356a -yb_area 117788a -xr_area 131154a -yt_area 145177a
+zoom_to -target area -xl_area 98869a -yb_area 114541a -xr_area 131116a -yt_area 148777a
+zoom_to -target area -xl_area 90760a -yb_area 110482a -xr_area 131068a -yt_area 153277a
+zoom_to -target area -xl_area 80623a -yb_area 105409a -xr_area 131008a -yt_area 158902a
+zoom_to -target area -xl_area 67952a -yb_area 99067a -xr_area 130933a -yt_area 165933a
+zoom_to -target area -xl_area 52114a -yb_area 91140a -xr_area 130840a -yt_area 174722a
+zoom_to -target area -xl_area 32316a -yb_area 81232a -xr_area 130723a -yt_area 185708a
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 1257}
+set_option -name window:main:message_area:location -value {328 1097}
+set_option -name window:main:message_area:size -value {2232 237}
+set_option -name window:main:message_area:state -value hidden
+zoom_to -target area -xl_area 42173a -yb_area 84925a -xr_area 120898a -yt_area 168505a
+zoom_to -target area -xl_area 50059a -yb_area 87879a -xr_area 113039a -yt_area 154743a
+zoom_to -target area -xl_area 42173a -yb_area 84924a -xr_area 120898a -yt_area 168504a
+zoom_to -target area -xl_area -16971a -yb_area 62767a -xr_area 179840a -yt_area 271717a
+zoom_to -target area -xl_area -41614a -yb_area 53535a -xr_area 204398a -yt_area 314721a
+zoom_to -target area -xl_area -41614a -yb_area 52469a -xr_area 204398a -yt_area 313655a
+zoom_to -target area -xl_area -41614a -yb_area -2753a -xr_area 204398a -yt_area 258433a
+zoom_to -target area -xl_area -41614a -yb_area -62026a -xr_area 204398a -yt_area 199160a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+zoom_to -target area -xl_area -41614a -yb_area -69841a -xr_area 204398a -yt_area 191345a
+set_option -name window:hierarchy:explorer:size -value {260 701}
+set_option -name window:hierarchy:explorer:size -value {260 1257}
+## trigger_gui -name design:create_pg_stripes
+set_option -name window:design:create_pg_stripes:state -value visible
+set_option -name window:design:create_pg_stripes:size -value {758 575}
+set_option -name trigger:design:create_pg_stripes:layers -value METAL8
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
+set_option -name window:design:create_pg_stripes:location -value {-100 -17}
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
+set_option -name trigger:design:create_pg_stripes:offset_link -value true
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 174
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
+set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:margin_link -value true
+set_option -name trigger:design:create_pg_stripes:start_length -value 1
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1
+set_option -name trigger:design:create_pg_stripes:start_length -value 14
+set_option -name trigger:design:create_pg_stripes:stop_length -value 14
+set_option -name trigger:design:create_pg_stripes:start_length -value 140
+set_option -name trigger:design:create_pg_stripes:stop_length -value 140
+set_option -name trigger:design:create_pg_stripes:start_length -value 1400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
+create_pg_stripes -partitions "home_automation_system" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+set_option -name window:design:create_pg_stripes:state -value hidden
+## trigger_gui -name design:create_pg_stripes
+set_option -name window:design:create_pg_stripes:state -value visible
+set_option -name trigger:design:create_pg_stripes:layers -value METAL7
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
+set_option -name trigger:design:create_pg_stripes:start_length -value 9
+set_option -name trigger:design:create_pg_stripes:stop_length -value 9
+set_option -name trigger:design:create_pg_stripes:start_length -value 94
+set_option -name trigger:design:create_pg_stripes:stop_length -value 94
+set_option -name trigger:design:create_pg_stripes:start_length -value 941
+set_option -name trigger:design:create_pg_stripes:stop_length -value 941
+set_option -name trigger:design:create_pg_stripes:start_length -value 94
+set_option -name trigger:design:create_pg_stripes:stop_length -value 94
+set_option -name trigger:design:create_pg_stripes:start_length -value 940
+set_option -name trigger:design:create_pg_stripes:stop_length -value 940
+set_option -name trigger:design:create_pg_stripes:start_length -value 9400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 9400
+create_pg_stripes -partitions "home_automation_system" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+set_option -name window:design:create_pg_stripes:state -value hidden
+set_option -name window:main:message_area:state -value visible
+source flow_scripts/3_route.tcl  > LOGs/route3.log 
+# get_config -name process -param node
+# config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
+# config_shell -echo false
+# config_shell -echo false
+# config_timing -disable_clock_gating_checks false
+# set_crpr_spec -method graph_based
+# config_flows -preserve_rcd false
+# config_shell -echo false
+# source scr/config.tcl
+# config_timing -rc_degrade_min_slew_when_rd_less_than_rnet false
+# config_timing -disable_recovery_removal false
+# config_timing -enable_exception_proxy true
+# config_timing -disable_time_borrow false
+# config_timing -disable_annotation_factor_calc true
+# config_timing -enable_clock_propagation_through_three_state_enable_pins false
+# config_timing -disable_internal_inout_cell_paths true
+# config_timing -enable_cond_arcs_with_default true 
+# config_timing -enable_default_for_cond_arcs true
+# config_timing -enable_setup_independent_hold_checks true
+# config_timing -enable_ideal_clock_data_tags true
+# config_timing -enable_clock_gating_propagate true
+# config_timing -disable_seq_case_analysis true
+# config_timing -early_launch_at_borrowing_latches false
+# config_timing -enable_preset_clear_arcs false
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -pt_min_max_compatibility on_chip_variation
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -disable_sequential_generation_of_waveform_preserving_clocks false
+# config_timing -capacitance_violation_threshold 0
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_default_input_delay false
+# config_extraction -gr_short_route_gcell_span 3
+# config_extraction -search_distance_multiple 15
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# config_extraction -coupling_abs_threshold 0.1f
+# config_extraction -coupling_rel_threshold 1.0
+# ta_debug -cc_ratio 0
+# config_route_timing -name dvia_mode -value dfm
+# config_place_detail -name follow_drc_for
+# source nrf_customization.tcl
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# set_crpr_spec -crpr_threshold 5p
+# set_crpr_spec -method graph_based
+# set_crpr_spec -transition same_transition
+# fk_msg Max Length Constraint
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_max_length -length_threshold 1000u
+# report_max_length
+# fk_msg Max Length Set to 10000000
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Running RRT with Interleave Optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# run_route_timing -mode interleave_opt -cpus 2 -messages verbose
+# help run_route_timing -return
+# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 2 messages verbose timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode interleave_opt trial false dump_qor_stages {} user_params {}
+# fk_msg Setting up run_route_timing flow ...
+
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id UI24 -max_messages 0
+# config_messages -message_id UI24 -max_log_messages 0
+# config_messages -message_id UI34 -max_messages 0
+# config_messages -message_id UI34 -max_log_messages 0
+# config_messages -message_id UI54 -max_messages 0
+# config_messages -message_id UI54 -max_log_messages 0
+# config_messages -message_id UI705 -max_messages 0
+# config_messages -message_id UI705 -max_log_messages 0
+# config_messages -message_id UI156 -max_messages 0
+# config_messages -message_id UI156 -max_log_messages 0
+# config_messages -message_id config1 -max_messages 0
+# config_messages -message_id config1 -max_log_messages 0
+# config_messages -message_id config3 -max_messages 0
+# config_messages -message_id config3 -max_log_messages 0
+# config_messages -message_id config5 -max_messages 0
+# config_messages -message_id config5 -max_log_messages 0
+# config_messages -message_id CSDB57 -max_messages 0
+# config_messages -message_id CSDB57 -max_log_messages 0
+# config_messages -message_id CSDB87 -max_messages 0
+# config_messages -message_id CSDB87 -max_log_messages 0
+# config_messages -message_id TA_CMDS1618 -max_messages 0
+# config_messages -message_id TA_CMDS1618 -max_log_messages 0
+# config_messages -message_id TA_CMDS1619 -max_messages 0
+# config_messages -message_id TA_CMDS1619 -max_log_messages 0
+# config_messages -message_id TA_CMDS7412 -max_messages 0
+# config_messages -message_id TA_CMDS7412 -max_log_messages 0
+# config_messages -message_id SDB43 -max_messages 0
+# config_messages -message_id SDB43 -max_log_messages 0
+# config_messages -message_id CSDB45 -max_messages 0
+# config_messages -message_id CSDB45 -max_log_messages 0
+# fk_msg 'design' variable does not exist, using 'top_partition' as design name
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
+# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# fk_msg -set_prompt RRT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level _d%ve_
+# fk_msg -set_verbosity_filter debug
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value debug -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_application -cpus 1
+# config_timing -cpus 2
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_global -argument messages -value normal
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument messages -value normal
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument messages -value normal
+# config_default_value -command route_si_repair -argument check -value  
+# config_default_value -command route_si_repair -argument messages -value normal
+# config_route_final -opt_strict_drc false
+# write_db -data design -file dbs/route.db
+# save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
+# config_shell -echo false
+set_option -name window:main:errors:state -value hidden
+set_option -name window:main:message_area:location -value {328 719}
+set_option -name window:main:message_area:size -value {2232 615}
+## trigger_gui -name design:check_design
+set_option -name window:design:check_design:state -value visible
+zoom_to -target area -xl_area -66852a -yb_area -107785a -xr_area 240662a -yt_area 218696a
+set_option -name window:main:errors:state -value visible
+zoom_to -target area -xl_area -98399a -yb_area -155216a -xr_area 285992a -yt_area 252884a
+zoom_to -target area -xl_area -137832a -yb_area -214505a -xr_area 342655a -yt_area 295619a
+zoom_to -target area -xl_area -98397a -yb_area -155215a -xr_area 285991a -yt_area 252883a
+zoom_to -target area -xl_area -45818a -yb_area -76162a -xr_area 210439a -yt_area 195902a
+zoom_to -target area -xl_area -10766a -yb_area -23460a -xr_area 160072a -yt_area 157915a
+zoom_to -target area -xl_area 3254a -yb_area -2379a -xr_area 139924a -yt_area 142720a
+zoom_to -target area -xl_area 14470a -yb_area 14485a -xr_area 123806a -yt_area 130564a
+zoom_to -target area -xl_area 23443a -yb_area 27976a -xr_area 110911a -yt_area 120839a
+set_option -name window:main:errors:location -value {7 613}
+set_option -name window:main:errors:location -value {515 482}
+set_option -name window:design:check_design:state -value hidden
+set_option -name window:main:message_area:state -value hidden
+zoom_to -target area -xl_area 12434a -yb_area 16671a -xr_area 121768a -yt_area 132749a
+zoom_to -target area -xl_area -1327a -yb_area 2540a -xr_area 135339a -yt_area 147637a
+zoom_to -target area -xl_area -18528a -yb_area -15122a -xr_area 152303a -yt_area 166247a
+zoom_to -target area -xl_area -42102a -yb_area -24986a -xr_area 171435a -yt_area 201724a
+zoom_to -target area -xl_area -71569a -yb_area -37316a -xr_area 195351a -yt_area 246070a
+zoom_to -target area -xl_area -108403a -yb_area -52728a -xr_area 225245a -yt_area 301503a
+zoom_to -target area -xl_area -71567a -yb_area -37315a -xr_area 195350a -yt_area 246068a
+zoom_to -target area -xl_area -22453a -yb_area -16765a -xr_area 155490a -yt_area 172156a
+zoom_to -target area -xl_area 10288a -yb_area -3064a -xr_area 128916a -yt_area 122881a
+zoom_to -target area -xl_area 23384a -yb_area 2415a -xr_area 118286a -yt_area 103171a
+zoom_to -target area -xl_area 33861a -yb_area 6798a -xr_area 109782a -yt_area 87402a
+zoom_to -target area -xl_area 47830a -yb_area 12643a -xr_area 98444a -yt_area 66379a
+zoom_to -target area -xl_area 53418a -yb_area 14981a -xr_area 93908a -yt_area 57969a
+zoom_to -target area -xl_area 57888a -yb_area 16851a -xr_area 90280a -yt_area 51241a
+select_objects -objects [get_area_objects -type wire -xl_area 71400a -yb_area 1400a -xr_area 75400a -yt_area 138600a -filter "@net_name == VDD && @length == 137200.0000 && @width == 4000.0000 && @layer == metal8 && @orientation == vertical && @route_type == pre_route"] -keep true
+select_objects -objects [get_area_objects -type cell -xl_area 71300a -yb_area 20000a -xr_area 77000a -yt_area 34000a -filter "@name == i_0_0_1 && @xorigin == 71300 && @yorigin == 20000"] -keep false
+select_objects -objects [get_area_objects -type cell -xl_area 77000a -yb_area 20000a -xr_area 109300a -yt_area 34000a -filter {@name == Q_reg[1] && @xorigin == 77000 && @yorigin == 20000}] -keep false
+select_objects -objects [get_area_objects -type cell -xl_area 71300a -yb_area 20000a -xr_area 77000a -yt_area 34000a -filter "@name == i_0_0_1 && @xorigin == 71300 && @yorigin == 20000"] -keep false
+zoom_to -target area -xl_area 53207a -yb_area 13822a -xr_area 93697a -yt_area 56809a
+zoom_to -target area -xl_area -40405a -yb_area -46742a -xr_area 162045a -yt_area 168193a
+zoom_to -target area -xl_area -69658a -yb_area -65668a -xr_area 183403a -yt_area 202999a
+zoom_to -target area -xl_area -40403a -yb_area -46740a -xr_area 162044a -yt_area 168192a
+zoom_to -target area -xl_area -16999a -yb_area -31597a -xr_area 144957a -yt_area 140346a
+zoom_to -target area -xl_area -16999a -yb_area -31211a -xr_area 144957a -yt_area 140732a
+zoom_to -target area -xl_area -16999a -yb_area -27842a -xr_area 144957a -yt_area 144101a
+zoom_to -target area -xl_area -16999a -yb_area -20123a -xr_area 144957a -yt_area 151820a
+zoom_to -target area -xl_area -16999a -yb_area -16614a -xr_area 144957a -yt_area 155329a
+zoom_to -target area -xl_area -16999a -yb_area -16893a -xr_area 144957a -yt_area 155050a
+clear_selection
+set_option -name window:main:message_area:state -value visible
+ write_verilog -file netlist.v 
+## trigger_gui -name main:save_design_as
+set_option -name window:main:save_design_as:state -value visible
+set_option -name window:main:save_design_as:location -value {505 78}
+set_option -name window:main:save_design_as:size -value {500 350}
+set_option -name trigger:main:save_design_as:file_name -value netlist
+write_db -file netlist -overwrite true -data all
+set_option -name window:main:save_design_as:state -value hidden
+set_option -name window:main:message_area:state -value hidden
+set_option -name window:main:view:location -value {-1 27}
+## trigger_gui -name main:save_design_as
+set_option -name window:main:save_design_as:state -value visible
+set_option -name window:main:save_design_as:location -value {1030 503}
+set_option -name window:hierarchy:explorer:size -value {260 738}
+set_option -name window:main:view:location -value {99 147}
+set_option -name window:main:view:size -value {1200 837}
+set_option -name window:main:save_design_as:state -value hidden
+set_option -name window:hierarchy:explorer:size -value {260 1257}
+set_option -name window:main:view:location -value {-1 27}
+## trigger_gui -name main:save_design_as
+set_option -name window:main:save_design_as:state -value visible
+set_option -name trigger:main:save_design_as:file_name -value floorplanning_routing
+write_db -file floorplanning_routing -overwrite true -data all
+set_option -name window:main:save_design_as:state -value hidden

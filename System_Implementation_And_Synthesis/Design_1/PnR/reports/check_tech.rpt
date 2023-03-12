@@ -1,0 +1,58 @@
+info CHK10: Checking technology...
+-----------------------------------------------------------------------------------------------------------
+|                                            Technology Errors                                            |
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| Name                 | Count | Status | Description                                                     | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| no_parasitics        | 0     | Passed | Layer has no corresponding parasitics data                      | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| no_ndr_vias          | 0     | Passed | No vias at all in non default rule.                             | 
+|                      |       |        | Use default vias                                                | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| partial_ndr_vias     | 0     | Passed | Not all layers have vias in non default rule.                   | 
+|                      |       |        | Use default vias                                                | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| duplicate_lvias      | 0     | Passed | Duplicate name for some lib_vias in non default rule.           | 
+|                      |       |        | To avoid unpredictable results please fix the problem by        | 
+|                      |       |        | keeping unique names.                                           | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_ndr_width      | 0     | Passed | Nondefault rule width is less then default width on the         | 
+|                      |       |        | layer                                                           | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_ndr_space      | 0     | Passed | Nondefault rule spacing is less then required spacing on        | 
+|                      |       |        | the layer                                                       | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_ndr_min_layer  | 0     | Passed | Nondefault rule min layer is higher than partition max layer    | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_ndr_max_layer  | 0     | Passed | Nondefault rule max layer is higher than partition max layer    | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| ndr_duplicated       | 0     | Passed | Nondefault rule has duplication in different libraries          | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_min_area       | 0     | Passed | Min area requirement is too big                                 | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_hole_area      | 0     | Passed | Hole area requirement is too big                                | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_mfgrid         | 0     | Passed | Manufacturing grid is too big                                   | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| not_even_mfgrid      | 0     | Passed | All width and spacing rules on all metal and cut layers must be | 
+|                      |       |        | an even multiple of manufacturing grid (2*N*mg)                 | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_layer_dir      | 0     | Passed | Direction of the layer is not reversed to below layer           | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_layer_order    | 0     | Passed | Order of layer is wrong, should be metal-cut-metal-...-metal    | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_m1_width       | 0     | Passed | Width of M1 pins is less then minimum width parameter           | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_cut_size       | 0     | Passed | Size of cut is not defined and can't be determined              | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_cut_space      | 0     | Passed | Space between cuts is not defined and can't be determined       | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_diff_cut_space | 0     | Passed | Diffnet cut spacing is less then samenet cut spacing            | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| wrong_proj_cut_space | 0     | Passed | Projection cut spacing is less to diffnet cut spacing           | 
+|----------------------+-------+--------+-----------------------------------------------------------------|
+| max_metal            | 0     | Passed | Top metal is too wide for routing                               | 
+-----------------------------------------------------------------------------------------------------------
+
+
+info UI33: performed technology checks for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)

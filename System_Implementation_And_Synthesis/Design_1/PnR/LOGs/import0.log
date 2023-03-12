@@ -1,0 +1,779 @@
+
+#####################################################
+## Nitro Reference Flow : Import Stage             ##
+## Version : 2019.1.R2                             ##
+## Imports technology & design info to prepare     ##
+## design for NRF place and route.                 ##
+#####################################################
+
+info UI33: performed source of import_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
+NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/kit_utils.tcl
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/kit_utils.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
+Loading utility util::nrf_utils
+Loading utility util::save_nrf_import_vars
+NRF info: Checking import variables
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/tm.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/8.5/msgcat-1.4.2.tm for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/clock.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 154M, CVMEM - 1656M, PVMEM - 1656M)
+Storing TCL variables as db root property
+warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
+NRF info: MGC_libDbPath :  doesn't exist, Running library setup part of import stage and generate libs.db
+NRF info: Since TECHNO RULE File is not provided or does not exist, technology rules must come from tech lef
+NRF info: Reading TECH LEF File
+info UI35: Reading LEF file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/lib_data/NangateOpenCellLibrary.tech.lef'.
+info SDBLEF119: Processing 'NangateOpenCellLibrary.tech' library...
+warning SDBLEF112: A manufacturing grid definition in the DB irrelevant to what is defined in the tech LEF for MANUFACTURINGGRID
+info SDB2: Layer 'poly' added.
+info SDB2: Layer 'active' added.
+info SDB2: Layer 'metal1' added.
+info SDB2: Layer 'via1' added.
+info SDB2: Layer 'metal2' added.
+info SDB2: Layer 'via2' added.
+info SDB2: Layer 'metal3' added.
+info SDB2: Layer 'via3' added.
+info SDB2: Layer 'metal4' added.
+info SDB2: Layer 'via4' added.
+info SDB2: Layer 'metal5' added.
+info SDB2: Layer 'via5' added.
+info SDB2: Layer 'metal6' added.
+info SDB2: Layer 'via6' added.
+info SDB2: Layer 'metal7' added.
+info SDB2: Layer 'via7' added.
+info SDB2: Layer 'metal8' added.
+info SDB2: Layer 'via8' added.
+info SDB2: Layer 'metal9' added.
+info SDB2: Layer 'via9' added.
+info SDB2: Layer 'metal10' added.
+info SDB2: Layer 'OVERLAP' added.
+info SDBLEF15: Via rule 'Via1Array-0' added.
+info SDBLEF15: Via rule 'Via1Array-1' added.
+info SDBLEF15: Via rule 'Via1Array-2' added.
+info SDBLEF15: Via rule 'Via1Array-3' added.
+info SDBLEF15: Via rule 'Via1Array-4' added.
+info SDBLEF15: Via rule 'Via2Array-0' added.
+info SDBLEF15: Via rule 'Via2Array-1' added.
+info SDBLEF15: Via rule 'Via2Array-2' added.
+info SDBLEF15: Via rule 'Via2Array-3' added.
+info SDBLEF15: Via rule 'Via2Array-4' added.
+info SDBLEF15: Via rule 'Via3Array-0' added.
+info SDBLEF15: Via rule 'Via3Array-1' added.
+info SDBLEF15: Via rule 'Via3Array-2' added.
+info SDBLEF15: Via rule 'Via4Array-0' added.
+info SDBLEF15: Via rule 'Via5Array-0' added.
+info SDBLEF15: Via rule 'Via6Array-0' added.
+info SDBLEF15: Via rule 'Via7Array-0' added.
+info SDBLEF15: Via rule 'Via8Array-0' added.
+info SDBLEF15: Via rule 'Via9Array-0' added.
+info SDB2: Layer 'CO' added.
+info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 156M, CVMEM - 1656M, PVMEM - 1656M)
+NRF info: Reading Cell LEF Files
+info UI35: Reading LEF file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/lib_data/NangateOpenCellLibrary.macro.lef'.
+info SDBLEF119: Processing 'NangateOpenCellLibrary.macro' library...
+info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 156M, CVMEM - 1656M, PVMEM - 1656M)
+NRF info: Load new_rc technology .PTF
+info LIB65: Identified 'ptf' format in file 'NCSU_FreePDK_45nm.ptf'
+warning LIB47: Unknown library keyword 'thickness_unit' at line 15.
+warning LIB4: Layer 'contact' is not defined in LEF.
+warning LIB4: Layer 'diffco' is not defined in LEF.
+info LIB40: Library file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/lib_data/NCSU_FreePDK_45nm.ptf' containing library group(s) 'master_techFreePDK45 ' (renamed using prefix: 'new_rc') successfully read.
+info UI33: performed library read for 0 sec (CPU time: 0 sec; MEM: RSS - 157M, CVMEM - 1656M, PVMEM - 1656M)
+info LIB65: Identified 'liberty' format in file 'NangateOpenCellLibrary_typical.lib'
+info LIB40: Library file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/lib_data/NangateOpenCellLibrary_typical.lib' containing library group(s) 'NangateOpenCellLibrary ' (renamed using prefix: 'new_pvt') successfully read.
+info UI33: performed library read for 0 sec (CPU time: 0 sec; MEM: RSS - 164M, CVMEM - 1656M, PVMEM - 1656M)
+warning UI7: Argument '-select' already specified; using last value 'true'.
+Routing lib vias have been created
+Routing lib vias have been selected
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+info UI36: Writing folded database file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/work/dbs/libs.db'.
+info Writing libraries...
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Corner     | Enable | Setup | Hold  | CRPR       | SI   | Power   | EM   | Voltage Drop | DRC        | Process                    | RC Temp | Scale Factor | 
+|------------+--------+-------+-------+------------+------+---------+------+--------------+------------+----------------------------+---------+--------------|
+| slow       | false  | true  | false | setup_hold | none | leakage | none | none         | trans, cap | new_rcmaster_techFreePDK45 | 25      | 1            | 
+|------------+--------+-------+-------+------------+------+---------+------+--------------+------------+----------------------------+---------+--------------|
+| fast       | false  | false | true  | setup_hold | none | leakage | none | none         | trans, cap | new_rcmaster_techFreePDK45 | 25      | 1            | 
+|------------+--------+-------+-------+------------+------+---------+------+--------------+------------+----------------------------+---------+--------------|
+| corner_0_0 | true   | true  | true  | setup_hold | none | leakage | none | none         | trans, cap | new_rcmaster_techFreePDK45 | 25      | 1            | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+NRF info: Reading netlist /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/output/verilog/home_automation_system.syn.v
+info VLOG8: Reading verilog file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/output/verilog/home_automation_system.syn.v'.
+warning SDB10: 1 unconnected input pins in hier 'home_automation_system'.
+info VLOG2: Parsed 5 modules.
+info SDB3: Top design set to 'home_automation_system'.
+warning SDB29: After linking, there are 1 dont_modify and 1 driverless nets.
+info UI33: performed verilog read for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
+NRF info: Info: Setting delay model to voltage
+------------------------------
+| Name  | Model | Base Model | 
+|-------+-------+------------|
+| Data  | fast  | voltage    | 
+|-------+-------+------------|
+| Clock | fast  | voltage    | 
+------------------------------
+
+
+-------------------------------------------
+| Mode     | Enable | System | Corners    | 
+|----------+--------+--------+------------|
+| default  | false  | true   | <all>      | 
+|----------+--------+--------+------------|
+| new_mode | true   | false  | corner_0_0 | 
+-------------------------------------------
+
+
+NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl
+
+
+########################
+### FLOORPLAN: Start ###
+########################
+
+### FLOORPLAN: Sourcing floorplan variable settings file. ###
+info UI33: performed source of floorplan_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
+Loading utility util::nrf_utils
+NRF info: Checking floorplan variables
+
+### FLOORPLAN: Checking technology ###
+info UI34: no objects were found for '*'
+NRF info: Design is not MV, but reading UPF file for power intent.
+info UI420: Supply net 'VDD' inferred as power.
+info UI420: Supply net 'VSS' inferred as ground.
+info UI419: Adding port 'VDD' to current scope '/'.
+info UI33: performed source of /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module.85.upf for 0 sec (CPU time: 0 sec; MEM: RSS - 167M, CVMEM - 1656M, PVMEM - 1656M)
+
+### FLOORPLAN: Creating the chip based on utilization ###
+info CSDB79: Snapped chip dimensions to manufacturing grid.
+info CSDB75: Core area resized to fit integral number of core row sites.
+info CSDB76: Core area resized to fit integral number of core row sites.
+info DUM203: create_chip: created cell-density map for partition home_automation_system with max-util 100 and bin-size 8x8 rows.
+
+### FLOORPLAN: Creating rows ###
+warning UI160: Clear all variables that may contain removed objects.
+info UI40: removed 10 objects (out of 10 objects)
+info UI49: 7 rows were created
+
+### FLOORPLAN: Creating tracks ###
+warning UI137: The precision for 'angstrom' has been set to the minimum of '4'
+info UI49: creating 100 horizontal track starting at 0 with step 0.1400
+info UI49: creating 69 vertical track starting at 0 with step 0.1900
+info UI49: creating 100 horizontal track starting at 0 with step 0.1400
+info UI49: creating 47 vertical track starting at 0 with step 0.2800
+info UI49: creating 50 horizontal track starting at 0 with step 0.2800
+info UI49: creating 47 vertical track starting at 0 with step 0.2800
+info UI49: creating 17 horizontal track starting at 0 with step 0.8000
+info UI49: creating 16 vertical track starting at 0 with step 0.8000
+info UI49: creating 9 horizontal track starting at 0 with step 1.6000
+info UI49: creating 8 vertical track starting at 0 with step 1.6000
+info UI34: no objects were found for '*'
+-------------------------
+|   Max routing layer   |
+|-------------+---------|
+| Stack       | metal10 | 
+|-------------+---------|
+| Property    | metal10 | 
+|-------------+---------|
+| Recommended | metal10 | 
+-------------------------
+
+
+info UI49: updated global design rule(s): max_layer
+warning CSDB87: Property name 'placed' has been deprecated. Use 'placed_state'.
+
+### FLOORPLAN: Quick place of std cells to perform IO placement. ###
+info CHK10: Checking technology...
+info CHK10: Checking placement...
+info CHK10: Checking routing...
+PLX-INFO: Evaluating region utilizations.
+info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
+info UI30: performing global placement on partition home_automation_system (started at Mon Jan 3 13:11:56 2022)
+warning PLC2012: The port 'SFD' is not fixed.
+warning PLC2012: The port 'ST' is not fixed.
+warning PLC2012: The port 'SW' is not fixed.
+warning PLC2012: The port 'SFA' is not fixed.
+warning PLC2012: The port 'SRD' is not fixed.
+warning PLC2012: The port 'display[1]' is not fixed.
+warning PLC2012: The port 'display[0]' is not fixed.
+warning PLC2012: The port 'display[2]' is not fixed.
+warning PLC2012: The port 'reset' is not fixed.
+warning PLC2012: The port 'clk' is not fixed.
+warning PLC2012: The port 'temperature[2]' is not fixed.
+warning PLC2012: The port 'temperature[1]' is not fixed.
+warning PLC2012: The port 'temperature[4]' is not fixed.
+warning PLC2012: The port 'temperature[3]' is not fixed.
+info PLACING CELLS using 1 core.
+info PLX: 10% 30% 50% 60% 80% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+50% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 50% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 50% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 33% 66% 100%
+info =================================================================================
+info PLX: Placer total heap increase: [0G:30M:536K]
+info DUM207: place_timing: re-initialized cell-density map for partition home_automation_system old bin-size 8x8 rows new bin-size 8x8 rows.
+info DUM204: place_timing: re-initialized cell-density map for partition home_automation_system old max-util 100 new max-util 100.
+info Total Bounding-Box Half-Perimeter Wirelength  = 2.355898e+06
+Report 'placement': Placement Report
+Generated on Mon Jan 3 13:11:56 2022
+  
+Cell Density Map Utilization - 1 objects 
+    --- get_objects cell_density_rect -of [get_objects cell_density_map] -fi --->
+0   | 0
+5   | 0
+10  | 0
+15  | 0
+20  | 0
+25  | 0
+30  | 0
+35  | 0
+40  | 0
+45  | 0
+50  | 0
+55  | 0
+60  | 0
+65  | 0
+70  | 0
+75  | 0
+80  | 0
+85  | 0
+90  | 0
+95  |========================================================================= 1
+100 | 0
+105 | 0
+110 | 0
+115 | 0
+120 | 0
+125 | 0
+130 | 0
+135 | 0
+140 | 0
+145 | 0
+150 |
+    V      get_property -name utilization -object %object%
+
+info UI33: performed global placement for 0 sec (CPU time: 0 sec; MEM: RSS - 173M, CVMEM - 1687M, PVMEM - 1839M)
+info CHK10: Checking placement...
+info UI30: performing detailed placement on partition home_automation_system (started at Mon Jan 3 13:11:56 2022)
+
+All Parameters are Set to Default Values for 'config_place_detail'
+
+Routing Cell Library initialization ...
+  Technology offset 700 is not equal to partition offset 400 on metal1 layer. Use partition value.
+  Technology offset 950 is not equal to partition offset 1000 on metal2 layer. Use partition value.
+ core  lib cells:  134 with    134 unique orients.
+Calculated access for 533 core library pins:
+ Ideal   :   236 pins (via ongrid,  completely inside of pin)
+ Good    :   104 pins (via ongrid,  no violations)
+ Offgrid :   193 pins (via offgrid, completely inside of pin)
+ None    :     0 pins (no access)
+ None NDR:     0 pins (no NDR via access)
+Pitch/Offset X: 1900/1000, Y: 1400/400
+Done in 0.2 (0.2 CPU) seconds, used 0 MB
+error PG grid is not there yet.
+----------------
+| PG structure |
+|--------------|
+| Power vias   | 
+|--------------|
+| Power width  | 
+|--------------|
+| Ground vias  | 
+|--------------|
+| Ground width | 
+----------------
+
+
+info UI33: performed Library cell PG blockage preparation for 0 sec (CPU time: 0 sec; MEM: RSS - 174M, CVMEM - 1687M, PVMEM - 1839M)
+info Found 56 movable and 0 fixed cells in partition home_automation_system
+info DP107: Legalizer for site FreePDK45_38x28_10R_NP_162NW_34O, has 7 cut rows, with average utilization 96.0486%, utilization with cell bloats 96.0486%.
+info DP116: Legalizer has initial 56 illegal movable cells and 0 illegal fixed cells.
+info DP128: Legalizer has 56 illegal moveable cells after fix orientation only step.
+info DP117: Iteration 1 (without drc) has 4 illegal movable cells.
+info DP117: Iteration 2 (without drc) has 2 illegal movable cells.
+info DP117: Iteration 3 (without drc) has 0 illegal movable cells.
+info DP118: Finished placing cells without drc: total movable cells: 56, cells moved: 56, total movement: 54.6411, max movement: 3.34886, average movement: 0.975735.
+info DP115: Iteration 4 (with drc) has 0 illegal movable cells.
+info Optimize displacement: 0 (0.0%) cells are moved and 0 (0.0%) cells are flipped.
+info DP113: Finished legalization after 4 iterations, all movable and fixed cells are legal.
+info Number of moved cells: 56. First few cells with largest displacements:
+info DP110: 3.35 rows, from {76599 91383, N} to {94100 62000, FS}, cell priority_encoder/i_0_13.
+info DP110: 2.70 rows, from {40061 41815, N} to {56100 20000, N}, cell output_decoder/i_0_7.
+info DP110: 2.29 rows, from {29743 27161, N} to {40900 48000, N}, cell counter/i_0_0_0.
+info DP110: 2.28 rows, from {88985 92564, N} to {90300 62000, FS}, cell priority_encoder/i_0_22.
+info DP110: 2.10 rows, from {91472 70635, N} to {67500 76000, N}, cell priority_encoder/i_0_1.
+info DP111: Legalization summary: total movable cells: 56, cells moved: 56, total movement: 54.6411, max movement: 3.34886, average movement: 0.975735.
+------------------------------------------------------------------------------------------------
+|                                     Legalization Summary                                     |
+|---------------------+-------------+------------------------+--------------+------------------|
+| Total Movable Cells | Cells Moved | Total Movement in Rows | Max Movement | Average Movement | 
+|---------------------+-------------+------------------------+--------------+------------------|
+| 56                  | 56          | 54.6411                | 3.34886      | 0.975735         | 
+------------------------------------------------------------------------------------------------
+
+
+info DUM207: place_detail: re-initialized cell-density map for partition home_automation_system old bin-size 8x8 rows new bin-size 8x8 rows.
+info DUM203: place_detail: created cell-density map for partition home_automation_system with max-util 100 and bin-size 8x8 rows.
+info UI33: performed detailed placement for 0 sec (CPU time: 0 sec; MEM: RSS - 175M, CVMEM - 1687M, PVMEM - 1839M)
+
+### FLOORPLAN: Placing ports/pins ###
+info using min_layer = metal2
+info using max_layer = metal10
+info Collected pin constraints
+info Placing scalar pins ...
+info Placed 22 pins (out of 22).
+info UI33: performed fast pin placer for 0 sec (CPU time: 0 sec; MEM: RSS - 176M, CVMEM - 1687M, PVMEM - 1839M)
+
+### FLOORPLAN: Checking pin placement ###
+
+### FLOORPLAN: Checking floorplan ###
+
+### FLOORPLAN: Saving database: dbs/floorplan.db   ###
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+info UI36: Writing folded database file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/work/dbs/floorplan.db'.
+info Writing design...
+info Writing timer configuration...
+info Writing SI configuration...
+info Writing Parasitic Models and Extractor configuration...
+info Writing Scan data
+info Writing Trailing data
+info Writing partitions...
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1839M)
+
+### FLOORPLAN: Reporting Errors ###
+Report 'messages': Messages Report
+Generated on Mon Jan 3 13:11:56 2022
+Total number of error messages:  0
+
+########################
+### FLOORPLAN: End ###
+########################
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1839M)
+info CHK10: Checking cells...
+--------------------------------------------------------------------------------------
+|                                    Cell Errors                                     |
+|-------------+-------+--------+-----------------------------------------------------|
+| Name        | Count | Status | Description                                         | 
+|-------------+-------+--------+-----------------------------------------------------|
+| no_lib_cell | 0     | Passed | Cell has no corresponding library cell              | 
+|-------------+-------+--------+-----------------------------------------------------|
+| unresolved  | 0     | Passed | Cell is not linked against any defined library cell | 
+--------------------------------------------------------------------------------------
+
+
+info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1839M)
+info UI34: no objects were found for '*'
+info UI34: no objects were found for '*'
+NRF info: Creating new tracks on all layers
+warning UI160: Clear all variables that may contain removed objects.
+info UI40: removed 10 objects (out of 10 objects)
+info UI49: creating 100 horizontal track starting at 1100 with step 1400
+info UI49: creating 69 vertical track starting at 50 with step 1900
+info UI49: creating 100 horizontal track starting at 1100 with step 1400
+info UI49: creating 47 vertical track starting at 1350 with step 2800
+info UI49: creating 50 horizontal track starting at 1100 with step 2800
+info UI49: creating 47 vertical track starting at 1350 with step 2800
+info UI49: creating 17 horizontal track starting at 4700 with step 8000
+info UI49: creating 16 vertical track starting at 4950 with step 8000
+info UI49: creating 9 horizontal track starting at 4700 with step 16000
+info UI49: creating 8 vertical track starting at 4950 with step 16000
+NRF info: Reading constraints
+NRF info: Loading new_mode Constraints
+NRF info: PT file path /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc
+NRF info: Reading Constraints from SDC for Mode new_mode
+info Reading constraint file /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc
+info Applicable mode(s) : { new_mode }
+info Applicable corner(s) : All
+info Clock suffix : _new_mode
+info UI34: no objects were found for 'reset_n'
+error TA_CMDS1611: No valid start-points are specified for the -from argument.
+error UI5: Specify a value for '-objects' .
+info UI154: Ignoring command 'set_max_capacitance 0.0' execution error at file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc' line 36
+warning UI705: 'set_max_delay -delay' specified value was ignored.
+error UI5: Specify a value for '-unit' .
+info UI154: Ignoring command 'set_max_dynamic_power 0.0' execution error at file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc' line 38
+error UI5: Specify a value for '-unit' .
+info UI154: Ignoring command 'set_max_leakage_power 0.0' execution error at file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc' line 39
+error UI5: Specify a value for '-objects' .
+info UI154: Ignoring command 'set_max_time_borrow 0.0' execution error at file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc' line 40
+error UI5: Specify a value for '-objects' .
+info UI154: Ignoring command 'set_max_transition 0.0' execution error at file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc' line 41
+info UI33: performed read constraints of /home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/constraints/module_func.sdc for 0 sec (CPU time: 0 sec; MEM: RSS - 180M, CVMEM - 1687M, PVMEM - 1839M)
+info UI33: performed source of nrf_customization.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 180M, CVMEM - 1687M, PVMEM - 1839M)
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+info UI36: Writing folded database file '/home/vlsi/Desktop/VLSI-Project/System_Implementation_And_Synthesis/Design_1/work/dbs/import.db'.
+info Writing design...
+info Writing timer configuration...
+info Writing SI configuration...
+info Writing Parasitic Models and Extractor configuration...
+info Writing Scan data
+info Writing Trailing data
+info Writing partitions...
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 178M, CVMEM - 1687M, PVMEM - 1839M)
+NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl
+
+ 
+    ###################################################################################################################  
+                         PERFORMING DESIGN CHECKS PLEASE REVIEW THESE BEFORE PROCEEDING FURTHER  
+    ################################################################################################################### 
+
+info CHK10: Checking technology...
+info CHK10: Checking libraries...
+info CHK10: Checking design...
+info CHK10: Checking partition...
+info CHK10: Checking cells...
+info CHK10: Checking nets...
+info CHK10: Checking pins...
+info CHK10: Checking placement...
+info Found 56 movable and 0 fixed cells in partition home_automation_system
+info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
+info CHK10: Checking floorplan...
+                                                                  Net Errors                                                                  
+ Name                        Count Status  Description 
+ floating                    1     Warning Net is not connected to a driver pin 
+ floating_power              0     Passed  Power net is not connected to a driver pin 
+ floating_ground             0     Passed  Ground net is not connected to a driver pin 
+ multiple_drivers            0     Passed  Net has more than one driver 
+ multiple_drivers_inout      0     Passed  Net has multiple inout only drivers 
+ many_multiple_drivers_inout 0     Passed  Net has more than 128 inout drivers, which may cause excessive run time. Please investigate and fix. 
+ loop                        0     Passed  Net has a loop 
+ flat_net_error              0     Passed  Flat net internal error 
+ no_supply_net               0     Passed  No supply net for logic pin 
+ bad_supply_net              0     Passed  Supply net is not power/ground or wrong polarity 
+ unnamed_nets                0     Passed  Unnamed nets count. 
+ no_type_nets                0     Passed  Net is not a power/ground or signal net. 
+
+
+                                   Pin Errors                                    
+ Name                 Count Status  Description 
+ not_connected        7     Warning Pin is not connected to any net 
+ pg_not_connected     0     Passed  PG core pin is not connected to any supply net 
+ no_leaf_pin_geometry 1     Warning Leaf pin doesn't have geometry or not placed. 
+
+
+                                                                Floorplan Errors                                                                
+ Name                      Count Status  Description 
+ no_tracks                 0     Passed  No preferred direction routing tracks on the layer. 
+ track_step_too_small      0     Passed  Step of routing tracks is smaller then via-wire spacing. 
+ track_step_too_big        0     Passed  Step of routing tracks is bigger then via-wire spacing. 
+ diff_track_step           0     Passed  Different step of preferred direction routing tracks. 
+ tracks_not_cover_pin      0     Passed  Routing tracks do not cover pin. 
+ tracks_not_masked         0     Passed  Routing tracks shall have mask on masked layer. 
+ tracks_incorrectly_masked 0     Passed  Routing tracks masks shall interlace. 
+ no_macro_pin_access       0     Passed  Macro pin doesn't have routing access. 
+ macro_pin_blocked         0     Passed  Macro pin may be blocked by nearby objects. 
+ no_port_access            0     Passed  Partition port doesn't have routing access. 
+ not_aligned_pin           0     Passed  Macro/top pin is not aligned to manufacturing grid. 
+ offgrid_core_access       0     Passed  Library core pin has only offgird routing access. 
+ no_core_access            0     Passed  Library core pin doesn't have routing access. 
+ no_port_geometry          0     Passed  Port doesn't have geometry or not placed. 
+ port_outside_partition    0     Passed  Port is placed outside partition. 
+ port_min_area             0     Passed  Port has insufficient minimum area. 
+ port_short                0     Passed  Port has intersection with other one. 
+ port_spacing              0     Passed  Port has insufficient spacing with other one. 
+ port_above_max_layer      0     Passed  Port is above of max layer. 
+ region_overlaps           0     Passed  Region overlaps other region. 
+ cell_outside_region       0     Passed  Cell outside of region with member_hard requirement. Will cause pin assignment to fail. 
+ cell_inside_region        0     Passed  Foreign cell is inside region with non_member_hard requirement. Will cause pin assignment to fail 
+ region_off_mfg_grid       0     Passed  Region is not on manufacturing grid 
+ region_off_fp_grid        0     Passed  Region is not on floorplan grid. 
+ excessive_region_blockage 0     Passed  Placement blockages cover more than 70% of region. Run report_region_utilization to verify placeability. 
+ macro_off_mfg             0     Passed  Macro off manufacturing grid. 
+ missing_cell_rows         0     Passed  No cell rows are found in the design. Placer will fail without rows. 
+ partition_overlap         0     Passed  Partition overlaps other partition. 
+ partition_off_fp_grid     0     Passed  Partition is not on floorplan grid. 
+ endcap_alignment          0     Passed  Cell is not aligned with the cell row. 
+ row_without_endcaps       14    Warning Row has no endcap cells at ends. 
+ no_pin_mask               0     Passed  Port shape does not have a mask on a masked layer. 
+ narrow_pin_misalignment   0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
+ wide_pin_misalignment     0     Passed  Wide port shape mask, on masked layer, should be on alternate mask to reduce routing congestion. 
+ short_placement_width     0     Passed  The width of the placement rectangle is short. 
+ object_off_floorplan_grid 0     Passed  Objects are off floorplan grid. 
+
+
+info CHK10: Checking floorplan...
+warning CHK321: Check 'tracks_misalign' will not flag errors, as the top partition has been specified.
+warning CHK320: The default value '1' is used for 'multiple' option of 'macro_height_multiple' check. No errors will be flagged.
+warning CHK320: The default value '1' is used for 'multiple' option of 'region_width_multiple' check. No errors will be flagged.
+warning CHK320: The default value '1' is used for 'multiple' option of 'region_height_multiple' check. No errors will be flagged.
+warning CHK320: The default value '0' is used for 'height' option of 'large_std_cell' check. No errors will be flagged.
+warning CHK321: Check 'cell_inside_partition' will not flag errors, as the top partition has been specified.
+info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
+                                                                                                                                        Floorplan Errors                                                                                                                                        
+ Name                                 Count Status  Description 
+ no_tracks                            0     Passed  No preferred direction routing tracks on the layer. 
+ track_step_too_small                 0     Passed  Step of routing tracks is smaller then via-wire spacing. 
+ track_step_too_big                   0     Passed  Step of routing tracks is bigger then via-wire spacing. 
+ diff_track_step                      0     Passed  Different step of preferred direction routing tracks. 
+ tracks_not_cover_pin                 0     Passed  Routing tracks do not cover pin. 
+ tracks_not_masked                    0     Passed  Routing tracks shall have mask on masked layer. 
+ tracks_incorrectly_masked            0     Passed  Routing tracks masks shall interlace. 
+ tracks_misalign                      0     Passed  Partition routing tracks do not align with top partition. 
+ no_macro_pin_access                  0     Passed  Macro pin doesn't have routing access. 
+ macro_pin_blocked                    0     Passed  Macro pin may be blocked by nearby objects. 
+ no_port_access                       0     Passed  Partition port doesn't have routing access. 
+ not_aligned_pin                      0     Passed  Macro/top pin is not aligned to manufacturing grid. 
+ offgrid_core_access                  0     Passed  Library core pin has only offgird routing access. 
+ no_core_access                       0     Passed  Library core pin doesn't have routing access. 
+ no_macro_halo                        0     Passed  Macro is missing a macro halo definition. 
+ no_macro_blockage                    0     Passed  Macro is missing a cell-based blockage. 
+ no_macro_bloat                       0     Passed  Macro is missing a bloat definition. 
+ unaligned_power_stripes              0     Passed  Top-level PG stripe doesn't align with partition PG stripe. 
+ unabutted_power_stripes              0     Passed  Block-level PG stripes don't abut to a top-level PG stripe. 
+ no_port_geometry                     0     Passed  Port doesn't have geometry or not placed. 
+ no_leaf_pin_geometry                 1     Warning Leaf pin doesn't have geometry or not placed. 
+ port_outside_partition               0     Passed  Port is placed outside partition. 
+ port_inside_partition                0     Passed  Port is placed inside partition. 
+ port_min_area                        0     Passed  Port has insufficient minimum area. 
+ port_short                           0     Passed  Port has intersection with other one. 
+ port_spacing                         0     Passed  Port has insufficient spacing with other one. 
+ port_above_max_layer                 0     Passed  Port is above of max layer. 
+ region_overlaps                      0     Passed  Region overlaps other region. 
+ cell_outside_region                  0     Passed  Cell outside of region with member_hard requirement. Will cause pin assignment to fail. 
+ cell_inside_region                   0     Passed  Foreign cell is inside region with non_member_hard requirement. Will cause pin assignment to fail 
+ region_off_mfg_grid                  0     Passed  Region is not on manufacturing grid 
+ region_off_fp_grid                   0     Passed  Region is not on floorplan grid. 
+ excessive_region_blockage            0     Passed  Placement blockages cover more than 70% of region. Run report_region_utilization to verify placeability. 
+ macro_off_mfg                        0     Passed  Macro off manufacturing grid. 
+ macro_off_fp_grid                    0     Passed  Macro is not on floorplan grid. 
+ macro_height_multiple                0     Passed  Macro height is not a multiple of user defined value. 
+ macro_channel_check                  0     Passed  Channels between macros or from macros to partition/region edges is less than the user defined distance. 
+ missing_cell_rows                    0     Passed  No cell rows are found in the design. Placer will fail without rows. 
+ partition_overlap                    0     Passed  Partition overlaps other partition. 
+ partition_off_fp_grid                0     Passed  Partition is not on floorplan grid. 
+ endcap_alignment                     0     Passed  Cell is not aligned with the cell row. 
+ undefined_endcap                     1     Warning No library cells of type endcap are defined. 
+ row_without_endcaps                  14    Warning Row has no endcap cells at ends. 
+ pin_off_track_center                 0     Passed  Port shape of macro or partition pin, on masked layer, is off track center. 
+ no_pin_mask                          0     Passed  Port shape does not have a mask on a masked layer. 
+ narrow_pin_misalignment              0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
+ wide_pin_misalignment                0     Passed  Wide port shape mask, on masked layer, should be on alternate mask to reduce routing congestion. 
+ short_placement_width                0     Passed  The width of the placement rectangle is short. 
+ region_width_multiple                0     Passed  Region width is not a multiple of user defined value. 
+ region_height_multiple               0     Passed  Region height is not a multiple of user defined value. 
+ macro_halo_overlap                   0     Passed  Standard cells overlap user defined macro halo. 
+ row_missing_m1_rail                  7     Warning Cell row is missing M1 rail. 
+ row_missing_m2_rail                  7     Warning Cell row is missing M2 rail. 
+ large_std_cell                       0     Passed  Macro may be marked as standard cell. 
+ macro_overlap                        0     Passed  Macro overlaps other macro. 
+ partition_off_mfg_grid               0     Passed  Partition is not on manufacturing grid. 
+ non_abutted_pin_group                0     Passed  Abutted pins are in non-abutting pin groups. 
+ port_unconnected_internally          0     Passed  Port is not connected internally. 
+ port_unconnected_externally          0     Passed  Port is not connected externally. 
+ unmatched_cellrow_sites              0     Passed  Cell row sites do not match library cell sites. Placer will fail since row site must match cell site. 
+ diff_site_cellrow_overlap            0     Passed  Cell rows with different sites overlap. 
+ same_site_cellrow_overlap            0     Passed  Cell rows with same sites overlap. 
+ odd_row_sites                        0     Passed  The row does not contain an odd number of sites, or it extends beyond an adjacent row an odd number of sites. Every row must have an odd number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ even_row_sites                       7     Warning The row does not contain an even number of sites, or it extends beyond an adjacent row an even number of sites. Every row must have an even number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ odd_row                              0     Passed  The opposite horizontal core edges which have even number of rows between each other. 
+ even_row                             1     Warning The opposite horizontal core edges which have odd number of rows between each other. 
+ cell_outside_partition               0     Passed  Cell outside of parent partition. Will cause pin assignment to fail. 
+ cell_inside_partition                0     Passed  Foreign cell inside of partition. Will cause pin assignment to fail. 
+ pg_nets                              2     Warning Defined power and ground nets. 
+ no_pg_nets                           0     Passed  No power and ground nets defined. Use create_supply_net to define them. 
+ no_lib_vias                          0     Passed  No library vias found in the design. May not be able to insert vias. 
+ no_lib_via_rule                      0     Passed  No libary via rules found in the design. May not be able to insert vias. 
+ unabutted_region_edge                0     Passed  Floorplan region edge does not abut another floorplan region edge. Abutted pin assignment will fail for pins on this edge. 
+ abutted_region_edge                  0     Passed  Floorplan region edge abuts another floorplan region edge. 
+ unabutted_partition_edge             0     Passed  Partition edge does not abut another partition edge. Abutted pin assignment will fail for pins on this edge. 
+ abutted_partition_edge               0     Passed  Partition edge abuts another partition edge. 
+ region_utilization                   0     Passed  Region utilization is greater than 95%. Placement will likely fail. Check for available rows and placement blockages. 
+ unplaced_pads                        0     Passed  Unplaced pads will cause the global placer to fail. Place it or remove it. 
+ unconnected_pads                     0     Passed  Unconnected pads placed in the design. 
+ unabutted_pads                       0     Passed  Pad does not abut to a signal pad, filler pad, or corner cell. 
+ unabutted_corner                     0     Passed  Corner cell does not abut to a signal pad, filler pad, or corner cell. 
+ missing_sequential_cells             0     Passed  No sequential cells found in the design. This will cause macro connectivity analysis to fail. 
+ no_pg_domains                        0     Passed  No power domains defined in the design. Recommend using create_power_domain to define one. 
+ no_top_pg_domain                     0     Passed  No PG domain defined for top hierarchy. Recommend using create_power_domain to define one. 
+ no_domain_cells                      0     Passed  Cells not assigned to a power domain. 
+ no_cell_power_net                    1     Warning Cell is not connected to a power net. Use set_domain_supply_net to associate a power net with a power domain and all of its cells. Or use connect_supply_net to directly connect a power pin to a power net. 
+ no_cell_ground_net                   1     Warning Cell is not connected to a ground net. Use set_domain_supply_net to associate a ground net with a power domain and all of its cells. Or use connect_supply_net to directly connect a ground pin to a ground net. 
+ no_primary_power_net                 0     Passed  No primary power net is associated to primary PG domain. Use set_domain_supply_net to associate one. 
+ no_primary_ground_net                0     Passed  No primary ground net is associated to primary PG domain. Use set_domain_supply_net to associate one. 
+ core_area_outside_partition_boundary 0     Passed  Core area protrudes outside partition boundary. 
+ row_orient_vs_pg_rails               0     Passed  The row orientation does not match the PG rails. 
+ object_off_floorplan_grid            0     Passed  Objects are off floorplan grid. 
+
+
+info CHK10: Checking technology...
+                                                                Technology Errors                                                                
+ Name                 Count Status Description 
+ no_parasitics        0     Passed Layer has no corresponding parasitics data 
+ no_ndr_vias          0     Passed No vias at all in non default rule. 
+                                   Use default vias 
+ partial_ndr_vias     0     Passed Not all layers have vias in non default rule. 
+                                   Use default vias 
+ duplicate_lvias      0     Passed Duplicate name for some lib_vias in non default rule. 
+                                   To avoid unpredictable results please fix the problem by keeping unique names. 
+ wrong_ndr_width      0     Passed Nondefault rule width is less then default width on the layer 
+ wrong_ndr_space      0     Passed Nondefault rule spacing is less then required spacing on the layer 
+ wrong_ndr_min_layer  0     Passed Nondefault rule min layer is higher than partition max layer 
+ wrong_ndr_max_layer  0     Passed Nondefault rule max layer is higher than partition max layer 
+ ndr_duplicated       0     Passed Nondefault rule has duplication in different libraries 
+ wrong_min_area       0     Passed Min area requirement is too big 
+ wrong_hole_area      0     Passed Hole area requirement is too big 
+ wrong_mfgrid         0     Passed Manufacturing grid is too big 
+ not_even_mfgrid      0     Passed All width and spacing rules on all metal and cut layers must be an even multiple of manufacturing grid (2*N*mg) 
+ wrong_layer_dir      0     Passed Direction of the layer is not reversed to below layer 
+ wrong_layer_order    0     Passed Order of layer is wrong, should be metal-cut-metal-...-metal 
+ wrong_m1_width       0     Passed Width of M1 pins is less then minimum width parameter 
+ wrong_cut_size       0     Passed Size of cut is not defined and can't be determined 
+ wrong_cut_space      0     Passed Space between cuts is not defined and can't be determined 
+ wrong_diff_cut_space 0     Passed Diffnet cut spacing is less then samenet cut spacing 
+ wrong_proj_cut_space 0     Passed Projection cut spacing is less to diffnet cut spacing 
+ max_metal            0     Passed Top metal is too wide for routing 
+
+
+info running report region utilization in global placement context: 
+    - utilization = (mobile_cell_area/(row_area - obstruction_area)).
+    - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
+    - by default, cell area include all bloats associated with the cells. 
+
+
+info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
+Report 'temp_rru': Region Utilization Report
+Generated on Mon Jan 3 13:11:56 2022
+  
+                                            Report Region Utilization                                            
+   Partition/Region       MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) 
+ 0 home_automation_system -  -   84.056    87.514         84.056       96.0486               45.8 
+
+
+NRF info: Please check the number of associated libraries in table below, each corners should have same number of associated libs
+                       Corner_Summary                       
+ Corner     #Max_Libs #Min_Libs #Proc_Libs Setup Hold  Enable 
+ slow       0         0         1          true  false false 
+ fast       0         0         1          false true  false 
+ corner_0_0 1         1         1          true  true  true 
+
+
+NRF info: Please review layer resistance and capacitance values in tables below
+Report 'capacitance': Capacitance Report
+Generated on Mon Jan 3 13:11:56 2022
+  
+                                                                Layer Capacitance                                                                 
+                            metal1      metal2      metal3    metal4     metal5     metal6     metal7    metal8     metal9     metal10    poly 
+ new_rcmaster_techFreePDK45 1.48296e-05 1.09236e-05 1.521e-05 1.5446e-05 1.5236e-05 1.5127e-05 1.539e-05 1.4979e-05 1.7227e-05 1.6977e-05 1.4766e-05 
+
+
+Report 'resistance': Resistance Report
+Generated on Mon Jan 3 13:11:56 2022
+  
+                                                                               Layer Resistance                                                                                
+                                     metal1  metal2  metal3  metal4  metal5  metal6  metal7  metal8  metal9 metal10 via1  via2  via3  via4  via5  via6  via7  via8  via9   poly 
+ <new_rcmaster_techFreePDK45 25.00C> 0.00038 0.00025 0.00025 0.00021 0.00021 0.00021 7.5e-05 7.5e-05 3e-05  3e-05   0.005 0.005 0.005 0.003 0.003 0.003 0.001 0.001 0.0005 0.0078 
+
+
+NRF info: Please check timing constraints summary in table below
+Report 'report_read_constraints': User Constraints
+Generated on Mon Jan 3 13:11:56 2022
+  
+                  USER CONSTRAINTS                  
+                      MODE default MODE new_mode Total 
+ create_clock         0            2             2 
+ set_input_delay      0            1             1 
+ set_output_delay     0            1             1 
+ set_input_transition 0            1             1 
+ set_load             0            1             1 
+ set_false_path       0            1             1 
+ set_max_area         1            1             2 
+ Total                1            8             9 
+
+
+NRF warning: There are 1 dont_modify nets and they won't be optimized
+NRF warning: Design has 96.0486 placement utilization. Please review if this high utilization is expected before proceeding further.
+---------------------------------------------------------------------------
+|                         Current Units Settings                          |
+|-------------------------------------------------------------------------|
+| Value type  Unit name Input settings  Output settings Precision Format  | 
+|-------------------------------------------------------------------------|
+| time        second    nano (e-9)      nano (e-9)      4         decimal | 
+| frequency   hertz     giga (e+9)      giga (e+9)      4         decimal | 
+| distance    meter     angstrom (e-10) angstrom (e-10) 4         decimal | 
+| capacitance farad     femto (e-15)    femto (e-15)    1         float   | 
+| resistance  ohm       kilo (e+3)      kilo (e+3)      4         float   | 
+| inductance  henry     nano (e-9)      nano (e-9)      1         decimal | 
+| current     ampere    milli (e-3)     milli (e-3)     4         decimal | 
+| power       watt      nano (e-9)      nano (e-9)      0         decimal | 
+| voltage     volt      one             one             2         decimal | 
+| temperature celsius   one             one             2         decimal | 
+| area        sq-meter  sq-micro (e-12) sq-micro (e-12) 3         decimal | 
+---------------------------------------------------------------------------
+
+
+
+ 
+    ######################################################################################################################  
+                         FINISHED IMPORT DESIGN CHECKS PLEASE REVIEW ABOVE BEFORE PROCEEDING FURTHER  
+    ###################################################################################################################### 
+
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1839M)
+Report 'messages': Messages Report
+Generated on Mon Jan 3 13:11:56 2022
+  
+--------------------------------------------------------------------------------------------------
+|                                         Error Messages                                         |
+|-------------+--------------------+-------------------------------------------------------------|
+| Message ID  | Number of messages | Message text (of first message)                             | 
+|-------------+--------------------+-------------------------------------------------------------|
+| TA_CMDS1611 | 1                  | No valid start-points are specified for the -from argument. | 
+|-------------+--------------------+-------------------------------------------------------------|
+| UI5         | 5                  | Specify a value for '-objects' %2.                          | 
+--------------------------------------------------------------------------------------------------
+
+
+Total number of error messages:  6
+  
+-----------------------------------------------------------------------------------------------------
+|                                         Warning Messages                                          |
+|------------+--------------------+-----------------------------------------------------------------|
+| Message ID | Number of messages | Message text (of first message)                                 | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI705      | 3                  | 'create_argument -value_type' specified value was ignored.      | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI54       | 10                 | UI54: redirecting output of %1 to %2                            | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI4        | 4                  | Only 1 cores are available; the -cpus argument was set to 2.    | 
+|------------+--------------------+-----------------------------------------------------------------|
+| SDBLEF112  | 1                  | A manufacturing grid definition in the DB irrelevant to what is | 
+|            |                    | defined in the tech LEF for MANUFACTURINGGRID                   | 
+|------------+--------------------+-----------------------------------------------------------------|
+| LIB47      | 1                  | Unknown library keyword 'thickness_unit' at line 15.            | 
+|------------+--------------------+-----------------------------------------------------------------|
+| LIB4       | 2                  | Layer 'contact' is not defined in LEF.                          | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI7        | 1                  | Argument '-select' already specified; using last value          | 
+|            |                    | 'true'.                                                         | 
+|------------+--------------------+-----------------------------------------------------------------|
+| SDB10      | 1                  | 1 unconnected input pins in hier 'home_automation_system'.      | 
+|------------+--------------------+-----------------------------------------------------------------|
+| SDB29      | 1                  | After linking, there are 1 dont_modify and 1 driverless         | 
+|            |                    | nets.                                                           | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI160      | 2                  | Clear all variables that may contain removed objects.           | 
+|------------+--------------------+-----------------------------------------------------------------|
+| UI137      | 1                  | The precision for 'angstrom' has been set to the minimum of     | 
+|            |                    | '4'                                                             | 
+|------------+--------------------+-----------------------------------------------------------------|
+| CSDB87     | 1                  | Property name 'placed' has been deprecated. Use 'placed_state'. | 
+|------------+--------------------+-----------------------------------------------------------------|
+| PLC2012    | 14                 | The port 'SFD' is not fixed.                                    | 
+|------------+--------------------+-----------------------------------------------------------------|
+| CHK321     | 4                  | Check 'tracks_misalign' will not flag errors, as the top        | 
+|            |                    | partition has been specified.                                   | 
+|------------+--------------------+-----------------------------------------------------------------|
+| CHK320     | 8                  | The default value '1' is used for 'multiple' option of          | 
+|            |                    | 'macro_height_multiple' check. No errors will be flagged.       | 
+-----------------------------------------------------------------------------------------------------
+
+
+Total number of warning messages:  54
+info UI33: performed source of flow_scripts/0_import.tcl for 1 sec (CPU time: 1 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1839M)
