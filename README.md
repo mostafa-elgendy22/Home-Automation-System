@@ -1,5 +1,5 @@
-# VLSI-Project
-System Design, RTL implementation, logic synthesis using Oasys tool, and PnR using Nitro SoC tool of a home automation system.
+# Home-Automation-System
+System Design, RTL implementation using VHDL, logic synthesis using Oasys tool, and PnR using Nitro SoC tool of a home automation system.
 
 <hr>
 <img src="Screenshots/1.PNG" alt="1">
