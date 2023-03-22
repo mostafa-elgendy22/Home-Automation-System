@@ -2,6 +2,9 @@
 System Design, RTL implementation using VHDL, logic synthesis using Oasys tool, and PnR using Nitro SoC tool of a home automation system.
 
 <hr>
+<img src="Screenshots/36.PNG" alt="36">
+<img src="Screenshots/37.PNG" alt="37">
+<img src="Screenshots/38.PNG" alt="38">
 <img src="Screenshots/1.PNG" alt="1">
 <img src="Screenshots/2.PNG" alt="2">
 <img src="Screenshots/3.PNG" alt="3">
